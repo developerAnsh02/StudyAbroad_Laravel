@@ -1,51 +1,33 @@
-@extends('layouts.app')
-
-@section('content')
-<section class="contact-section">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>We would love to hear from you! Fill out the form below and we'll get back to you soon.</p>
-
-        
-
-        <div class="contact-content">
-            <!-- Contact Form -->
-            <form class="contact-form" method="POST" id="contact_us_form">
-                @csrf
-
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Full Name" value="{{ old('name') }}" required />
-                </div>
-
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email Address" value="{{ old('email') }}" required />
-                </div>
-
-                <div class="form-group">
-                    <input type="tel" name="phone_number[main]" id="phone_number" />
-                </div>
-
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" rows="5" required>{{ old('message') }}</textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-
-            <!-- Contact Details -->
-            <div class="contact-info">
-                <h3>Contact Info</h3>
-                <p><strong>Email:</strong> support@wtsvisa.com</p>
-                <p><strong>Phone:</strong> +91 92578 74994</p>
-                <p><strong>Address:</strong>4th floor, Ashoka palace, 410, Shobhagpura, Udaipur, Rajasthan 313001</p>
-                <!-- Map Integration -->
-                <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.7051881377574!2d73.7094346!3d24.5993686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e538f33055ef%3A0xa94746794fe9e6e2!2sWTS%20Visa%20Consultancy!5e0!3m2!1sen!2sin!4v1743228666404!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+<div class="registration-form">
+    <h2 style="margin: 0px;">Register for Visa Assistance</h2>
+    <form id="registrationForm" method="POST">
+        @csrf
+        <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder="Your Name">
         </div>
-    </div>
-</section>
+        <div class="form-group">
+            <input type="tel" name="phone_number[main]" id="phone_number" />
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder="Email">
+        </div>
+        
+        <div class="form-group">
+            <input type="text" id="visa-country" name="visa_country" required placeholder="Visa Required Country">
+        </div>
+        <div class="form-group">
+            <select id="visa-type" name="visa_type" required>
+                <option value="" disabled selected>Select Visa Type</option>
+                <option value="Tourist Visa">Tourist Visa</option>
+                <option value="Work Visa">Work Visa</option>
+                <option value="Student Visa">Student Visa</option>
+                <option value="Business Visa">Business Visa</option>
+            </select>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
 <!-- Include jQuery, SweetAlert and intl-tel-input libraries -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -60,6 +42,7 @@
         hiddenInput: "full",
         utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
     });
+
     $("form").submit(function(e) {
         e.preventDefault(); // Prevent the default form submission
 
@@ -74,19 +57,19 @@
 
         // Use AJAX to submit the form
         $.ajax({
-            url: "{{ route('contact.submit') }}", // Your form submission URL
+            url: "{{ route('submit.registration') }}", // Your form submission URL
             method: "POST",
             data: formData,
             success: function(response) {
                 // Success: Show a success message using SweetAlert
                 Swal.fire({
                     icon: 'success',
-                    title: 'Thank you for contacting us!',
-                    text: 'We will get back to you soon.',
+                    title: 'Form Submitted!',
+                    text: 'Your form has been successfully submitted.',
                     showConfirmButton: true,
                 }).then(function() {
                     // Optionally, reset the form after success
-                    $('#contact_us_form')[0].reset();
+                    $('#registrationForm')[0].reset();
                     // Re-enable the submit button after success
                     $('button[type="submit"]').prop('disabled', false);
                 });
@@ -117,6 +100,7 @@
         });
     });
 </script>
+
 <style>
     .iti {
         width: -webkit-fill-available !important;
@@ -124,8 +108,4 @@
     .iti--separate-dial-code .iti__selected-dial-code {
         color: white !important;
     }
-    .iti__country-name, .iti__flag-box {
-        color: black;
-    }
 </style>
-@endsection

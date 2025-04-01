@@ -41,38 +41,8 @@
                 <span>Australia</span>
             </div>
         </div>
-        <div class="registration-form">
-                <h2>Register for Visa Assistance</h2>
-                <form id="registrationForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="country" name="country" required placeholder="Your Country">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="visa-country" name="visa_country" required
-                            placeholder="Visa Required Country">
-                    </div>
-                    <div class="form-group">
-                        <select id="visa-type" name="visa_type" required>
-                            <option value="" disabled selected>Select Visa Type</option>
-                            <option value="Tourist Visa">Tourist Visa</option>
-                            <option value="Work Visa">Work Visa</option>
-                            <option value="Student Visa">Student Visa</option>
-                            <option value="Business Visa">Business Visa</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="submit-btn">Submit</button>
-                </form>
-            </div>
-            </div>
+        @include('./components/registration-form')
+    </div>
 
 </section>
 

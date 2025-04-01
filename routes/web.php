@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MasterController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -14,7 +15,7 @@ Route::get('/', [MasterController::class, 'homePage']);
 Route::get('/contact', [MasterController::class, 'ContactPage']);
 Route::get('/about', [MasterController::class, 'aboutPage']);
 
-Route::post('/contact-submit', [MasterController::class, 'submit'])->name('contact.submit');
+// Route::post('/contact-submit', [MasterController::class, 'submit'])->name('contact.submit');
 
 Route::get('/component-hero', [MasterController::class, 'hero'])->name('component-hero');
 
@@ -38,5 +39,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::post('/submit-registration', [MailController::class, 'sendVisaAssistanceEmail'])->name('submit.registration');
+Route::post('/contact-submit', [MailController::class, 'contactSubmit'])->name('contact.submit');
+
 
 require __DIR__.'/auth.php';
