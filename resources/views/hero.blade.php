@@ -1,8 +1,5 @@
-@extends('layouts.app')
 
-@section('content')
 <section class="hero-main">
-    <div class="hero-overlay-main">
     <div class="hero-content-wrapper">
 
         <div class="map-container">
@@ -15,9 +12,9 @@
 
             <div class="card-country india-card">
                 <div class="flag-circle">
-                    <img src="images/icons/world.png" alt="India Flag">
+                    <img src="images/icons/russia.png" alt="India Flag">
                 </div>
-                <span>India</span>
+                <span>Russsia</span>
             </div>
             <div class="card-country japan-card">
                 <div class="flag-circle">
@@ -76,27 +73,25 @@
                 </form>
             </div>
             </div>
-    </div>
+
 </section>
 
 <style>
 .hero-main {
-    height: 110vh;
     background: url('/images/fbf0efd993d06415633881cd7b0c43de.jpg') no-repeat center center/cover;
     position: relative;
+    padding: 80px 0; /* Add padding instead of fixed height */
 }
 
-.hero-overlay-main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(46, 46, 46, 0.3);
-    backdrop-filter: blur(4px);
-    padding: 20px;
-    opacity: 0;
-    animation: overlayFadeIn 1.5s forwards;
+.hero-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    gap: 40px;
+    margin: auto;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .map-container {
@@ -104,6 +99,7 @@
     max-width: 55%;
     margin-left: 0;
     margin-right: auto;
+    top: 0; /* Remove top margin to align properly */
 }
 
 .map-image {
@@ -160,13 +156,13 @@
     color: #4a4a4a;
 }
 
-.india-marker { top: 48%; left: 67%; }
-.india-card { top: 51%; left: 62%; }
+.india-marker { top: 34%; left: 69%; }
+.india-card { top: 20%; left: 67%; }
 
 .usa-marker { top: 44%; left: 23%; }
 .usa-card { top: 42%; left: 26%; }
 .brazil-marker { top: 59%; left: 34%; }
-.brazil-card { top: 57%; left: 20%; }
+.brazil-card { top: 63%; left: 32%; }
 .australia-marker { top: 61%; left: 83%; }
 .australia-card { top: 62%; left: 85%; }
 
@@ -192,5 +188,29 @@
     0%, 100% { filter: brightness(1.5); transform: scale(1); }
     50% { filter: brightness(0.5) contrast(1.2); transform: scale(1.2); }
 }
+
+@media (max-width: 768px) {
+    .map-container {
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .map-image {
+        width: 100%;
+        transform: scale(1); /* Ensure it stays the same size */
+    }
+
+    .marker {
+        width: 6px;
+        height: 6px;
+        box-shadow: 0px 0px 8px 4px rgba(255, 0, 0, 0.5);
+    }
+
+    .card-country {
+        display: none; /* Hide country cards */
+    }
+}
+
 </style>
-@endsection

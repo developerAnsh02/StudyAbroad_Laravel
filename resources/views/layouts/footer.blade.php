@@ -39,7 +39,7 @@
             <div class="footer-offices">
                 <h3>Our Offices</h3>
                 <div class="office-item">
-                    <p><span>🇮🇳 India Office:</span> 4th floor, Ashoka palace, 410, Shobhagpura, Udaipur, Rajasthan 313001</p>
+                    <p><span>India Office:</span> 4th floor, Ashoka palace, 410, Shobhagpura, Udaipur, Rajasthan 313001</p>
                 </div>
             </div>
             

@@ -2,8 +2,6 @@
     .faq-section {
         background: #f9f9f9;
         padding: 40px 20px;
-      
-      
     }
 
     .section-title {
@@ -31,7 +29,7 @@
     }
 
     .faq-item:hover {
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 
     .faq-question {
@@ -58,17 +56,20 @@
     }
 
     .faq-answer {
-        display: none;
-        padding: 15px;
+        max-height: 0;
+        overflow: hidden;
         background: #fff7ed;
         border: 1px solid #d97706;
         font-size: 16px;
         color: #333;
         line-height: 1.5;
+        padding: 0 15px;
+        transition: max-height 0.3s ease-out, padding 0.3s ease-out;
     }
 
     .faq-item.active .faq-answer {
-        display: block;
+        max-height: 200px; /* Adjust based on content */
+        padding: 15px;
     }
 
     .faq-item.active .faq-question i {
@@ -108,7 +109,17 @@
     document.querySelectorAll(".faq-question").forEach((button) => {
         button.addEventListener("click", () => {
             const faqItem = button.parentElement;
-            faqItem.classList.toggle("active");
+            const isOpen = faqItem.classList.contains("active");
+
+            // Close all FAQs
+            document.querySelectorAll(".faq-item").forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            // If it was not open, open this one
+            if (!isOpen) {
+                faqItem.classList.add("active");
+            }
         });
     });
 </script>

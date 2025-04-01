@@ -1,60 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<section class="hero">
-    <div class="hero-overlay"></div>
-        <div class="hero-content-wrapper">
-            <!-- Hero Content -->
-            <div class="hero-content">
-                <div class="plane-container">
-                    <img src="assets/plane.png" alt="Aeroplane" class="plane">
-                </div>
-
-                <h1>Your Gateway to Hassle-Free Travel</h1>
-                <p>Get expert visa assistance and make your travel dreams a reality.</p>
-                <div class="cta-buttons">
-                    <a href="#services" class="btn">Learn More</a>
-                    <a href="contact.html" class="btn-secondary">Contact Us</a>
-                </div>
-
-            </div>
-            <!-- Registration Form -->
-            <div class="registration-form">
-                <h2>Register for Visa Assistance</h2>
-                <form id="registrationForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="country" name="country" required placeholder="Your Country">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="visa-country" name="visa_country" required
-                            placeholder="Visa Required Country">
-                    </div>
-                    <div class="form-group">
-                        <select id="visa-type" name="visa_type" required>
-                            <option value="" disabled selected>Select Visa Type</option>
-                            <option value="Tourist Visa">Tourist Visa</option>
-                            <option value="Work Visa">Work Visa</option>
-                            <option value="Student Visa">Student Visa</option>
-                            <option value="Business Visa">Business Visa</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="submit-btn">Submit</button>
-                </form>
-            </div>
-        </div>
-        <div class="globe-container">
-            <img src="/assets/PinClipart.com_travel-clipart_290936.png" alt="Globe" class="globe">
-        </div>
-    </section>
+    @include('hero')
 
     <section class="section-hero">
         <div class="destination">

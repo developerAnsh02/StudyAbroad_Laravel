@@ -18,6 +18,13 @@ Route::post('/contact-submit', [MasterController::class, 'submit'])->name('conta
 
 Route::get('/component-hero', [MasterController::class, 'hero'])->name('component-hero');
 
+Route::get('/services/sop-assistance', function () {
+    return view('services.sop-assistance.index');
+});
+Route::get('/services/course-selection', function () {
+    return view('services.course-selection.course-selection');
+});
+
 
 
 Route::get('/dashboard', function () {
