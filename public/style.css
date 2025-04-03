@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #242424;
+    background-color: #fff;
     color: #333;
     margin-top: -20px !important;
 }
@@ -61,7 +61,7 @@ h2{
     align-items: center;
 }
 p{
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 .navbar {
@@ -322,6 +322,7 @@ p{
     z-index: 1000;
 } */
 
+
 /* Hero Content */
 .hero-content {
     width: 50%;
@@ -349,7 +350,6 @@ p{
     -webkit-backdrop-filter: blur(14.4px);
     padding: 30px;
     border-radius: 16px;
-    width: 35%;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     animation: fade-in 1s ease;
 }
@@ -921,6 +921,9 @@ p{
 }
 
 /* Fade-in animation */
+.footer{
+    background-color: #242424;
+}
 .footer .container {
     opacity: 0;
     padding-top: 25px ;
@@ -1860,7 +1863,7 @@ h2 {
     font-size: 28px;
     font-weight: bold;
     color: #2d3748;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 h2 span {
     color: #3182ce;

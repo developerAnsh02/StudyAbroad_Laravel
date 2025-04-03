@@ -1,5 +1,6 @@
 
 <section class="hero-main">
+
     <div class="hero-content-wrapper">
 
         <div class="map-container">
