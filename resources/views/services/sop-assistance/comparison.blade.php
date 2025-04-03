@@ -122,4 +122,63 @@
             opacity: 1;
         }
     }
+    @media (max-width: 1024px) {
+    .comparison-title {
+        font-size: 28px;
+    }
+    .comparison-container {
+        gap: 20px;
+    }
+    .comparison-column {
+        width: 48%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .comparison-title {
+        font-size: 24px;
+    }
+    .comparison-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .comparison-column {
+        width: 90%;
+        padding: 18px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .comparison-title {
+        font-size: 20px;
+    }
+    .comparison-column {
+        width: 95%;
+        padding: 15px;
+    }
+    .comparison-column h3 {
+        font-size: 18px;
+    }
+    .comparison-column ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .comparison-title {
+        font-size: 18px;
+    }
+    .comparison-column {
+        width: 98%;
+        padding: 12px;
+    }
+    .comparison-column h3 {
+        font-size: 16px;
+    }
+    .comparison-column ul li {
+        font-size: 13px;
+    }
+}
 </style>

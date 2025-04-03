@@ -21,7 +21,7 @@
 <section class="cta-section">
     <h2 class="cta-title">Ready to Craft a Winning SOP?</h2>
     <p class="cta-text">Let our expert writers create an SOP that gets you accepted! Don't risk rejection—get a professionally written SOP today.</p>
-    <a href="#contact" class="cta-button">Get Your SOP Now</a>
+    <a href="#contact" class="cta-btn">Get Your SOP Now</a>
 </section>
 
 <style>
@@ -62,6 +62,7 @@
         transform: scale(1.05);
     }
 
+    
     /* Call to Action Section */
     .cta-section {
     background: url('/images/banner-bg.jpg') center/cover no-repeat;
@@ -81,7 +82,7 @@
     background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
 }
 
-.cta-title, .cta-text, .cta-button {
+.cta-title, .cta-text, .cta-btn {
     position: relative;
     z-index: 2;
 }
@@ -100,12 +101,11 @@
         margin: 0 auto;
     }
 
-    .cta-button {
+    .cta-btn {
         display: inline-block;
         padding: 12px 25px;
         background: #ff9900;
         color: #fff;
-        font-size: 18px;
         font-weight: 600;
         border-radius: 5px;
         text-decoration: none;
@@ -113,7 +113,7 @@
         transition: background 0.3s ease;
     }
 
-    .cta-button:hover {
+    .cta-btn:hover {
         background: #cc7700;
     }
 </style>

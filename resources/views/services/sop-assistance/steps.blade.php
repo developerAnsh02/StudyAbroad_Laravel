@@ -1,10 +1,10 @@
 <section class="sop-process">
-        <h2 class="section-title">Easy Steps to Get a Perfect SOP</h2>
+        <h2 class="title">Easy Steps to Get a Perfect SOP</h2>
         <p class="subtitle">A step-by-step approach to crafting a powerful SOP for your visa application.</p>
 
         <div class="timeline">
             
-            <div class="step">
+            <div class="steps">
                 <div class="icon"><i class="fas fa-user-edit"></i></div>
                 <div class="content">
                     <h3>Step 1: Custom Consultation </h3>
@@ -13,7 +13,7 @@
                 </div>
             </div>
 
-            <div class="step">
+            <div class="steps">
                 <div class="icon"><i class="fas fa-file-alt"></i></div>
                 <div class="content">
                     <h3>Step 2: Professional Writing & Editing</h3>
@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="step">
+            <div class="steps">
             <div class="icon"><i class="fas fa-check-circle"></i></div>
                 <div class="content">
                     <h3>Step 3: Final Touch-Ups & Punctuation</h3>
@@ -41,8 +41,8 @@
     background-color: #fff;
 }
 
-.section-title {
-    font-size: 2.5rem;
+.title {
+    font-size: 32px;
     color: #333;
     font-weight: 600;
     opacity: 0;
@@ -63,12 +63,12 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    max-width: 800px;
+    width: 80%;
     margin: 0 auto;
 }
 
 /* Steps */
-.step {
+.steps {
     display: flex;
     align-items: center;
     background: #fff;
@@ -80,6 +80,7 @@
     /* max-width: 800px; */
     position: relative;
     opacity: 0;
+    gap: 10px;
     transform: translateY(20px);
     animation: fadeInUp 1s ease forwards;
 }
@@ -129,6 +130,100 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@media (max-width: 1024px) {
+    .title {
+        font-size: 28px;
+    }
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    .steps {
+        width: 90%;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+    .timeline {
+        width: 100%;
+    }
+    .steps {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        width: 90%;
+    }
+    .icon {
+        margin: 0 auto 10px auto;
+    }
+    .content {
+        max-width: 100%;
+    }
+    .content h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .content p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 20px;
+    }
+    .subtitle {
+        font-size: 0.9rem;
+    }
+    .steps {
+        width: 95%;
+        padding: 12px;
+        margin: 15px 0;
+    }
+    .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    .content h3 {
+        font-size: 0.9rem;
+    }
+    .content p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 18px;
+    }
+    .subtitle {
+        font-size: 0.85rem;
+    }
+    .steps {
+        padding: 10px;
+        margin: 10px 0;
+        width: 98%;
+    }
+    .icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.4rem;
+    }
+    .content h3 {
+        font-size: 0.85rem;
+    }
+    .content p {
+        font-size: 0.8rem;
     }
 }
 

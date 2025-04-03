@@ -59,7 +59,7 @@
         padding-bottom: 1rem;
     }
 
-    .tab-section {
+    /* .tab-section {
         text-align: center;
         padding: 60px 20px;
         background-color: #fff;
@@ -103,9 +103,9 @@
 
     .tab-content.active {
         display: block;
-    }
+    } */
 
-    .cta-btn {
+    /* .cta-btn {
         display: inline-block;
         background: #ffcc00;
         color: #222;
@@ -120,7 +120,83 @@
 
     .cta-btn:hover {
         background: #e6b800;
+    } */
+    /* Responsive Design */
+@media (max-width: 1024px) {
+    .column-container {
+        width: 90%;
+        overflow-y: auto;
+        flex-direction: column;
+        padding: 10px;
     }
+
+    .column {
+        min-width: 100%;
+    }
+
+    .content-box {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* .tab-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+} */
+
+@media (max-width: 768px) {
+    .column-container {
+        width: 95%;
+        padding: 10px;
+    }
+/* 
+    .tab-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .cta-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+} */
+
+@media (max-width: 480px) {
+    .column-container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .column {
+        min-width: 100%;
+    }
+
+    .content-box {
+        padding: 8px;
+        font-size: 14px;
+    }
+/* 
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .tab-btn {
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+
+    .cta-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+} */
+
 </style>
 
 
@@ -306,7 +382,7 @@
 
 
 
-
+<!-- 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const tabs = document.querySelectorAll(".tab-btn");
@@ -325,4 +401,4 @@
         });
     });
 
-</script>
+</script> -->
