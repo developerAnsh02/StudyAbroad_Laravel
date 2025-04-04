@@ -2,8 +2,8 @@
         <div class="container">
             <!-- Left Section -->
             <div class="footer-left">
-                <div class="logo">
-                    <a href="#">wisvisa<span>.com</span></a>
+                <div class="logo-footer">
+                    <a href="#"><img src="/images/logo-wts.png" alt=""></a>
                 </div>
                 <p>
                     Your trusted partner for securing visas to the USA, Canada, and Australia. We offer personalized

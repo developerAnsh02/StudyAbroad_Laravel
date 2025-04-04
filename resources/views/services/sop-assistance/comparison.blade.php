@@ -34,14 +34,6 @@
         text-align: center;
     }
 
-    .comparison-title {
-        font-size: 32px;
-        color: #333;
-        font-weight: 600;
-        margin-bottom: 30px;
-        opacity: 0;
-        animation: fadeInUp 1s ease-in-out forwards;
-    }
 
     /* Comparison Box */
     .comparison-container {

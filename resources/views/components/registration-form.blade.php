@@ -108,4 +108,80 @@
     .iti--separate-dial-code .iti__selected-dial-code {
         color: white !important;
     }
+
+    /* Responsive Design */
+@media (max-width: 768px) {
+    .registration-form {
+        width: 90%;
+        padding: 18px;
+        margin: auto;
+    }
+    
+    .form-group input,
+    .form-group select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-form h2 {
+        font-size: 18px;
+    }
+
+    .form-group input,
+    .form-group select {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Fix Phone Input UI */
+.iti {
+    width: 100% !important; /* Ensures full width on all devices */
+}
+
+/* Adjust input styles for smaller screens */
+.iti--separate-dial-code {
+    width: 100%;
+}
+
+.iti--separate-dial-code .iti__selected-flag {
+    padding: 10px;
+}
+
+.iti--separate-dial-code .iti__selected-dial-code {
+    font-size: 14px;
+}
+
+/* Ensure proper spacing for mobile */
+@media (max-width: 480px) {
+    .iti--separate-dial-code .iti__selected-flag {
+        padding: 8px;
+    }
+    .iti input[type="tel"] {
+        padding-left: 70px !important;
+        
+    }
+
+    .iti--separate-dial-code .iti__selected-dial-code {
+        font-size: 13px;
+    }
+
+    .form-group input {
+        padding: 10px !important;
+        font-size: 14px !important;
+    }
+}
+
 </style>

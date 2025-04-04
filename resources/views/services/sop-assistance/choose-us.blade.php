@@ -1,6 +1,6 @@
 <section class="choose-us">
         <h2 class="title">Why Choose Us?</h2>
-        <p class="subtitle">We ensure top-quality SOPs tailored to your visa requirements.</p>
+        <p class="description">We ensure top-quality SOPs tailored to your visa requirements.</p>
 
         <div class="choose-container">
             <div class="choose-card">
@@ -37,15 +37,9 @@
     background-color: #fff;
 }
 
-.title {
-    font-size: 32px;
-    color: #333;
-    font-weight: 600;
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards;
-}
 
-.subtitle {
+
+.description {
     font-size: 1.2rem;
     color: #999;
     margin-bottom: 40px;

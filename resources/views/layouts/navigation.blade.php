@@ -5,7 +5,21 @@
             <div class="hamburger-overlay">
                 <nav class="hamburger-nav">
                     <a href="{{ url('/') }}">Home</a>
-                    <a>Services</a>
+                    <div class="hamburger-dropdown">
+                        <a class="dropdown-toggle" onclick="toggleDropdown()">Services ⌄</a>
+                        <div class="hamburger-dropdown-menu">
+                            <a href="{{ url('/marketing') }}">Counseling with an expert</a>
+                            <a href="{{ url('/marketing') }}">Free profile evaluation</a>
+                            <a href="{{ url('/services/course-selection') }}">Course Selection</a>
+                            <a href="{{ url('/marketing') }}">Admissions</a>
+                            <a href="{{ url('/services/sop-assistance') }}">SOP/ Scholarship essays</a>
+                            <a href="{{ url('/marketing') }}">Visa Assistance</a>
+                            <a href="{{ url('/marketing') }}">Mock interview</a>
+                            <a href="{{ url('/marketing') }}">Education Loan</a>
+                            <a href="{{ url('/marketing') }}">Travel arrangements</a>
+                            <a href="{{ url('/marketing') }}">Post - Landing services</a>
+                        </div>
+                    </div>
                     <a href="{{ url('/about') }}">About Us</a>
                     <a href="{{ url('/contact') }}">Contact Us</a>
                 </nav>
@@ -15,7 +29,7 @@
         <div class="navbar-container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="{{ url('/') }}">wtsvisa<span>.com</span></a>
+                    <a href="{{ url('/') }}"><img src="/images/logo-wts.png" alt=""></a>
                 </div>
                 <nav class="nav-links">
                     <a class="nav-item" href="{{ url('/') }}">Home</a>
@@ -23,9 +37,16 @@
                     <div class="dropdown">
                         <a class="nav-item">Services</a>
                         <div class="dropdown-menu">
-                            <a href="{{ url('/services/sop-assistance') }}">SOP Assistance</a>
+                            <a href="{{ url('/marketing') }}">Counseling with an expert</a>
+                            <a href="{{ url('/marketing') }}">Free profile evaluation</a>
                             <a href="{{ url('/services/course-selection') }}">Course Selection</a>
-                            <a href="{{ url('/marketing') }}">Digital Marketing</a>
+                            <a href="{{ url('/marketing') }}">Admissions</a>
+                            <a href="{{ url('/services/sop-assistance') }}">SOP/ Scholarship essays</a>
+                            <a href="{{ url('/marketing') }}">Visa Assistance</a>
+                            <a href="{{ url('/marketing') }}">Mock interview</a>
+                            <a href="{{ url('/marketing') }}">Education Loan</a>
+                            <a href="{{ url('/marketing') }}">Travel arrangements</a>
+                            <a href="{{ url('/marketing') }}">Post - Landing services</a>
                         </div>
                     </div>
                     
@@ -36,3 +57,13 @@
         </div>
     </div>
 </header>
+<!-- JavaScript -->
+<script>
+    function toggleMenu() {
+        document.querySelector(".hamburger-overlay").classList.toggle("show");
+    }
+
+    function toggleDropdown() {
+        document.querySelector(".hamburger-dropdown").classList.toggle("active");
+    }
+</script>

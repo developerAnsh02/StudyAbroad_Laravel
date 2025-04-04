@@ -31,14 +31,6 @@
         padding: 60px 20px;
         text-align: center;
     }
-
-    .section-title {
-        font-size: 32px;
-        color: #333;
-        font-weight: 600;
-        margin-bottom: 30px;
-    }
-
     .fact-container {
         display: flex;
         justify-content: center;

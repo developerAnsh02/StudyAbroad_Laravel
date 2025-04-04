@@ -167,7 +167,7 @@
                             <img src="{{ asset('images/testimonial4.jpg') }}" alt="Aman Verma">
                         </div>
                         <h3>Aman Verma</h3>
-                        <p>The services provided were amazing, from consultation to the final admission process.</p>
+                        <p>Through my journey, Gateway International’s advice, guidance, and support have been an enormous help.</p>
                     </div>
                 </div>
             </div>

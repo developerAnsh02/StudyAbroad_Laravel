@@ -10,6 +10,7 @@ function toggleMenu() {
     }
 }
 
+
 document.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         (document.querySelector('.navbar')).classList.add('show'); // Slide down
