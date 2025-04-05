@@ -5,23 +5,23 @@
 
         <div class="map-container">
             <img src="images/white-world-map.png" alt="World Map" class="map-image">
-            <div class="india-marker marker" data-city="India"></div>
+            <div class="UK-marker marker" data-city="UK"></div>
             <div class="usa-marker marker" data-city="USA"></div>
-            <div class="brazil-marker marker" data-city="Brazil"></div>
+            <div class="canada-marker marker" data-city="Canada"></div>
             <div class="australia-marker marker" data-city="Australia"></div>
-            <div class="japan-marker marker" data-city="Japan"></div>
+            <div class="france-marker marker" data-city="france"></div>
 
-            <div class="card-country india-card">
+            <div class="card-country UK-card">
                 <div class="flag-circle">
-                    <img src="images/icons/russia.png" alt="India Flag">
+                    <img src="images/icons/uk.png" alt="UK Flag">
                 </div>
-                <span>Russsia</span>
+                <span>UK</span>
             </div>
-            <div class="card-country japan-card">
+            <div class="card-country france-card">
                 <div class="flag-circle">
-                    <img src="images/icons/japan.png" alt="Japan Flag">
+                    <img src="images/icons/france.png" alt="france Flag">
                 </div>
-                <span>Japan</span>
+                <span>france</span>
             </div>
             <div class="card-country usa-card">
                 <div class="flag-circle">
@@ -29,11 +29,11 @@
                 </div>
                 <span>USA</span>
             </div>
-            <div class="card-country brazil-card">
+            <div class="card-country canada-card">
                 <div class="flag-circle">
-                    <img src="images/icons/brazil-.png" alt="Brazil Flag">
+                    <img src="images/icons/canada.png" alt="canada Flag">
                 </div>
-                <span>Brazil</span>
+                <span>Canada</span>
             </div>
             <div class="card-country australia-card">
                 <div class="flag-circle">
@@ -127,18 +127,18 @@
     color: #4a4a4a;
 }
 
-.india-marker { top: 34%; left: 69%; }
-.india-card { top: 20%; left: 67%; }
+.UK-marker { top: 45%; left: 46%; }
+.UK-card { top: 33%; left: 41%; }
 
-.usa-marker { top: 44%; left: 23%; }
-.usa-card { top: 42%; left: 26%; }
-.brazil-marker { top: 59%; left: 34%; }
-.brazil-card { top: 63%; left: 32%; }
-.australia-marker { top: 61%; left: 83%; }
-.australia-card { top: 62%; left: 85%; }
+.usa-marker { top: 48%; left: 23%; }
+.usa-card { top: 44%; left: 2%; }
+.canada-marker { top: 40%; left: 16%; }
+.canada-card { top: 30%; left: -6%; }
+.australia-marker { top: 68%; left: 83%; }
+.australia-card { top: 72%; left: 78%; }
 
-.japan-marker { top: 41%; left: 81%; }
-.japan-card { top: 39%; left: 83%; }
+.france-marker { top: 48%; left: 48%; }
+.france-card { top: 44%; left: 52%; }
 
 @keyframes overlayFadeIn {
     0% { opacity: 0; }

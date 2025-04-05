@@ -7,10 +7,11 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/image-removebg-preview (4).png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
 <script src="{{ asset('js/custom.js') }}"></script>
 
     <script src="{{ asset('script.js') }}" defer></script>
-    <title>@yield('title', 'Study Abroad')</title>
+    <title>@yield('title', 'WTS Visa Consultancy')</title>
 </head>
 <body>
 
