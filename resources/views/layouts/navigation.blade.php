@@ -7,18 +7,18 @@
                     <a href="{{ url('/') }}">Home</a>
                     <div class="hamburger-dropdown">
                         <a class="dropdown-toggle" onclick="toggleDropdown()">Services ⌄</a>
-                        <div class="hamburger-dropdown-menu">
+                        <!-- <div class="hamburger-dropdown-menu">
                             <a href="{{ url('/services/counselling') }}">Counseling with an expert</a>
                             <a href="{{ url('/marketing') }}">Free profile evaluation</a>
                             <a href="{{ url('/services/course-selection') }}">Course Selection</a>
-                            <a href="{{ url('/services/admission') }}">Admissions</a>
+                            <a href="{{ url('/services/getting-admission') }}">Admissions</a>
                             <a href="{{ url('/services/sop-assistance') }}">SOP/ Scholarship essays</a>
                             <a href="{{ url('/marketing') }}">Visa Assistance</a>
                             <a href="{{ url('/services/mock-interviews') }}">Mock interview</a>
                             <a href="{{ url('/marketing') }}">Education Loan</a>
                             <a href="{{ url('/services/travel-arrangements') }}">Travel arrangements</a>
                             <a href="{{ url('/marketing') }}">Post - Landing services</a>
-                        </div>
+                        </div> -->
                     </div>
                     <a href="{{ url('/about') }}">About Us</a>
                     <a href="{{ url('/contact') }}">Contact Us</a>
@@ -38,15 +38,15 @@
                         <a class="nav-item">Services</a>
                         <div class="dropdown-menu">
                             <a href="{{ url('/services/counselling') }}">Counseling with an expert</a>
-                            <a href="{{ url('/marketing') }}">Free profile evaluation</a>
+                            <a href="{{ url('/') }}">Free profile evaluation</a>
                             <a href="{{ url('/services/course-selection') }}">Course Selection</a>
-                            <a href="{{ url('/services/admission') }}">Admissions</a>
+                            <a href="{{ url('/services/getting-admission') }}">Getting Admissions</a>
                             <a href="{{ url('/services/sop-assistance') }}">SOP/ Scholarship essays</a>
-                            <a href="{{ url('/marketing') }}">Visa Assistance</a>
+                            <a href="{{ url('/') }}">Visa Assistance</a>
                             <a href="{{ url('/services/mock-interviews') }}">Mock interview</a>
-                            <a href="{{ url('/marketing') }}">Education Loan</a>
+                            <a href="{{ url('/') }}">Education Loan</a>
                             <a href="{{ url('/services/travel-arrangements') }}">Travel arrangements</a>
-                            <a href="{{ url('/marketing') }}">Post - Landing services</a>
+                            <a href="{{ url('/m') }}">Post - Landing services</a>
                         </div>
                     </div>
                     

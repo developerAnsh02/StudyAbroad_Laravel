@@ -34,9 +34,7 @@ Route::get('/services/getting-admission', function () {
 Route::get('/services/counselling', function () {
     return view('services.counselling.counselling');
 });
-Route::get('/services/admission', function () {
-    return view('services.getting-admission.index');
-});
+
 Route::get('/services/mock-interviews', function () {
     return view('services.mock.mock');
 });

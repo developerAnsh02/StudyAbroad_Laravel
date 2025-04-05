@@ -125,25 +125,6 @@
         line-height: 1.6;
     }
 
-    .study-abroad-cta-wrapper {
-        text-align: center;
-        margin-top: 40px;
-    }
-
-    .study-abroad-cta-button {
-        background-color: #ffb400;
-        color: #fff;
-        font-weight: 600;
-        padding: 12px 32px;
-        border-radius: 9999px;
-        text-decoration: none;
-        transition: background-color 0.3s ease-in-out;
-        display: inline-block;
-    }
-
-    .study-abroad-cta-button:hover {
-        background-color: darked; /* Darker Indigo */
-    }
 </style>
 
 <section class="study-abroad-section">
@@ -184,22 +165,13 @@
                 <p>We guide you through the entire process, from admissions and visa applications to other essential steps, ensuring a smooth and successful journey.</p>
             </div>
         </div>
-
-        <div class="study-abroad-cta-wrapper">
-            <a href="#" class="study-abroad-cta-button">
-                Get Started Today
-            </a>
-        </div>
+        <a href="#contact" class="cta-bttn">Get Started Today</a> 
     </div>
 </section>
 
 @include('./components/stats')
 
 @include('./components/services-components.trust')
-
-<!-- @include('services.course-selection.scrollable') -->
-
-<!-- @include('services.course-selection.faqs') -->
 
 @include('./components/cta-button')
 

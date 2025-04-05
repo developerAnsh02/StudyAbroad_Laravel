@@ -81,28 +81,6 @@ Our experts ensure your SOP is engaging, well-structured, and tailored to impres
     animation: zoomIn 1s ease-in-out forwards 0.5s;
 }
 
-/* CTA Button */
-.cta-bttn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 14px 24px;
-    background: #ffcc00;
-    color: #222;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards 0.8s;
-}
-
-.cta-bttn:hover {
-    background: #ff9f00;
-    transform: scale(1.08);
-    box-shadow: 0px 6px 18px rgba(255, 165, 0, 0.3);
-}
 
 /* Animations */
 @keyframes fadeInUp {
@@ -115,7 +93,6 @@ Our experts ensure your SOP is engaging, well-structured, and tailored to impres
         transform: translateY(0);
     }
 }
-
 @keyframes slideIn {
     from {
         opacity: 0;

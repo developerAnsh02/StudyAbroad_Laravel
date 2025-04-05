@@ -1,5 +1,5 @@
 <footer class="footer dark-theme">
-        <div class="container">
+        <div class="footer-container">
             <!-- Left Section -->
             <div class="footer-left">
                 <div class="logo-footer">

@@ -38,7 +38,11 @@ body {
     /* color: var(--secondary-color);  */
     margin-top: -25px !important;
 }
-
+.hero-title{
+    margin-top: 4rem;
+    color: var(--accent-color);
+    text-align: left;
+}
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
@@ -524,6 +528,26 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #e6a100;
     color: var(--text-white);
     transform: translateY(-3px) scale(1.05);
+}
+/* CTA Button */
+.cta-bttn {
+    display: inline-block;
+    padding: 14px 24px;
+    background: #ffcc00;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.8s;
+}
+.cta-bttn:hover {
+    background: #ff9f00;
+    transform: scale(1.08);
+    box-shadow: 0px 6px 18px rgba(255, 165, 0, 0.3);
 }
 
 /* Smooth Animation */
@@ -1039,13 +1063,14 @@ h1, h2, h3, h4, h5, h6, p {
 .footer{
     background-color: var(--bg-dark);
 }
-.footer .container {
+.footer .footer-container {
     opacity: 0;
     padding-top: 25px ;
     transform: translateY(40px);
     animation: fade-in 0.6s ease forwards;
     display: flex;
     justify-content: space-around;
+    gap:1rem;
 }
 
 /* Left Section */
@@ -1211,7 +1236,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer-bottom p {
     font-size: 14px;
-    margin-bottom: 4px;
 }
 
 .footer-bottom a {
@@ -1584,7 +1608,7 @@ h1, h2, h3, h4, h5, h6, p {
         width: 95%;
     }
 
-    .footer .container {
+    .footer .footer-container {
         flex-direction: column;
         overflow-wrap: break-word;
         align-items: flex-start;
