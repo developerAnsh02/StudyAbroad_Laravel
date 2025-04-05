@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="about-section">
+<section class="about-section dark-theme">
     <div class="container">
         <div class="about-content">
             <h2>About Our Company</h2>

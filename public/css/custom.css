@@ -30,3 +30,13 @@
 body {
     cursor: default;
 }
+
+@media (max-width: 1024px) { /* Adjust breakpoint as needed */
+    .custom-cursor {
+        display: none;
+    }
+
+    body {
+        cursor: auto; /* Restore default cursor */
+    }
+}

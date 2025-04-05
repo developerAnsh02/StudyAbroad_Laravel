@@ -12,7 +12,7 @@
             <div class="path">
                 <div class="step">
                     <div class="step-content">
-                        <div class="step-title">Top Countries for Higher Education</div>
+                        <h3 class="step-title">Top Countries for Higher Education</h3>
                         <p>We guide you to study in top locations like the US for Ivy League schools, the UK for academic
                             excellence, Canada for affordability and job opportunities, Australia for lifestyle, and Germany
                             for tuition-free education. We align your aspirations with the ideal study destination, ensuring
@@ -21,7 +21,7 @@
                 </div>
                 <div class="step">
                     <div class="step-content">
-                        <div class="step-title">Compare Universities & Programs</div>
+                        <h3 class="step-title">Compare Universities & Programs</h3>
                         <p>Choosing the right university and program shapes your future. At WTS Visa Consultancy, we help
                             you compare options based on international reputation, career prospects, and personal
                             preferences.</p>
@@ -29,14 +29,14 @@
                 </div>
                 <div class="step">
                     <div class="step-content">
-                        <div class="step-title">Scholarship & Financial Aid Support</div>
+                        <h3 class="step-title">Scholarship & Financial Aid Support</h3>
                         <p>We assist in locating scholarships, grants, work-study jobs, and low-interest loans. Our support
                             ensures you meet all requirements and study stress-free with financial aid.</p>
                     </div>
                 </div>
                 <div class="step">
                     <div class="step-content">
-                        <div class="step-title">Pre-Departure Training & Orientation</div>
+                        <h3 class="step-title">Pre-Departure Training & Orientation</h3>
                         <p>Our training covers culture, lifestyle, and academic expectations, along with practical guidance
                             on finances, healthcare, and communication. We ensure you're prepared for your new environment.
                         </p>
@@ -48,7 +48,7 @@
 
     <section class="visa-services" id="visa-services">
         <div class="container">
-            <h2 class="section-title">Smooth Transition to Your New Country</h2>
+            <h2>Smooth Transition to Your New Country</h2>
             <p>At WTS Visa Consultancy, we assist you to settle in abroad. From housing and transportation to medical care
                 and local way of life, we have it all covered. Our assistance enables you to settle down, get connected with
                 other students and settle down fast so you can study with confidence.</p>
@@ -243,7 +243,7 @@
 
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Start Your Journey Today!</h2>
+            <h2>Start Your Journey Today!</h2>
             <p class="section-description">Start with WTS Visa Consultancy today. Plan ahead to research options, enhance
                 your application and find funding. Our consultants will assist you to hit deadlines, study for exams and
                 coordinate documents effortlessly. With a plan you can confidently realize your academic aspirations.</p>

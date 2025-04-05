@@ -8,7 +8,7 @@
 @include('./components/stats')
 @include('./components/services-components.trust')
 @include('./components.services-components.choose-us')
-@include('./components/testimonials')
+
 @include('services.sop-assistance.sop')
 @include('./components/cta-button')
 @include('services.sop-assistance.faqs')

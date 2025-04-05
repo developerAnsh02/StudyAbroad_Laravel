@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer dark-theme">
         <div class="container">
             <!-- Left Section -->
             <div class="footer-left">
