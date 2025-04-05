@@ -181,6 +181,62 @@
                     and their families and ensure the study abroad experience is successful and rewarding. </p>
             </div>
         </div>
+        <hr>
+        <div class="card">
+            <img src="icons/mentoring.png" alt="Top Universities">
+            <div>
+                <h3>Counseling Sessions</h3>
+                <p>Personalized sessions for students and their parents covering:</p>
+                <ul style="padding-left: 16px;">
+                    <li>University guidance and recommendations.</li>
+                    <li>Key points to consider before and after admission.</li>
+                    <li>Systematic explanation of our services.</li>
+                    <li>Virtual or in-person university tours.</li>
+                    <li>Nearby locations and facilities overview.</li>
+                    <li>Community connections: alumni and native groups.</li>
+                    <li>Building trust and rapport for smoother transitions.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <img src="icons/accommodation.png" alt="Top Universities">
+            <div>
+                <h3>Accommodation Support</h3>
+                <p>Assistance with finding suitable housing based on:</p>
+                <ul style="padding-left: 16px;">
+                    <li>On-campus or off-campus options.</li>
+                    <li>Preferred locations.</li>
+                    <li>Budget considerations.</li>
+                    <li>Room type preferences (private/shared, en-suite/studio, etc.)</li>                    
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <img src="icons/reliable.png" alt="Top Universities">
+            <div>
+                <h3>Part-Time Job Assistance</h3>
+                <p>Helping students’ secure suitable part-time employment:</p>
+                <ul style="padding-left: 16px;">
+                    <li>CV and cover letter support.</li>
+                    <li>Interview preparation.</li>
+                    <li>Job search strategies.</li>
+                    <li>Employer connections (if applicable)</li>                    
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <img src="icons/airport.png" alt="Top Universities">
+            <div>
+                <h3>Airport Pickup Service</h3>
+                <ul style="padding-left: 16px;">
+                    <li>Reliable pickup from UK airports.</li>
+                    <li>Comfort and safety ensured upon arrival.</li>             
+                </ul>
+            </div>
+        </div>
     </section>
 
     <x-global-partner/>
@@ -238,12 +294,30 @@
 
     @php
         $faqs = [
-            (object) ['question' => '1.	How Do I Select the Best Country to Study Abroad?', 'answer' => 'Your academic objective, career aspirations and personal interest depend on selecting the best destination. Investigate the standard of education, cost of living and overall culture of every nation. Approach an expert and get your choices aligned with your long-term professional objectives.'],
-            (object) ['question' => '2.	What Are the Preconditions for Studying Abroad?', 'answer' => 'Admission criteria differ by country and institution. Typical requirements are academic transcripts, language proficiency tests (such as IELTS or TOEFL), and statement of purpose and recommendation letters. Some programs will also require entrance exams.'],
-            (object) ['question' => '3.	How Can I Apply for Scholarships?', 'answer' => 'Begin by investigating scholarship opportunities provided by universities, governments and private agencies. Read and fully understand the eligibility requirements and timelines. Develop a good application with a good personal statement and supporting materials.'],
-            (object) ['question' => '4.	Which Country Is Best for My Studies Abroad?', 'answer' => 'Cost differs according study visa apply to country, university and lifestyle. Fees cost between a few thousand to tens of thousands of dollars per year. Living accommodation, eating, travelling and insurance are other costs. Scholarships and student financial aid may minimize the cost.'],
-            (object) ['question' => '5.	How Much Does it Cost?', 'answer' => 'Cost differs according study visa apply to country, university and lifestyle. Fees cost between a few thousand to tens of thousands of dollars per year. Living accommodation, eating, travelling and insurance are other costs. Scholarships and student financial aid may minimize the cost.'],
-            (object) ['question' => '6. Which Scholarships for International Students?', 'answer' => 'Fulbright Program (USA), Chevening Scholarships (United Kingdom), DAAD Scholarships (Germany) and Australia Awards are some of the best available scholarships. Universities also provide need-based and merit-based scholarships. Research in advance to fulfil deadlines for applications.'],
+            [
+                "question" => "1.	How Do I Select the Best Country to Study Abroad?",
+                "answer" => "Your academic objective, career aspirations and personal interest depend on selecting the best destination. Investigate the standard of education, cost of living and overall culture of every nation. Approach an expert and get your choices aligned with your long-term professional objectives."
+            ],
+            [
+                "question" => "2.	What Are the Preconditions for Studying Abroad?",
+                "answer" => "Admission criteria differ by country and institution. Typical requirements are academic transcripts, language proficiency tests (such as IELTS or TOEFL), and statement of purpose and recommendation letters. Some programs will also require entrance exams."
+            ],
+            [
+                "question" => "3.	How Can I Apply for Scholarships?",
+                "answer" => "Begin by investigating scholarship opportunities provided by universities, governments and private agencies. Read and fully understand the eligibility requirements and timelines. Develop a good application with a good personal statement and supporting materials."
+            ],
+            [
+                "question" => "4.	Which Country Is Best for My Studies Abroad?",
+                "answer" => "Cost differs according study visa apply to country, university and lifestyle. Fees cost between a few thousand to tens of thousands of dollars per year. Living accommodation, eating, travelling and insurance are other costs. Scholarships and student financial aid may minimize the cost."
+            ],
+            [
+                "question" => "5.	How Much Does it Cost?",
+                "answer" => "Cost differs according study visa apply to country, university and lifestyle. Fees cost between a few thousand to tens of thousands of dollars per year. Living accommodation, eating, travelling and insurance are other costs. Scholarships and student financial aid may minimize the cost."
+            ],
+            [
+                "question" => "6. Which Scholarships for International Students?",
+                "answer" => "Fulbright Program (USA), Chevening Scholarships (United Kingdom), DAAD Scholarships (Germany) and Australia Awards are some of the best available scholarships. Universities also provide need-based and merit-based scholarships. Research in advance to fulfil deadlines for applications."
+            ],
         ];
     @endphp
 

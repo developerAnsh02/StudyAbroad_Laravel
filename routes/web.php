@@ -25,6 +25,9 @@ Route::get('/services/sop-assistance', function () {
 Route::get('/services/course-selection', function () {
     return view('services.course-selection.course-selection');
 });
+Route::get('/services/getting-admission', function () {
+    return view('services.getting-admission.index');
+});
 
 
 
