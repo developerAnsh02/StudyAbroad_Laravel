@@ -128,8 +128,9 @@ We take care of your travel plans, making your visa process seamless and stress-
 
 @include('./components/services-components.trust')
 
+@include('services.travelling.scrollable')
 
-
+@include('services.travelling.faqs')
 
 
 @include('./components/cta-button')

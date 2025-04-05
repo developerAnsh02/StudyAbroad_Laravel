@@ -1,0 +1,11 @@
+@php
+    $faqs = [
+        ['question' => '1. What Is the Difference Between How Mock Interviews Are Useful and How Real Ones Work?', 'answer' => 'Mock interviews might assist students in rehearsing responses to frequent and difficult queries in a simulated environment. Students receive real-time feedback that effectively highlights weaknesses, enabling them to improve mock interview for US visa on these aspects and sharpen their communications. The more one practices, the less anxiety they will feel and the more confidence they will gain, thus making it easier to achieve visa approval.'],
+        ['question' => '2.	Are Online Mock Interviews Really Useful?', 'answer' => 'Yes. They are really effective since they offer the same expert guidance and feedback as would be provided in a face-to-face session. Plus, students can do their mock interviews from anywhere and can get detailed feedback and evaluation about their performances. The convenience offered to the students worldwide is the single-most beneficial aspect of an online session.'],
+        ['question' => '3.	How Many Types of Mock Interviews Are Conducted?', 'answer' => 'We conduct various mock interviews types: one-to-one coaching, panel interviews, stress interviews, and scenario-based interviews. Each of these is structured to help students in dealing with various aspects related to the visa interview process smoothly. '],
+        ['question' => '4.	What Common Mistakes Do People Make During Mock Interviews?', 'answer' => 'Some of the most common mistakes include vague or inconsistent answers, lack of confidence, poor body language, and a mock interview platform general lack of preparation. Our experts help the students to identify these mistakes and guide them so they cannot make such mistakes in the future and have a smooth interview experience.'],
+        ['question' => '5. Where Can I Book a Mock Interview?', 'answer' => 'Students can book mock interviews with WTS Visa Consultancy through the website or by contacting our team. In-person and online mock interviews are available to help students effectively prepare for their visa interviews.'],
+    ];
+@endphp
+
+<x-faq :faqs="$faqs" />

@@ -75,9 +75,9 @@
 
 @include('./components/services-components.trust')
 
-@include('services.course-selection.scrollable')
+@include('services.mock.scrollable')
 
-@include('services.course-selection.faqs')
+@include('services.mock.faqs')
 
 @include('./components/cta-button')
 
