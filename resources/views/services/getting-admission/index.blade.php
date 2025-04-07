@@ -244,74 +244,87 @@
     </section>
     <!-- scrollable section end -->
     
-    @include('components.cta-button')
-
-
     <!-- why choose start -->
-    <section class="why-choose-section">
-        <div class="why-choose-container">
-            <h2>Why Choose Us for Admission Assistance?</h2>
-            <p class="why-description">
-                The choice of the right admission assistance services can easily summarize all efforts made in the study abroad operation. Thousands of students have been assisted by our group of highly experienced counsellors into top universities worldwide. Admission counselling is personalized according to your academic experience and career goals, together with country preference for studies. For example, we select the right program for you, prepare your visa application, and so on. The success reflects the quality and efficiency of our strategies. We always keep student visa application up to date with the latest trends and changes in admissions; thus, you can always gain an edge over others. You get detailed expert advisory services, professional document review, and strategic interview orientation-a very simple way to complicated admission procedures to turn into a breeze and realization of your own dreams of confidence.
-            </p>
-
-            <ul class="why-list">
-                <li><strong>Success in studying abroad</strong> starts with choosing the right admission assistance service.</li>
-                <li>For many years, consultants have been <strong>helping students secure admission</strong> to top universities.</li>
-                <li>The guidance offered is <strong>customized</strong> according to your academic perspective, career goals, and destination.</li>
-                <li>We offer <strong>end-to-end solutions</strong> starting from the selection of programs to visa filings.</li>
-                <li>We boast a <strong>high success rate</strong> that is a testimony of effective and quality strategies.</li>
-                <li><strong>Our consultants</strong> have their ears to the ground on current trends and requirements for admission.</li>
-                <li>Includes <strong>expert advisory services</strong>, professional document review, and strategic interview preparation.</li>
-                <li>We aim to <strong>simplify the admission process for you</strong> and help you embark on your academic journey with full confidence.</li>
-            </ul>
-
+    <section id="services" class="services">
+        <h2>Why <span>Choose Us</span> for Admission Assistance?</h2>
+        <p>The choice of the right admission assistance services can easily summarize all efforts made in the study abroad operation. Thousands of students have been assisted by our group of highly experienced counsellors into top universities worldwide. Admission counselling is personalized according to your academic experience and career goals, together with country preference for studies. For example, we select the right program for you, prepare your visa application, and so on. The success reflects the quality and efficiency of our strategies. We always keep student visa application up to date with the latest trends and changes in admissions; thus, you can always gain an edge over others. You get detailed expert advisory services, professional document review, and strategic interview orientation-a very simple way to complicated admission procedures to turn into a breeze and realization of your own dreams of confidence.</p>
+        
+        <div class="card">
+            <!-- <img src="icons/graduation.png" alt="Choice"> -->
+            <div>
+                <ul style="padding-left: 16px;">
+                    <li><strong>Success in studying abroad</strong> starts with choosing the right admission assistance service.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <!-- <img src="icons/trust.png" alt="Top Universities"> -->
+            <div>
+                <ul style="padding-left: 16px;">
+                    <li>For many years, consultants have been <strong>helping students secure admission</strong> to top universities.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <!-- <img src="icons/mentoring.png" alt="Top Universities"> -->
+            <div>                
+                <ul style="padding-left: 16px;">
+                    <li>The guidance offered is <strong>customized</strong> according to your academic perspective, career goals, and destination.</li>                                   
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <!-- <img src="icons/accommodation.png" alt="Top Universities"> -->
+            <div>
+                <ul style="padding-left: 16px;">
+                    <li>We offer <strong>end-to-end solutions</strong> starting from the selection of programs to visa filings.</li>                    
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <!-- <img src="icons/reliable.png" alt="Top Universities"> -->
+            <div>
+                <ul style="padding-left: 16px;">
+                    <li>We boast a <strong>high success rate</strong> that is a testimony of effective and quality strategies.</li>                    
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <!-- <img src="icons/airport.png" alt="Top Universities"> -->
+            <div>                
+                <ul style="padding-left: 16px;">
+                    <li><strong>Our consultants</strong> have their ears to the ground on current trends and requirements for admission.</li>                    
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <!-- <img src="icons/airport.png" alt="Top Universities"> -->
+            <div>                
+                <ul style="padding-left: 16px;">
+                    <li>Includes <strong>expert advisory services</strong>, professional document review, and strategic interview preparation.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="card">
+            <!-- <img src="icons/airport.png" alt="Top Universities"> -->
+            <div>                
+                <ul style="padding-left: 16px;">
+                    <li>We aim to <strong>simplify the admission process for you</strong> and help you embark on your academic journey with full confidence.</li>
+                </ul>
+            </div>
         </div>
     </section>
-
-    <style>
-        .why-choose-section {
-            background-color: #e9cd00;
-            background-image: linear-gradient(160deg, #e9cd00 0%, #ff9900 100%);
-            padding: 60px 20px;
-        }
-
-        .why-choose-container {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .why-choose-container h2 {        
-            color: #222;
-            margin-bottom: 10px;
-            padding-bottom: 0 !important;
-        }
-
-        .why-description {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            text-align: justify;
-        }
-
-        .why-list {
-            text-align: left;
-            padding-left: 20px;
-            list-style: disc;
-            color: #333;
-            font-size: 1rem;
-            line-height: 1.8;
-        }
-
-        .why-list li {
-            margin-bottom: 12px;
-        }
-
-        
-    </style>
+     
     <!-- why choose end -->
+
+    @include('components.cta-button')
 
 
     <!-- faq start -->
