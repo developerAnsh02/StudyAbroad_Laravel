@@ -3,15 +3,18 @@
         <!-- Hamburger Menu for Mobile -->
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">☰</div>
-            <div class="hamburger-overlay">
-                <div class="hamburger-icon" onclick="toggleMenu()">✖</div> <!-- Close Button -->
-                <nav class="hamburger-nav">
+            <div class="sidebar-menu">
+                <div class="sidebar-header">
+                    <img class="main-logo" style="height: 3rem; width: 8rem" src="{{ asset('images/logo-wts.png') }}" alt="wts-logo" />
+                    <div class="hamburger-icon close-icon" onclick="toggleMenu()">✖</div>
+                </div>
+                <nav class="sidebar-nav">
                     <a href="{{ url('/') }}">Home</a>
-                    <div class="hamburger-dropdown">
-                        <a class="dropdown-toggle" onclick="toggleDropdown()">
+                    <div class="sidebar-dropdown">
+                        <a class="dropdown-toggle" onclick="toggleDropdown(event)">
                             Services <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
-                        <div class="hamburger-dropdown-menu">
+                        <div class="sidebar-dropdown-menu">
                             <a href="{{ url('/services/counselling') }}">Counseling with an expert</a>
                             <a href="{{ url('/marketing') }}">Free profile evaluation</a>
                             <a href="{{ url('/services/course-selection') }}">Course Selection</a>
@@ -24,15 +27,15 @@
                             <a href="{{ url('/marketing') }}">Post - Landing services</a>
                         </div>
                     </div>
-                    <div class="hamburger-dropdown">
-                        <a class="dropdown-toggle" onclick="toggleDropdown()">
+                    <div class="sidebar-dropdown">
+                        <a class="dropdown-toggle" onclick="toggleDropdown(event)">
                             Countries <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
-                        <div class="hamburger-dropdown-menu">
+                        <div class="sidebar-dropdown-menu">
                             <a href="{{ url('/country/europe') }}">Europe</a>
                             <a href="{{ url('/country/usa') }}">USA</a>
                             <a href="{{ url('/country/canada') }}">Canada</a>
-                            <a href="{{ url('/country/newzealand') }}">New Zealand</a>
+                            <a href="{{ url('/country/new-zealand') }}">New Zealand</a>
                             <a href="{{ url('/country/australia') }}">Australia</a>
                             <a href="{{ url('/country/uk') }}">United Kingdom</a>
                             <a href="{{ url('/country/international') }}">International</a>
@@ -77,7 +80,7 @@
                             <a href="{{ url('/country/europe') }}">Europe</a>
                             <a href="{{ url('/country/usa') }}">USA</a>
                             <a href="{{ url('/country/canada') }}">Canada</a>
-                            <a href="{{ url('/country/newzealand') }}">New Zealand</a>
+                            <a href="{{ url('/country/new-zealand') }}">New Zealand</a>
                             <a href="{{ url('/country/australia') }}">Australia</a>
                             <a href="{{ url('/country/uk') }}">United Kingdom</a>
                             <a href="{{ url('/country/international') }}">International</a>
@@ -92,22 +95,67 @@
     </div>
 </header>
 
+<!-- Overlay for closing sidebar when clicking outside -->
+<div class="sidebar-overlay" onclick="toggleMenu()"></div>
+
 <!-- JavaScript for Menu & Dropdown -->
 <script>
+    document.addEventListener("DOMContentLoaded", function () {
     function toggleMenu() {
-        document.querySelector(".hamburger-overlay").classList.toggle("show");
+        const sidebarMenu = document.querySelector(".sidebar-menu");
+        const sidebarOverlay = document.querySelector(".sidebar-overlay");
+
+        if (sidebarMenu && sidebarOverlay) {
+            sidebarMenu.classList.toggle("show");
+            sidebarOverlay.classList.toggle("show");
+            document.body.classList.toggle("sidebar-open");
+        } else {
+            console.error("Sidebar menu or overlay not found in the DOM.");
+        }
     }
 
-    function toggleDropdown() {
-    const dropdown = document.querySelector(".hamburger-dropdown");
-    const arrowIcon = document.querySelector(".arrow-icon");
+    document.querySelector(".hamburger-icon").addEventListener("click", toggleMenu);
+    document.querySelector(".close-icon").addEventListener("click", toggleMenu);
+    document.querySelector(".sidebar-overlay").addEventListener("click", toggleMenu);
+});
 
-    dropdown.classList.toggle("active");
 
-    if (dropdown.classList.contains("active")) {
-        arrowIcon.style.transform = "rotate(180deg)"; 
+function toggleDropdown(event) {
+    const allDropdowns = document.querySelectorAll(".sidebar-dropdown-menu");
+    const allArrows = document.querySelectorAll(".arrow-icon");
+
+    allDropdowns.forEach(menu => {
+        if (menu !== event.target.closest(".sidebar-dropdown").querySelector(".sidebar-dropdown-menu")) {
+            menu.classList.remove("active");
+            menu.style.maxHeight = "0px";
+            menu.style.opacity = "0";
+            menu.style.visibility = "hidden";
+        }
+    });
+
+    allArrows.forEach(arrow => {
+        if (arrow !== event.target.closest(".sidebar-dropdown").querySelector(".arrow-icon")) {
+            arrow.style.transform = "rotate(0deg)";
+        }
+    });
+
+    // Now toggle the clicked one
+    const dropdownContainer = event.target.closest(".sidebar-dropdown");
+    const dropdownMenu = dropdownContainer.querySelector(".sidebar-dropdown-menu");
+    const arrowIcon = dropdownContainer.querySelector(".arrow-icon");
+
+    dropdownMenu.classList.toggle("active");
+
+    if (dropdownMenu.classList.contains("active")) {
+        arrowIcon.style.transform = "rotate(180deg)";
+        dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + "px"; 
+        dropdownMenu.style.opacity = "1";
+        dropdownMenu.style.visibility = "visible";
     } else {
-        arrowIcon.style.transform = "rotate(0deg)"; 
+        arrowIcon.style.transform = "rotate(0deg)";
+        dropdownMenu.style.maxHeight = "0px"; 
+        dropdownMenu.style.opacity = "0";
+        dropdownMenu.style.visibility = "hidden";
     }
 }
 </script>
@@ -115,7 +163,7 @@
 <style>
     /* Hamburger Menu */
     .hamburger-menu {
-        display: hidden;
+        display: none;
     }
 
     @media (max-width: 768px) {
@@ -139,52 +187,90 @@
         transform: scale(1.1);
     }
 
-    /* Overlay (Glass Effect) */
-    .hamburger-overlay {
+    /* Sidebar Menu */
+    .sidebar-menu {
         position: fixed;
         top: 0;
-        left: -100%; /* Initially hidden */
-        width: 100%;
+        right: -300px; /* Initially hidden */
+        width: 280px;
         height: 100vh;
-        background: rgba(255, 255, 255, 0.1); /* Glass effect */
-        backdrop-filter: blur(15px);
-        transition: left 0.5s ease;
-        z-index: 2000;
+        background: #003366;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 3000;
+        overflow-y: auto;
+    }
+
+    /* Sidebar Header */
+    .sidebar-header {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .close-icon {
+        position: relative;
+        top: 0;
+        right: 0;
+        font-size: 24px;
+        display: none !important;
     }
 
     /* Active State */
-    .hamburger-overlay.active {
+    .sidebar-menu.show {
+        right: 0;
+    }
+
+    /* Overlay for closing sidebar */
+    .sidebar-overlay {
+        position: fixed;
+        top: 0; 
         left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1500;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+    }
+
+    .sidebar-overlay.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Prevent body scrolling when sidebar is open */
+    body.sidebar-open {
+        overflow: hidden;
     }
 
     /* Navigation Links */
-    .hamburger-nav {
+    .sidebar-nav {
         display: flex;
         flex-direction: column;
-        gap: 24px;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
+        padding: 20px;
+        gap: 15px;
     }
 
-    .hamburger-nav a {
-        font-size: 24px;
+    .sidebar-nav a {
+        font-size: 18px;
         color: var(--primary-color);
         text-decoration: none;
         font-weight: 600;
-        transition: color 0.3s ease, transform 0.3s ease;
+        transition: color 0.3s ease;
+        padding: 8px 0;
     }
 
-    .hamburger-nav a:hover {
+    .sidebar-nav a:hover {
         color: var(--primary-dark);
-        transform: translateY(-3px);
     }
 
     /* Dropdown styles */
-    .hamburger-dropdown {
+    .sidebar-dropdown {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     /* Dropdown Toggle */
@@ -192,7 +278,7 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        gap: 8px;
+        justify-content: space-between;
     }
 
     /* Arrow animation */
@@ -200,26 +286,31 @@
         transition: transform 0.3s ease-in-out;
     }
 
-    .hamburger-dropdown-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color: #003366;
-    border-radius: 8px;
-    /* backdrop-filter: blur(5px); */
-    padding: 5px;
-
-    max-height: 0px; 
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    .sidebar-dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #003366;
+        border-radius: 8px;
+        padding: 0 10px;
+        margin-left: 10px;
+        
+        max-height: 0px; 
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     }    
 
-    .hamburger-dropdown.active .hamburger-dropdown-menu {
-    max-height: 500px;
-    opacity: 1;
-    visibility: visible;
+    .sidebar-dropdown-menu a {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+
+    .sidebar-dropdown-menu.active {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+        padding: 10px;
     }
 </style>
