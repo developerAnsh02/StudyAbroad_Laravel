@@ -582,7 +582,7 @@
     @media (max-width: 767px) {
         .container {
             width: 95%;
-            padding: 1rem 0;
+            padding: 2rem 0;
         }
         
         .about-us-black h1,

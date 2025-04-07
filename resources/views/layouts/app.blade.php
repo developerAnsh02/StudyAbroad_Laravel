@@ -28,6 +28,7 @@
     </main>
     @include('layouts.footer') <!-- Footer -->
     <button id="backToTop" class="back-to-top">↑</button>
+    @include('layouts.bottomMenu') <!-- Bottom Menu -->
 </body>
 </html>
  <footer class="footer"></footer>
