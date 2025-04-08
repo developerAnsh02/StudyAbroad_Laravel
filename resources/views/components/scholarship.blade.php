@@ -3,7 +3,7 @@
 <section class="scholarship-section">
     <div class="scholarship-container">
         <div class="scholarship-text">
-            <h2><span>Scholarships</span> In The UK</h2>
+        <h2>{{ $scholarship['title'] }}</h2>
             <p>{{ $scholarship['desc'] }}</p>
             <p>{!! $scholarship['footer'] !!}</p>
         </div>

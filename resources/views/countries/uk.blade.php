@@ -269,8 +269,24 @@
             ['label' => 'Medicine', 'value' => '£30,000 – £60,000'],
         ];
         $description = "Cost for study and living varies with university, courses, and city in the UK. Below is an approximate breakdown of tuition fees for international students:";
-    @endphp
-    <x-cost-of-living :tuitionFees="$tuitionFees" :description="$description" />
+        $ukCostOfLiving = [
+        'heading' => 'Understanding the Study & Living Costs in the UK',
+        'description' => 'Studying in the UK involves not just tuition fees, but also day-to-day expenses. It’s crucial to plan your finances carefully.',
+        'highlights' => [
+            'accommodation' => '£500–£1,500 per month',
+            'food' => '£200–£400 per month',
+            'transportation' => '£50–£150 per month',
+            'note' => 'assists students in financial planning and scholarship searches.',
+            'consultancy' => 'WTS Visa Consultancy'
+        ]
+    ];
+@endphp
+
+<x-cost-of-living 
+    :tuitionFees="$tuitionFees" 
+    :description="$description" 
+    :ukCostOfLiving="$ukCostOfLiving" 
+/>
 
 <!-- scholarship section -->
 @php
@@ -430,6 +446,7 @@ $guideContent = [
                 <h2 class="service-heading">Study in the UK: Your Pathway to World-Class Education</h2>
                 <p class="content-description">Studying in the UK is every student's dream because of its universities and education and career opportunities. WTS Visa Consultancy is an organization that helps students through the entire process of studying abroad-from choosing a university to a student visa. The UK is host to many old and reputable institutions, granting students world-class education with international recognition. The diverse culture, student-friendly cities, and great academic resources make this study in UK an ideal place for personal and professional development. Whether looking to study bachelor's, masters, or research programs, the UK offers a nurturing atmosphere that encourages the cost of studying in UK for international students creativity and excellence in all facets of life. Begin your academic journey in the UK with every confidence and with minimum fuss, thanks to our supportive experts. 
                 </p>
+
             </div>
         </div>
 

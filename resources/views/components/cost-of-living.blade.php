@@ -1,23 +1,22 @@
 <section class="cost-living-section">
     <div class="tuition-container">
-        <div class="left">
-            <h2>
-                Understanding the <span>Study & Living</span> Costs in the UK
-            </h2>
-            <p>{{ $description }}</p>
-            <div class="info-highlight">
-                <p>
-                    Aside from tuition fees, a student also has to plan for
-                    <strong>accommodation (£500–£1,500 per month)</strong>,
-                    <strong>food (£200–£400 per month)</strong>, and
-                    <strong>transportation (£50–£150 per month)</strong>.
-                </p>
-                <p>
-                    <strong>WTS Visa Consultancy</strong> assists students in financial planning and scholarship
-                    searches.
-                </p>
-            </div>
-        </div>
+    <div class="left">
+    <h2>{{ $ukCostOfLiving['heading'] }}</h2>
+    <p>{{ $ukCostOfLiving['description'] }}</p>
+
+    <div class="info-highlight">
+    <p>
+            Aside from tuition fees, a student also has to plan for
+            <strong>accommodation ({{ $ukCostOfLiving['highlights']['accommodation'] }})</strong>,
+            <strong>food ({{ $ukCostOfLiving['highlights']['food'] }})</strong>, and
+            <strong>transportation ({{ $ukCostOfLiving['highlights']['transportation'] }})</strong>.
+        </p>
+        <p>
+            <strong>{{ $ukCostOfLiving['highlights']['consultancy'] }}</strong> {{ $ukCostOfLiving['highlights']['note'] }}
+        </p>
+    </div>
+</div>
+
 
         <div class="right">
             <div class="tuition-box">
