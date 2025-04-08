@@ -1,8 +1,8 @@
 <section class="tab-section">
     <div class="tab-container">
         <div class="tabs">
-            <button class="tab-button active" data-tab="documents">Documents</button>
-            <button class="tab-button" data-tab="visa">Visa</button>
+            <button class="tab-button active" data-tab="guide">Step by Step Guide for Registration</button>
+            <button class="tab-button" data-tab="documents">Documents Required</button>
         </div>
 
         <div class="tab-content-box">
@@ -17,7 +17,7 @@
                 <button class="consult-button">Free Expert Consultation</button>
             </div>
 
-            <div class="tab-content" id="visa">
+            <div class="tab-content" id="guide">
                 <h3>Visa requirements to study in the UK</h3>
                 <p>Here are the basic requirements you need to fulfill for obtaining a UK Student Visa:</p>
                 <ul>
