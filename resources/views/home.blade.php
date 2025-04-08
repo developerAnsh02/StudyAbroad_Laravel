@@ -5,162 +5,163 @@
 
 
     @php
-    $videos = [
-        (object)[ 'url' => 'https://www.youtube.com/embed/oIs1m_LZlws', 'title' => 'Abid Review' ],
-        (object)[ 'url' => 'https://www.youtube.com/embed/2kDdTVhVGpk', 'title' => 'Deepali Review' ],
-        (object)[ 'url' => 'https://www.youtube.com/embed/v5guUOX7ANM', 'title' => 'Abhishek Review' ],
-        (object)[ 'url' => 'https://www.youtube.com/embed/z6S02ntwcQI', 'title' => 'Sumandeep Review' ],
-        (object)[ 'url' => 'https://www.youtube.com/embed/h7x-BRbPco4', 'title' => 'Ayushi Review' ],
-        (object)[ 'url' => 'https://www.youtube.com/embed/mWNsU_SSenY', 'title' => 'Prakhar Review' ],
-    ];
-@endphp
+        $videos = [
+            (object)[ 'url' => 'https://www.youtube.com/embed/oIs1m_LZlws', 'title' => 'Abid Review' ],
+            (object)[ 'url' => 'https://www.youtube.com/embed/2kDdTVhVGpk', 'title' => 'Deepali Review' ],
+            (object)[ 'url' => 'https://www.youtube.com/embed/v5guUOX7ANM', 'title' => 'Abhishek Review' ],
+            (object)[ 'url' => 'https://www.youtube.com/embed/z6S02ntwcQI', 'title' => 'Sumandeep Review' ],
+            (object)[ 'url' => 'https://www.youtube.com/embed/h7x-BRbPco4', 'title' => 'Ayushi Review' ],
+            (object)[ 'url' => 'https://www.youtube.com/embed/mWNsU_SSenY', 'title' => 'Prakhar Review' ],
+        ];
+    @endphp
 
-<section class="video-gallery-section">
-    <div class="container">
-        <h2 class="section-title">Client Testimonials</h2>
+    <section class="video-gallery-section">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
 
-        <div class="video-slider-wrapper">
-            <button class="slide-btn left" onclick="scrollSlider(-1)">‹</button>
-            <div class="video-slider" id="videoSlider">
-                @foreach($videos as $video)
-                    <div class="video-slide">
-                        <div class="video-card">
-                            <div class="video-wrapper">
-                                <iframe 
-                                    src="{{ $video->url }}" 
-                                    title="{{ $video->title }}" 
-                                    frameborder="0" 
-                                    allowfullscreen
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-                                </iframe>
+            <div class="video-slider-wrapper">
+                <button class="slide-btn left" onclick="scrollSlider(-1)">‹</button>
+                <div class="video-slider" id="videoSlider">
+                    @foreach($videos as $video)
+                        <div class="video-slide">
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe 
+                                        src="{{ $video->url }}" 
+                                        title="{{ $video->title }}" 
+                                        frameborder="0" 
+                                        allowfullscreen
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                                    </iframe>
+                                </div>
                             </div>
-                            <h5 class="video-title">{{ $video->title }}</h5>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
+                <button class="slide-btn right" onclick="scrollSlider(1)">›</button>
             </div>
-            <button class="slide-btn right" onclick="scrollSlider(1)">›</button>
         </div>
-    </div>
-</section>
-<style>
-.video-gallery-section {
-    padding: 60px 20px;
-    background: #f7f7f7;
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
+    </section>
+    <style>
+        .video-gallery-section {
+            padding: 60px 20px;
+            background: #f7f7f7;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
 
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #333;
-}
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
 
-.video-slider-wrapper {
-    position: relative;
-    overflow: hidden;
-}
+        .video-slider-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
 
-.video-slider {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding-bottom: 10px;
-    scrollbar-width: none;
-}
+        .video-slider {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            scrollbar-width: none;
+        }
 
-.video-slider::-webkit-scrollbar {
-    display: none;
-}
+        .video-slider::-webkit-scrollbar {
+            display: none;
+        }
 
-.video-slide {
-    flex: 0 0 auto;
-    width: 160px;
-}
+        .video-slide {
+            flex: 0 0 auto;
+            width: 160px;
+        }
 
-@media (min-width: 576px) {
-    .video-slide { width: 180px; }
-}
-@media (min-width: 768px) {
-    .video-slide { width: 200px; }
-}
-@media (min-width: 992px) {
-    .video-slide { width: 220px; }
-}
-@media (min-width: 1200px) {
-    .video-slide { width: 240px; }
-}
+        @media (min-width: 576px) {
+            .video-slide { width: 180px; }
+        }
+        @media (min-width: 768px) {
+            .video-slide { width: 200px; }
+        }
+        @media (min-width: 992px) {
+            .video-slide { width: 220px; }
+        }
+        @media (min-width: 1200px) {
+            .video-slide { width: 240px; }
+        }
 
-.video-card {
-    background: #fff;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
-    text-align: center;
-    padding: 10px;
-}
+        .video-card {
+            background: #fff;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            text-align: center;
+            padding: 5px;
+        }
 
-.video-card:hover {
-    transform: translateY(-5px);
-}
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
 
-.video-wrapper {
-    position: relative;
-    width: 100%;
-    padding-top: 177.77%; /* 9:16 Portrait Aspect Ratio */
-    background: #000;
-    border-radius: 12px;
-    overflow: hidden;
-}
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 177.77%; /* 9:16 Portrait Aspect Ratio */
+            background: #000;
+            border-radius: 6px;
+            overflow: hidden;
+        }
 
-.video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-.video-title {
-    font-size: 0.95rem;
-    margin-top: 10px;
-    color: #444;
-}
+        .video-title {
+            font-size: 0.95rem;
+            margin-top: 10px;
+            color: #444;
+        }
 
-/* Slider buttons */
-.slide-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    border: none;
-    font-size: 2rem;
-    padding: 0 10px;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 6px;
-    user-select: none;
-}
+        /* Slider buttons */
+        .slide-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            border: none;
+            font-size: 2rem;
+            padding: 0px 10px;
+            padding-bottom: 5px;
+            cursor: pointer;
+            z-index: 1;
+            border-radius: 6px;
+            user-select: none;
+        }
 
-.slide-btn.left {
-    left: 10px;
-}
+        .slide-btn.left {
+            left: 10px;
+        }
 
-.slide-btn.right {
-    right: 10px;
-}
-</style>
-<script>
-function scrollSlider(direction) {
-    const slider = document.getElementById('videoSlider');
-    const slideWidth = slider.querySelector('.video-slide').offsetWidth + 20; // include gap
-    slider.scrollLeft += direction * slideWidth;
-}
-</script>
+        .slide-btn.right {
+            right: 10px;
+        }
+    </style>
+    <script>
+        function scrollSlider(direction) {
+            const slider = document.getElementById('videoSlider');
+            const slideWidth = slider.querySelector('.video-slide').offsetWidth + 20; // include gap
+            slider.scrollLeft += direction * slideWidth;
+        }
+    </script>
 
     <section class="section-hero">
         <div class="destination">
