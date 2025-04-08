@@ -34,6 +34,8 @@
     padding: 30px 25px;
     width: 100%;
     text-align: left;
+    max-height: 400px;
+    overflow-y: scroll;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
     transition: all 0.3s ease;
     height: 100%;

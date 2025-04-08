@@ -51,7 +51,7 @@
 .scholarship-text h2 span {
     color: #000;
     font-weight: 700;
-    text-decoration: underline red 3px;
+    text-decoration: underline #ff891a 3px;
     text-underline-offset: 6px;
 }
 

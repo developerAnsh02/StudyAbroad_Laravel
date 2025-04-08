@@ -45,8 +45,8 @@
     <section class="sub-hero">
         <div class="sub-hero-content">
             <div class="sub-hero-text">
-                <h2>Study in United Kingdom</h2>
-                <p>Explore top universities, flexible programs, and incredible opportunities for international students.</p>
+                <h2>Start Your Journey</h2>
+                <p>Studying in the UK is a dream for many students worldwide, thanks to its prestigious universities, high-quality education, and global career opportunities. At WTS Visa Consultancy, we specialize in helping students navigate the complex process of studying abroad, from choosing the right university to securing a student visa. The UK is home to some of the oldest and most respected institutions, ensuring that students receive a world- class education that is recognized internationally. Moreover, the country’s diverse culture, student-friendly cities, and vast academic resources make it an excellent place for personal and professional growth. Whether you want to pursue undergraduate, postgraduate, or research programs, the UK provides a supportive environment that fosters innovation and excellence. With our expert guidance, you can embark on your academic journey in the UK with confidence and ease</p>
             </div>
             <div class="sub-hero-img">
                 <img src="/images/uk-bg.png" alt="Study in uk">
@@ -77,13 +77,14 @@
         font-weight: 700;
         color: var(--primary-dark);
         margin-bottom: 1rem;
+        text-align: left;
     }
 
     .sub-hero-text p {
-        font-size: 1.2rem;
         color: var(--text-dark);
         max-width: 550px;
         line-height: 1.6;
+        text-align: justify;
     }
 
     .sub-hero-img {
