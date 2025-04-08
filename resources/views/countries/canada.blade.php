@@ -136,6 +136,26 @@
 </style>
 
 
+<!-- choose us section -->
+@php
+    $sectionTitle = '';
+    $sectionDescription = '';
+
+    $cards = [
+        ['title' => '1. ', 'desc' => ''],
+        ['title' => '2. ', 'desc' => ''],
+        ['title' => '3. ', 'desc' => ''],
+        ['title' => '4. ', 'desc' => ''],
+        ['title' => '5. ', 'desc' => ''],
+        ['title' => '6. ', 'desc' => ''],
+    ];
+@endphp
+<x-choose-us 
+    :section-title="$sectionTitle" 
+    :section-description="$sectionDescription" 
+    :cards="$cards" 
+/>
+
     <!-- universities section -->
     @php
         $universities = [
