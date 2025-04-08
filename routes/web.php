@@ -41,6 +41,24 @@ Route::get('/services/mock-interviews', function () {
 Route::get('/services/travel-arrangements', function () {
     return view('services.travelling.travel');
 });
+Route::get('/country/uk', function () {
+    return view('countries.uk');
+});
+Route::get('/country/usa', function () {
+    return view('countries.usa');
+});
+Route::get('/country/canada', function () {
+    return view('countries.canada');
+});
+Route::get('/country/europe', function () {
+    return view('countries.europe');
+});
+Route::get('/country/newzealand', function () {
+    return view('countries.newzealand');
+});
+Route::get('/country/australia', function () {
+    return view('countries.australia');
+});
 
 
 Route::get('/dashboard', function () {

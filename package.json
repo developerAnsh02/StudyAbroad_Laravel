@@ -150,6 +150,7 @@
         "sucrase": "^3.35.0",
         "supports-color": "^8.1.1",
         "supports-preserve-symlinks-flag": "^1.0.0",
+        "swiper": "^11.2.6",
         "tapable": "^2.2.1",
         "thenify": "^3.3.1",
         "thenify-all": "^1.6.0",

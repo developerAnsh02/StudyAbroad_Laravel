@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <link rel="icon" type="image/png" href="/images/favicon.png">
 <script src="{{ asset('js/custom.js') }}"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="{{ asset('script.js') }}" defer></script>
     <title>@yield('title', 'WTS Visa Consultancy')</title>
 </head>
