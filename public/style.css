@@ -1344,6 +1344,9 @@ h1, h2, h3, h4, h5, h6, p {
         height: 15px;
         font-size: 10px;
     }
+    .footer{
+        padding-bottom: 24px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2261,6 +2264,10 @@ hr {
     width: 500px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service-hero-content p {
+    color: #d1d1d1 !important;
 }
 
 /* Responsive Design */

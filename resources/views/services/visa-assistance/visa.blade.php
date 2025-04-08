@@ -3,9 +3,9 @@
 
     <section class="service-hero">
         <div class="service-hero-content">
-            <h1 class="main-heading">Effortless Travel Arrangements for a Smooth Visa Process</h1>
+            <h1 class="main-heading">Hassle-Free Visa Assistance for a Smooth Journey</h1>
             <p>Process
-We take care of your travel plans, making your visa process seamless and stress-free.
+We simplify your visa process, making your journey effortless and worry-free.
 
             </p>
             <!-- <a href="#get-started" class="btn">Select Your Course</a> -->
@@ -42,7 +42,7 @@ We take care of your travel plans, making your visa process seamless and stress-
     </section>
 
 
-    <section class="infographic-section">
+    <!-- <section class="infographic-section">
   <h2>Comprehensive Post-Arrival Support for a Smooth Transition</h2>
   <div class="info-grid">
     <div class="info-card">
@@ -66,7 +66,7 @@ We take care of your travel plans, making your visa process seamless and stress-
       <p>Join local student communities and connect with peers for a smoother transition.</p>
     </div>
   </div>
-</section>
+</section> -->
 <style>
     .infographic-section {
   font-family: 'Segoe UI', sans-serif;
@@ -128,11 +128,11 @@ We take care of your travel plans, making your visa process seamless and stress-
 
 @include('./components/services-components.trust')
 
-@include('services.travelling.scrollable')
+@include('services.visa-assistance.scrollable')
 
 @include('./components/cta-button')
 
-@include('services.travelling.faqs')
+@include('services.visa-assistance.faqs')
 
 
 @endsection

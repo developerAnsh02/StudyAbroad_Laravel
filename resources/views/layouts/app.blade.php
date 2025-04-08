@@ -16,7 +16,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="{{ asset('script.js') }}" defer></script>
-    <title>@yield('title', 'WTS Visa Consultancy')</title>
+    <title>{{ $meta['title'] ?? '' }}</title>
+    <meta name="description" content="{{ $meta['description'] ?? '' }}">
+    <meta name="keywords" content="{{ $meta['keywords'] ?? '' }}">
+    <link rel="canonical" href="{{ url()->current() }}">
 </head>
 <body>
 

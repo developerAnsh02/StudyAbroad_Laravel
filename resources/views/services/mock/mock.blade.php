@@ -77,9 +77,9 @@
 
 @include('services.mock.scrollable')
 
-@include('services.mock.faqs')
-
 @include('./components/cta-button')
+
+@include('services.mock.faqs')
 
 <style>
         .mock-interview-section {
