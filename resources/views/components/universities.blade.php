@@ -1,14 +1,12 @@
 <section class="university-slider-section">
+    <h2><span>{{ $universitySection['heading'] }}</span> {{ $universitySection['highlight'] }}</h2>
 
-    <h2><span>List Of Universities</span> In The UK</h2>
     <p class="sub-heading">
-        The UK is an educational hub for international students to attain a globally recognized education. Here's a list
-        of top universities.
+        {{ $universitySection['sub_heading'] }}
     </p>
+
     <div class="slider-container">
-        
         <div class="slider-wrapper">
-            
             <div class="slider-track" id="slider-track">
                 @foreach($universities as $university)
                     <div class="university-card">
@@ -21,10 +19,13 @@
             </div>
         </div>
     </div>
+
     <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
     <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
-    </div>
 
+    <p class="footer-text">
+        {{ $universitySection['footer'] }}
+    </p>
 </section>
 <style>
     :root {
@@ -42,20 +43,19 @@
         position: relative;
     }
 
-    .university-slider-section h2 {
-        font-size: 2.2rem;
-    }
 
     .university-slider-section h2 span {
         color: var(--primary);
     }
 
-    .sub-heading {
-        max-width: 700px;
-        margin: 10px auto 40px;
-        font-size: 1rem;
-        color: #555;
-    }
+    .footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
 
     .slider-container {
         overflow: hidden;

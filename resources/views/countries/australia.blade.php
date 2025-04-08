@@ -199,9 +199,15 @@
                 'ranking' => 73
             ]
         ];
+        $universitySection = [
+        'heading' => 'Best UK Universities',
+        'highlight' => 'for International Studies',
+        'sub_heading' => 'The UK itself possesses the world\'s Best Universities, which attract students from across the globe. Most of these universities are reputed for their excellent faculty, state-of-the-art research and cutting-edge facilities. Some of the major British universities include: ',
+        'footer' => ''
+    ];
     @endphp
 
-    <x-universities :universities="$universities" />
+    <x-universities :universities="$universities" :universitySection="$universitySection"/>
 
     <!-- course section  -->
     @php
@@ -217,9 +223,19 @@
             ['title' => 'Hospitality and Tourism Management', 'image' => 'images/courses/hospitality.jpg'],
             ['title' => 'Environmental Science', 'image' => 'images/courses/environment.jpg'],
         ];
+        $courseContent = [
+        'title' => 'Some Popular Fields to Study in the UK',
+        'desc' => 'Courses are available in numerous fields in the UK, but some disciplines are more in demand than others, mainly because of job opportunities and industry development. Most popular and in demand courses include the following:',
+        'footer' => 'WTS Visa Consultancy helps students select the proper course based on their career goals and future job opportunities.',
+    ];
     @endphp
 
-    <x-courses :courses="$courses" />
+<x-courses 
+    :courses="$courses" 
+    :title="$courseContent['title']"
+    :desc="$courseContent['desc']"
+    :footer="$courseContent['footer']"
+/>
 
 
     <!-- cost of living section  -->

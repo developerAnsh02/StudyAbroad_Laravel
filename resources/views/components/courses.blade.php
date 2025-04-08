@@ -1,8 +1,11 @@
 <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+@props(['courses', 'title', 'desc', 'footer'])
+
 <section class="course-slider-section">
-    <h2 >Popular Courses in the UK</h2>
+    <h2>{{ $title }}</h2>
+    <p>{{ $desc }}</p>
 
     <div class="swiper courseSwiper">
         <div class="swiper-wrapper">
@@ -23,10 +26,13 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
+
+    <p class="course-footer-text">{{ $footer }}</p>
 </section>
 
+
 <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 <!-- Initialize Swiper -->
 <script>

@@ -1,30 +1,35 @@
 <section class="tab-section">
     <div class="tab-container">
         <div class="tabs">
-            <button class="tab-button active" data-tab="guide">Step by Step Guide for Registration</button>
-            <button class="tab-button" data-tab="documents">Documents Required</button>
+            <!-- First button should match first tab-content that's active -->
+            <button class="tab-button active" data-tab="documents">Documents Required</button>
+            <button class="tab-button" data-tab="guide">Step by Step Guide for Visa Application</button>
         </div>
 
         <div class="tab-content-box">
+            <!-- Documents Tab -->
             <div class="tab-content active" id="documents">
-                <h3>Documents required to study in the UK</h3>
-                <p>Some common documents that international students typically need when applying for a course in the UK:</p>
+                <h3>{{ $documentContent['title'] }}</h3>
+                <p>{{ $documentContent['desc'] }}</p>
                 <ul>
-                    @foreach ($documents as $item)
+                    @foreach ($documentContent['list'] as $item)
                         <li>{!! $item !!}</li>
                     @endforeach
                 </ul>
+                <p>At WTS Visa Consultancy, we guide students through the process of assembling and organizing all necessary documents for the application without any irritancy. </p>
                 <button class="consult-button">Free Expert Consultation</button>
             </div>
 
+            <!-- Guide Tab -->
             <div class="tab-content" id="guide">
-                <h3>Visa requirements to study in the UK</h3>
-                <p>Here are the basic requirements you need to fulfill for obtaining a UK Student Visa:</p>
-                <ul>
-                    @foreach ($visa as $item)
+                <h3>{{ $guideContent['title'] }}</h3>
+                <p>{{ $guideContent['desc'] }}</p>
+                <ol>
+                    @foreach ($guideContent['list'] as $item)
                         <li>{!! $item !!}</li>
                     @endforeach
-                </ul>
+                </ol>
+                <p>At WTS Visa Consultancy, we help students with all aspects of the visa, making sure they meet all requirements for getting through successfully.</p>
                 <button class="consult-button">Free Expert Consultation</button>
             </div>
         </div>
@@ -35,7 +40,6 @@
   .tab-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
-    font-family: 'Segoe UI', sans-serif;
 }
 
 .tab-container {
@@ -66,6 +70,7 @@
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
     position: relative;
+    margin-top: 1rem;
 }
 
 .tab-button.active {
@@ -105,15 +110,48 @@
 }
 
 .tab-content ul {
-    padding-left: 20px;
+    padding-left: 25px;
+    margin-bottom: 20px;
     list-style-type: disc;
     color: #333;
-    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 .tab-content ul li {
-    margin-bottom: 10px;
-    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 10px;
+}
+.tab-content ul {
+    list-style: none;
+}
+
+.tab-content ul li::before {
+    content: '•';
+    color: #ffa500;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.tab-content ol {
+    counter-reset: item;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    list-style-type: decimal;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.tab-content ol li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 10px;
+}
+.tab-content ol li::marker {
+    font-weight: bold;
+    color: #ffa500; /* Orange */
 }
 
 .consult-button {
