@@ -18,22 +18,20 @@
     <section class="video-gallery-section">
         <div class="container">
             <h2 class="section-title">Client Testimonials</h2>
-
+    
             <div class="video-slider-wrapper">
                 <button class="slide-btn left" onclick="scrollSlider(-1)">‹</button>
                 <div class="video-slider" id="videoSlider">
                     @foreach($videos as $video)
+                        @php $videoId = Str::afterLast($video->url, '/'); @endphp
                         <div class="video-slide">
                             <div class="video-card">
                                 <div class="video-wrapper">
-                                    <iframe 
-                                        src="{{ $video->url }}" 
-                                        title="{{ $video->title }}" 
-                                        frameborder="0" 
-                                        allowfullscreen
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-                                    </iframe>
+                                    <div class="youtube-facade" data-video-id="{{ $videoId }}" onclick="loadYoutube(this)">
+                                        <img src="https://img.youtube.com/vi/{{ $videoId }}/hqdefault.jpg" alt="{{ $video->title }}" loading="lazy">
+                                    </div>
                                 </div>
+                                
                             </div>
                         </div>
                     @endforeach
@@ -42,6 +40,7 @@
             </div>
         </div>
     </section>
+
     <style>
         .video-gallery-section {
             padding: 60px 20px;
@@ -49,50 +48,40 @@
             text-align: center;
             font-family: Arial, sans-serif;
         }
-
+        
         .section-title {
             font-size: 2rem;
             margin-bottom: 30px;
             color: #333;
         }
-
+        
         .video-slider-wrapper {
             position: relative;
             overflow: hidden;
         }
-
+        
         .video-slider {
             display: flex;
             gap: 10px;
             overflow-x: auto;
             scroll-behavior: smooth;
-            padding-bottom: 10px;
-            padding-top: 10px;
+            padding: 10px 0;
             scrollbar-width: none;
         }
-
+        
         .video-slider::-webkit-scrollbar {
             display: none;
         }
-
+        
         .video-slide {
             flex: 0 0 auto;
             width: 160px;
         }
-
-        @media (min-width: 576px) {
-            .video-slide { width: 180px; }
-        }
-        @media (min-width: 768px) {
-            .video-slide { width: 200px; }
-        }
-        @media (min-width: 992px) {
-            .video-slide { width: 220px; }
-        }
-        @media (min-width: 1200px) {
-            .video-slide { width: 240px; }
-        }
-
+        @media (min-width: 576px) { .video-slide { width: 180px; } }
+        @media (min-width: 768px) { .video-slide { width: 200px; } }
+        @media (min-width: 992px) { .video-slide { width: 220px; } }
+        @media (min-width: 1200px) { .video-slide { width: 240px; } }
+        
         .video-card {
             background: #fff;
             border-radius: 6px;
@@ -102,34 +91,54 @@
             text-align: center;
             padding: 5px;
         }
-
+        
         .video-card:hover {
             transform: translateY(-5px);
         }
-
+        
         .video-wrapper {
             position: relative;
             width: 100%;
-            padding-top: 177.77%; /* 9:16 Portrait Aspect Ratio */
+            padding-top: 177.77%; /* 9:16 */
             background: #000;
             border-radius: 6px;
             overflow: hidden;
         }
-
-        .video-wrapper iframe {
+        
+        .youtube-facade {
             position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
+            top: 0;
+            left: 0;
+            background: #000;
+            cursor: pointer;
         }
-
+        
+        .youtube-facade img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .youtube-facade::after {
+            content: '▶';
+            font-size: 3rem;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        
         .video-title {
             font-size: 0.95rem;
             margin-top: 10px;
             color: #444;
         }
-
+        
         /* Slider buttons */
         .slide-btn {
             position: absolute;
@@ -139,27 +148,39 @@
             color: #fff;
             border: none;
             font-size: 2rem;
-            padding: 0px 10px;
-            padding-bottom: 5px;
+            padding: 0 10px 5px;
             cursor: pointer;
             z-index: 1;
             border-radius: 6px;
             user-select: none;
         }
-
+        
         .slide-btn.left {
             left: 10px;
         }
-
         .slide-btn.right {
             right: 10px;
         }
     </style>
+
     <script>
         function scrollSlider(direction) {
             const slider = document.getElementById('videoSlider');
-            const slideWidth = slider.querySelector('.video-slide').offsetWidth + 20; // include gap
+            const slideWidth = slider.querySelector('.video-slide').offsetWidth + 20; // gap
             slider.scrollLeft += direction * slideWidth;
+        }
+        
+        function loadYoutube(el) {
+            const videoId = el.getAttribute('data-video-id');
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allowfullscreen', '');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            el.innerHTML = '';
+            el.appendChild(iframe);
         }
     </script>
 

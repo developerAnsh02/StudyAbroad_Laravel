@@ -4,17 +4,17 @@
 @props(['courses', 'title', 'desc', 'footer'])
 
 <section class="course-slider-section">
-    <h2>{{ $title }}</h2>
-    <p>{{ $desc }}</p>
+    <h2>{{ $title ?? ' ' }}</h2>
+    <p>{{ $desc ?? ' ' }}</p>
 
     <div class="swiper courseSwiper">
         <div class="swiper-wrapper">
             @foreach($courses as $course)
                 <div class="swiper-slide">
                     <div class="course-card">
-                        <img src="{{ asset($course['image']) }}" alt="{{ $course['title'] }}">
+                        <img src="{{ asset($course['image'] ?? ' ') }}" alt="{{ $course['title'] ?? ' '}}">
                         <div class="course-card-content">
-                            <h3>{{ $course['title'] }}</h3>
+                            <h3>{{ $course['title'] ?? ' ' }}</h3>
                         </div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <p class="course-footer-text">{{ $footer }}</p>
+    <p class="course-footer-text">{{ $footer ?? ' ' }}</p>
 </section>
 
 

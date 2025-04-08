@@ -1,8 +1,8 @@
 <section class="university-slider-section">
-    <h2><span>{{ $universitySection['heading'] }}</span> {{ $universitySection['highlight'] }}</h2>
+    <h2><span>{{ $universitySection['heading'] ?? ' ' }}</span> {{ $universitySection['highlight'] ?? ' ' }}</h2>
 
     <p class="sub-heading">
-        {{ $universitySection['sub_heading'] }}
+        {{ $universitySection['sub_heading'] ?? ' ' }}
     </p>
 
     <div class="slider-container">
@@ -10,8 +10,8 @@
             <div class="slider-track" id="slider-track">
                 @foreach($universities as $university)
                     <div class="university-card">
-                        <img src="{{ asset($university['logo']) }}" alt="{{ $university['name'] }}">
-                        <h3>{{ $university['name'] }}</h3>
+                        <img src="{{ asset($university['logo'] ?? ' ' ) }}" alt="{{ $university['name'] ?? ' '  }}">
+                        <h3>{{ $university['name'] ?? ' ' }}</h3>
                         <!-- <p>Popular For: {{ $university['course'] }}</p>
                         <p>QS World Ranking: <strong>{{ $university['ranking'] }}</strong></p> -->
                     </div>
@@ -24,7 +24,7 @@
     <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
 
     <p class="footer-text">
-        {{ $universitySection['footer'] }}
+        {{ $universitySection['footer'] ?? ' '  }}
     </p>
 </section>
 <style>
@@ -116,14 +116,15 @@
         border-radius: 50%;
         cursor: pointer;
         z-index: 10;
+        top: 50%;
     }
 
     .nav-btn.prev {
-        left: 40%;
+        left: 2%;
     }
 
     .nav-btn.next {
-        right: 40%;
+        right: 2%;
     }
 
     /* Tablet */
