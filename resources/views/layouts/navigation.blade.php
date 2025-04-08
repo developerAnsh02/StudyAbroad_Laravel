@@ -15,16 +15,16 @@
                             Services <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
                         <div class="sidebar-dropdown-menu">
-                            <a href="{{ url('/services/counselling') }}">Counseling with an expert</a>
-                            <a href="{{ url('/marketing') }}">Free profile evaluation</a>
+                            <!-- <a href="{{ url('/services/counselling') }}">Counseling with an expert</a> -->
+                            <!-- <a href="{{ url('/marketing') }}">Free profile evaluation</a> -->
                             <a href="{{ url('/services/course-selection') }}">Course Selection</a>
                             <a href="{{ url('/services/getting-admission') }}">Admissions</a>
                             <a href="{{ url('/services/sop-assistance') }}">SOP/ Scholarship essays</a>
-                            <a href="{{ url('/marketing') }}">Visa Assistance</a>
+                            <a href="{{ url('/services/visa-assistance') }}">Visa Assistance</a>
                             <a href="{{ url('/services/mock-interviews') }}">Mock interview</a>
-                            <a href="{{ url('/marketing') }}">Education Loan</a>
+                            <!-- <a href="{{ url('/marketing') }}">Education Loan</a> -->
                             <a href="{{ url('/services/travel-arrangements') }}">Travel arrangements</a>
-                            <a href="{{ url('/marketing') }}">Post - Landing services</a>
+                            <!-- <a href="{{ url('/marketing') }}">Post - Landing services</a> -->
                         </div>
                     </div>
                     <div class="sidebar-dropdown">
@@ -59,16 +59,16 @@
                     <div class="dropdown">
                         <a class="nav-item">Services</a>
                         <div class="dropdown-menu">
-                            <a href="{{ url('/services/counselling') }}">Counseling with an expert</a>
-                            <a href="{{ url('/') }}">Free profile evaluation</a>
+                            <!-- <a href="{{ url('/services/counselling') }}">Counseling with an expert</a> -->
+                            <!-- <a href="{{ url('/') }}">Free profile evaluation</a> -->
                             <a href="{{ url('/services/course-selection') }}">Course Selection</a>
                             <a href="{{ url('/services/getting-admission') }}">Getting Admissions</a>
                             <a href="{{ url('/services/sop-assistance') }}">SOP/ Scholarship essays</a>
-                            <a href="{{ url('/') }}">Visa Assistance</a>
+                            <a href="{{ url('/services/visa-assistance') }}">Visa Assistance</a>
                             <a href="{{ url('/services/mock-interviews') }}">Mock interview</a>
-                            <a href="{{ url('/') }}">Education Loan</a>
+                            <!-- <a href="{{ url('/') }}">Education Loan</a> -->
                             <a href="{{ url('/services/travel-arrangements') }}">Travel arrangements</a>
-                            <a href="{{ url('/m') }}">Post - Landing services</a>
+                            <!-- <a href="{{ url('/m') }}">Post - Landing services</a> -->
                         </div>
                     </div>
 
@@ -101,18 +101,28 @@
 <!-- JavaScript for Menu & Dropdown -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-    function toggleMenu() {
-        const sidebarMenu = document.querySelector(".sidebar-menu");
-        const sidebarOverlay = document.querySelector(".sidebar-overlay");
 
-        if (sidebarMenu && sidebarOverlay) {
-            sidebarMenu.classList.toggle("show");
-            sidebarOverlay.classList.toggle("show");
-            document.body.classList.toggle("sidebar-open");
+    // function fo toggle sidebar 
+    function toggleMenu() {
+    const sidebarMenu = document.querySelector(".sidebar-menu");
+    const sidebarOverlay = document.querySelector(".sidebar-overlay");
+    const bottomMenu = document.querySelector(".bottom-menu");
+
+    if (sidebarMenu && sidebarOverlay && bottomMenu) {
+        const isSidebarOpen = sidebarMenu.classList.toggle("show");
+        sidebarOverlay.classList.toggle("show");
+        document.body.classList.toggle("sidebar-open");
+
+        // Hide bottom menu when sidebar is open
+        if (isSidebarOpen) {
+            bottomMenu.style.display = "none";
         } else {
-            console.error("Sidebar menu or overlay not found in the DOM.");
+            bottomMenu.style.display = "flex"; // Show it again when sidebar closes
         }
+    } else {
+        console.error("Sidebar menu, overlay, or bottom menu not found in the DOM.");
     }
+}
 
     document.querySelector(".hamburger-icon").addEventListener("click", toggleMenu);
     document.querySelector(".close-icon").addEventListener("click", toggleMenu);
@@ -174,7 +184,7 @@ function toggleDropdown(event) {
 
     .hamburger-icon {
         position: fixed;
-        top: 20px;
+        top: 23px;
         right: 30px;
         z-index: 1100;
         font-size: 40px;

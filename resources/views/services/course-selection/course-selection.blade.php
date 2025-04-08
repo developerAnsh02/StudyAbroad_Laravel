@@ -72,9 +72,9 @@
 
 @include('services.course-selection.scrollable')
 
-@include('services.course-selection.faqs')
-
 @include('./components/cta-button')
+
+@include('services.course-selection.faqs')
 
 <style>
     /* Section Styling */
