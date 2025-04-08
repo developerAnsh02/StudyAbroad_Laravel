@@ -53,11 +53,14 @@ Route::get('/country/canada', function () {
 Route::get('/country/europe', function () {
     return view('countries.europe');
 });
-Route::get('/country/newzealand', function () {
+Route::get('/country/new-zealand', function () {
     return view('countries.newzealand');
 });
 Route::get('/country/australia', function () {
     return view('countries.australia');
+});
+Route::get('/country/international', function () {
+    return view('countries.international');
 });
 
 

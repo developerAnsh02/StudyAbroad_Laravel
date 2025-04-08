@@ -3,8 +3,7 @@
 
     <section class="service-hero">
         <div class="service-hero-content">
-            <h1 class="main-heading">Study in the UK: Your Ultimate Guide to
-                Admissions, Visas & Scholarships</h1>
+            <h1 class="main-heading">Study anywhere in the GLOBE</h1>
             <!-- <p>Boost your confidence and ace your student visa interview with expert mock sessions.
                 </p> -->
             <!-- <a href="#get-started" class="btn">Select Your Course</a> -->
@@ -45,7 +44,7 @@
     <section class="sub-hero">
         <div class="sub-hero-content">
             <div class="sub-hero-text">
-                <h2>Study in United Kingdom</h2>
+                <h2>Study Abroad</h2>
                 <p>Explore top universities, flexible programs, and incredible opportunities for international students.</p>
             </div>
             <div class="sub-hero-img">
@@ -235,42 +234,8 @@
     @endphp
     <x-cost-of-living :tuitionFees="$tuitionFees" :description="$description" />
 
-@php
-    $documents = [
-        'Valid Passport',
-        'Offer Letter from a UK University',
-        'Proof of English Proficiency (IELTS, TOEFL, or equivalent)',
-        'Academic Transcripts and Certificates',
-        'Statement of Purpose (SOP)',
-        'Letter of Recommendation (LORs)',
-        'Proof of Financial Support (Bank Statements or Sponsorship Letter)',
-        'UK Student Visa (Tier 4 Visa)',
-    ];
-
-    $visa = [
-        'A valid passport or travel document',
-        'Confirmation of Acceptance for Studies (CAS) from your UK institution',
-        'Proof of sufficient funds (tuition + living expenses)',
-        'Proof of English proficiency (IELTS/TOEFL/PTE)',
-        'Parental or legal guardian consent (if under 18)',
-        'Tuberculosis test results (if required)',
-        'Academic qualifications and certificates',
-        'Payment for visa application fee and healthcare surcharge',
-    ];
-
-    $documentDescription = "Some common documents that international students typically need when applying for a course in the UK:";
-    $visaDescription = "Here are the basic requirements you need to fulfill for obtaining a UK Student Visa:";
-@endphp
-
-<x-documents 
-    :documents="$documents" 
-    :visa="$visa" 
-    :document-description="$documentDescription" 
-    :visa-description="$visaDescription" 
-/>
 
 
-    @include('./components/choose-us')
     @include('./components/stats')
 
     @include('./components/services-components.trust')
