@@ -48,7 +48,7 @@
                 <p>The study is primarily about international parameters where quality education, cultural diversity, and promising global career prospects play prime roles. WTS Visa Consultancy deals with the provision of expert guidance in university selection, application, visas, and finances to help students realize their dreams of studying abroad. International universities are a good option for students who wish to build their careers since they have world-class education, advanced best universities to study abroad, research facilities, and globally accepted degrees. Besides, students would study abroad in culturally diverse settings, where they expect to learn communication skills and network with people from different backgrounds. This experience not just enhances their academic knowledge but also develops their best scholarships for international undergraduate students personality and independence skills. Global market demand for professions has always been on the rise, making an international degree a leap into an enhanced career. At WTS Visa Consultancy, we assure that students get support at every level to ensure an easy transition to their favourite university. </p>
             </div>
             <div class="sub-hero-img">
-                <img src="/images/uk-bg.png" alt="Study in uk">
+                <img src="/images/international-university.jpg" alt="Study in all University">
             </div>
         </div>
     </section>
@@ -73,67 +73,69 @@
     :cards="$cards" 
 />
 
+    <!-- stats section  -->
+     @include('./components/stats')
 
     <!-- universities section -->
     @php
         $universities = [
             [
                 'name' => 'Harvard (USA)',
-                'logo' => 'images/universities/Melbourne_Logo.png',
+                'logo' => 'images/universities/Harvard-Logo.png',
                 'course' => 'Science & Medicine',
                 'ranking' => 1
             ],
             [
                 'name' => 'Stanford (USA)',
-                'logo' => 'images/universities/ANU_Logo.jpg',
+                'logo' => 'images/universities/Stanford_University_Logo.png',
                 'course' => 'Engineering & Technology',
                 'ranking' => 2
             ],
             [
                 'name' => 'Massachusetts Institute of Technology (MIT) (USA)',
-                'logo' => 'images/universities/Sydney_Logo.png',
+                'logo' => 'images/universities/MIT_logo.png',
                 'course' => 'Engineering & Physical Sciences',
                 'ranking' => 6
             ],
             [
                 'name' => 'University of Oxford (UK)',
-                'logo' => 'images/universities/Queensland_Logo.png',
+                'logo' => 'images/universities/Oxford-University.png',
                 'course' => 'Economics & Political Science',
                 'ranking' => 45
             ],
             [
                 'name' => 'University of Cambridge (UK)',
-                'logo' => 'images/universities/Monash_Logo.jpeg',
+                'logo' => 'images/universities/cambridge-logo.png',
                 'course' => 'Arts & Humanities',
                 'ranking' => 22
             ],
             [
                 'name' => 'University of Toronto (Canada)',
-                'logo' => 'images/universities/UNSW_Logo.png',
+                'logo' => 'images/universities/toronto.png',
                 'course' => 'Health & Life Sciences',
                 'ranking' => 40
             ],
             [
                 'name' => 'Singapore\'s National University (NUS)',
-                'logo' => 'images/universities/UWA_Logo.webp',
+                'logo' => 'images/universities/NUS.png',
                 'course' => 'Business & Law',
                 'ranking' => 32
             ],
             [
                 'name' => 'Australian National University (ANU)',
-                'logo' => 'images/universities/Adelaide_Logo.jpg',
+                'logo' => 'images/universities/ANU_Logo.jpg',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],
             [
                 'name' => 'ETH Zurich (Switzerland)',
-                'logo' => 'images/universities/Adelaide_Logo.jpg',
+                'logo' => 'images/universities/zurich.png',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],
             [
                 'name' => 'University of Melbourne, Australia',
-                'logo' => 'images/universities/Adelaide_Logo.jpg',
+                'logo' => 'images/universities/Melbourne_Logo.png',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],
@@ -307,11 +309,6 @@ Work hour limits vary from country to country. In the USA, UK, and Canada, stude
         </div>
     </div>
 </section>
-
-
-    @include('./components/stats')
-
-    @include('./components/services-components.trust')
 
     @include('./components/cta-button')
 

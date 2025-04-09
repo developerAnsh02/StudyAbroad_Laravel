@@ -49,7 +49,7 @@
                 <p>WTS Visa Consultancy avails services in full complement to all students who feel like studying in Australia. Services offered include university selection, guidance on applications, visa processing, and accommodation assistance. Australia's student-friendly policies coupled with vibrant cities and work opportunities make the ideal location for academic fulfilment and personal growth. Be it undergraduate or postgraduate or vocational courses, this land has got all how to study in Australia the possibilities of achieving your academic and professional aspirations. Our team works tirelessly to ensure that your journey toward studying in Australia is devoid of any hassle.</p>
             </div>
             <div class="sub-hero-img">
-                <img src="/images/uk-bg.png" alt="Study in uk">
+                <img src="/images/australia-img.webp" alt="Study in australia">
             </div>
         </div>
     </section>

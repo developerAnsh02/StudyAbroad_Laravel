@@ -57,7 +57,7 @@
                     <a class="nav-item" href="{{ url('/') }}">Home</a>
 
                     <div class="dropdown">
-                        <a class="nav-item">Services</a>
+                        <a class="nav-item" style = "display: flex; gap: 5px; align-items: center;">Services<span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span></a>
                         <div class="dropdown-menu">
                             <!-- <a href="{{ url('/services/counselling') }}">Counseling with an expert</a> -->
                             <!-- <a href="{{ url('/') }}">Free profile evaluation</a> -->
@@ -73,9 +73,7 @@
                     </div>
 
                     <div class="dropdown">
-                        <a class="nav-item">
-                            Countries 
-                        </a>
+                        <a class="nav-item" style = "display: flex; gap: 5px; align-items: center;">Countries<span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span></a>
                         <div class="dropdown-menu">
                             <a href="{{ url('/country/europe') }}">Europe</a>
                             <a href="{{ url('/country/usa') }}">USA</a>

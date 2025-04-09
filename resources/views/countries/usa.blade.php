@@ -48,7 +48,7 @@
                 <p>Study in the USA with WTS Visa Consultancy! We tutor students with respect to university selection, visa processing, scholarships, and test preparation. With over 4,000 institutions, the USA offers top-most study in the USA education, research, and culture. Our team of specialists will assure hassle-free transitions to help you realize your academic dreams in one of the liveliest international hubs. Let’s make it happen!</p>
             </div>
             <div class="sub-hero-img">
-                <img src="/images/uk-bg.png" alt="Study in uk">
+                <img src="/images/usa-img.jpg" alt="Study in usa">
             </div>
         </div>
     </section>
