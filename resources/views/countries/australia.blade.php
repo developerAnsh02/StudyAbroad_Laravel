@@ -54,86 +54,6 @@
         </div>
     </section>
 
-<style>
-    .sub-hero {
-        background-color: var(--bg-light);
-        padding: 80px 5%;
-    }
-
-    .sub-hero-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-
-    .sub-hero-text {
-        flex: 1 1 50%;
-    }
-
-    .sub-hero-text h2 {
-        font-size: 3rem;
-        font-weight: 700;
-        color: var(--primary-dark);
-        margin-bottom: 1rem;
-    }
-
-    .sub-hero-text p {
-        font-size: 1.2rem;
-        color: var(--text-dark);
-        max-width: 550px;
-        line-height: 1.6;
-    }
-
-    .sub-hero-img {
-        flex: 1 1 40%;
-        text-align: center;
-    }
-
-    .sub-hero-img img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px;
-        object-fit: cover;
-    }
-
-    /* Tablet Responsive */
-    @media (max-width: 768px) {
-        .sub-hero-content {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .sub-hero-text,
-        .sub-hero-img {
-            flex: 1 1 100%;
-        }
-
-        .sub-hero-text h2 {
-            font-size: 2rem;
-        }
-
-        .sub-hero-text p {
-            font-size: 1rem;
-        }
-    }
-
-    /* Mobile Responsive */
-    @media (max-width: 480px) {
-        .sub-hero {
-            padding: 60px 20px;
-        }
-
-        .sub-hero-text h2 {
-            font-size: 1.6rem;
-        }
-
-        .sub-hero-text p {
-            font-size: 0.95rem;
-        }
-    }
-</style>
 
 <!-- choose us section -->
 @php
@@ -155,6 +75,8 @@
     :section-description="$sectionDescription" 
     :cards="$cards" 
 />
+
+@include('./components/stats')
 
 
     <!-- universities section -->
@@ -324,73 +246,7 @@
     @endphp
     <x-documents :documentContent="$documentContent" :guideContent="$guideContent" />
 
-    <!-- Scrollale Section  -->
-     <style>
-    .column-section {
-        background-color: #fff;
-        padding: 20px;
-    }
-
-    .column-container {
-        background-color: #eee;
-        display: flex;
-        gap: 20px;
-        width: 80%;
-        margin: auto;
-        height: 500px;
-        overflow-y: auto;
-        padding: 15px;
-        border-top: 5px solid #ffb400;
-        border-bottom: 5px solid #ffb400;
-        border-radius: 10px;
-    }
-
-    .column-container::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    .column-container::-webkit-scrollbar-thumb {
-        background-color: #ffb400;
-        border-radius: 4px;
-    }
-
-    .column-container::-webkit-scrollbar-thumb:hover {
-        background-color: #ff9900;
-    }
-
-    .column {
-        flex: 1;
-        min-width: 300px;
-    }
-
-    .content-box {
-        padding: 15px;
-        border: 1px solid #ddd;
-        margin-bottom: 15px;
-        background: #fff;
-        border-radius: 5px;
-    }
-
-    .content-description {
-        font-size: .8rem;
-        text-align: justify;
-        margin-bottom: 10px;
-    }
-h3{
-    margin-bottom: 10px;
-}
-    .content-box ul li {
-        font-size: 0.8rem;
-        text-align: justify;
-        margin-left: 15px;
-    }
-
-    .service-heading {
-        color: #333;
-        padding-bottom: 1rem;
-    }
-</style>
-
+    
 <section class="column-section">
     <div class="column-container">
         <div class="column">
@@ -445,11 +301,6 @@ h3{
         </div>
     </div>
 </section>
-
-
-    @include('./components/stats')
-
-    @include('./components/services-components.trust')
 
     @include('./components/cta-button')
 

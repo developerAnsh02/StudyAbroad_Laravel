@@ -73,6 +73,8 @@
     @endphp
     <x-choose-us :section-title="$sectionTitle" :section-description="$sectionDescription" :cards="$cards" />
 
+    @include('./components/stats')
+
     <!-- universities section -->
     @php
         $universities = [
@@ -261,86 +263,6 @@
 
     <x-documents :documentContent="$documentContent" :guideContent="$guideContent" />
 
-    @include('./components/stats')
-
-    @include('./components/services-components.trust')
-
-    <!-- scrollable -->
-    <style>
-        .column-section {
-            background-color: #fff;
-            padding: 20px;
-        }
-
-        .column-container {
-            background-color: #eee;
-            display: flex;
-            gap: 20px;
-            width: 80%;
-            margin: auto;
-            height: 500px;
-            overflow-y: auto;
-            padding: 15px;
-            border-top: 5px solid #ffb400;
-            border-bottom: 5px solid #ffb400;
-            border-radius: 10px;
-        }
-
-        .column-container::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        .column-container::-webkit-scrollbar-thumb {
-            background-color: #ffb400;
-            border-radius: 4px;
-        }
-
-        .column-container::-webkit-scrollbar-thumb:hover {
-            background-color: #ff9900;
-        }
-
-        .column {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .service-heading {
-            font-size: 1.2rem;
-        }
-
-        .content-box {
-            padding: 15px;
-            border: 1px solid #ddd;
-            margin-bottom: 15px;
-            background: #fff;
-            border-radius: 5px;
-        }
-
-        .content-description {
-            font-size: .8rem;
-            text-align: justify;
-            margin-bottom: 10px;
-        }
-
-        h3 {
-            margin-bottom: 10px;
-        }
-
-        .content-box ul li {
-            font-size: .9rem;
-            text-align: justify;
-            margin-left: 15px;
-
-        }
-
-        .service-heading {
-            color: #333;
-            padding-bottom: 1rem;
-        }
-
-       
-    </style>
-
     <section class="column-section">
         <div class="column-container">
             <div class="column">
@@ -468,8 +390,6 @@
             </div>
         </div>
     </section>
-
-
 
     @include('./components/cta-button')
 

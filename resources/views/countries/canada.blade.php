@@ -40,7 +40,6 @@
             @include('./components/registration-form')
         </div>
     </section>
-
     <!-- sub hero section -->
     <section class="sub-hero">
         <div class="sub-hero-content">
@@ -97,6 +96,7 @@
     :section-description="$sectionDescription" 
     :cards="$cards" 
 />
+@include('./components/stats')
 
     <!-- universities section -->
     @php
@@ -342,6 +342,8 @@ $guideContent = [
     </div>
 </section>
 
+@include('./components/cta-button')
+
 @php
     $faqs = [
         [
@@ -370,10 +372,5 @@ $guideContent = [
 <x-faq :faqs="$faqs" />
 
 
-    @include('./components/stats')
-
-    @include('./components/services-components.trust')
-
-    @include('./components/cta-button')
 
 @endsection

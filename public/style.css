@@ -392,6 +392,7 @@ h3{
     font-size: 0.8rem;
     text-align: justify;
     margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 .service-heading {
@@ -407,7 +408,6 @@ h3{
 }
 
 .faq-list li {
-    padding: 10px 15px;
     border-radius: 5px;
     text-align: justify;
 }

@@ -75,6 +75,8 @@
     :cards="$cards" 
 />
 
+@include('./components/stats')
+
     <!-- universities section -->
     @php
         $universities = [
@@ -259,12 +261,6 @@ $guideContent = [
 @endphp
 
 <x-documents :documentContent="$documentContent" :guideContent="$guideContent" />
-
-    @include('./components/stats')
-
-    @include('./components/services-components.trust')
-
-
 
 <section class="column-section">
     <div class="column-container">
