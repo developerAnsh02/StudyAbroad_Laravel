@@ -2,6 +2,7 @@
     <div class="tuition-container">
     <div class="left">
     <h2>{{ $ukCostOfLiving['heading'] }}</h2>
+    <p>{{ $description }}</p>
     <p>{{ $ukCostOfLiving['description'] }}</p>
 
     <div class="info-highlight">

@@ -162,49 +162,49 @@
         $universities = [
             [
                 'name' => 'The University of Melbourne',
-                'logo' => 'images/universities/oxford.png',
+                'logo' => 'images/universities/Melbourne_Logo.png',
                 'course' => 'Science & Medicine',
                 'ranking' => 1
             ],
             [
                 'name' => 'The Australian National University (ANU)',
-                'logo' => 'images/universities/cambridge-logo.png',
+                'logo' => 'images/universities/ANU_Logo.jpg',
                 'course' => 'Engineering & Technology',
                 'ranking' => 2
             ],
             [
                 'name' => 'The University of Sydney',
-                'logo' => 'images/universities/imperial.png',
+                'logo' => 'images/universities/Sydney_Logo.png',
                 'course' => 'Engineering & Physical Sciences',
                 'ranking' => 6
             ],
             [
                 'name' => 'The University of Queensland',
-                'logo' => 'images/universities/lse.png',
+                'logo' => 'images/universities/Queensland_Logo.png',
                 'course' => 'Economics & Political Science',
                 'ranking' => 45
             ],
             [
                 'name' => 'Monash University',
-                'logo' => 'images/universities/edinburgh.png',
+                'logo' => 'images/universities/Monash_Logo.jpeg',
                 'course' => 'Arts & Humanities',
                 'ranking' => 22
             ],
             [
                 'name' => 'The University of New South Wales (UNSW)',
-                'logo' => 'images/universities/kings.png',
+                'logo' => 'images/universities/UNSW_Logo.png',
                 'course' => 'Health & Life Sciences',
                 'ranking' => 40
             ],
             [
                 'name' => 'The University of Western Australia (UWA)',
-                'logo' => 'images/universities/manchester.png',
+                'logo' => 'images/universities/UWA_Logo.webp',
                 'course' => 'Business & Law',
                 'ranking' => 32
             ],
             [
                 'name' => 'The University of Adelaide',
-                'logo' => 'images/universities/bristol.png',
+                'logo' => 'images/universities/Adelaide_Logo.jpg',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],

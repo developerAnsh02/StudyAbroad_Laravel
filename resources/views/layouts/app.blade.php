@@ -53,7 +53,10 @@
   
   <link rel="preload" as="image" href="/images/fbf0efd993d06415633881cd7b0c43de.jpg">
     {{-- Preload the first thumbnail for faster LCP --}}
-    <link rel="preload" as="image" href="https://img.youtube.com/vi/{{ $firstVideoId }}/hqdefault.jpg">
+  <link rel="preload" as="image" href="https://img.youtube.com/vi/{{ $firstVideoId ?? 'default_video_id' }}/hqdefault.jpg">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -71,6 +74,7 @@
     </main>
     @include('layouts.footer') <!-- Footer -->
     <button id="backToTop" class="back-to-top">↑</button>
+    @include('layouts.bottomMenu')
 </body>
 </html>
  <footer class="footer"></footer>
