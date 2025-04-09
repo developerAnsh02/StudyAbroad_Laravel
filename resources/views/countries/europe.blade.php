@@ -59,87 +59,6 @@
         </div>
     </section>
 
-    <style>
-        .sub-hero {
-            background-color: var(--bg-light);
-            padding: 80px 5%;
-        }
-
-        .sub-hero-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        .sub-hero-text {
-            flex: 1 1 50%;
-        }
-
-        .sub-hero-text h2 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary-dark);
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-
-        .sub-hero-text p {
-            color: var(--text-dark);
-            max-width: 550px;
-            line-height: 1.6;
-            text-align: justify;
-        }
-
-        .sub-hero-img {
-            flex: 1 1 40%;
-            text-align: center;
-        }
-
-        .sub-hero-img img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            object-fit: cover;
-        }
-
-        /* Tablet Responsive */
-        @media (max-width: 768px) {
-            .sub-hero-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .sub-hero-text,
-            .sub-hero-img {
-                flex: 1 1 100%;
-            }
-
-            .sub-hero-text h2 {
-                font-size: 2rem;
-            }
-
-            .sub-hero-text p {
-                font-size: 1rem;
-            }
-        }
-
-        /* Mobile Responsive */
-        @media (max-width: 480px) {
-            .sub-hero {
-                padding: 60px 20px;
-            }
-
-            .sub-hero-text h2 {
-                font-size: 1.6rem;
-            }
-
-            .sub-hero-text p {
-                font-size: 0.95rem;
-            }
-        }
-    </style>
 
     <!-- choose us section -->
     @php
@@ -419,36 +338,7 @@
             padding-bottom: 1rem;
         }
 
-        .faq-list {
-            padding-left: 1rem;
-            font-size: 0.85rem;
-            line-height: 1.6;
-            color: #333;
-            list-style: decimal;
-        }
-
-        .faq-list li {
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-align: justify;
-        }
-
-        .faq-list li strong {
-            color: #000;
-        }
-
-        .student-list {
-            list-style-type: disc;
-            padding-left: 1rem;
-            color: #333;
-        }
-
-
-        .student-list li strong {
-            display: block;
-            color: #000;
-            margin-bottom: 8px;
-        }
+       
     </style>
 
     <section class="column-section">
