@@ -66,6 +66,13 @@
     }
 }
 
+@media screen and (min-width: 769px) {
+    .bottom-menu {
+        display: none !important;
+    }
+}
+
+
 </style>
 
 <script>

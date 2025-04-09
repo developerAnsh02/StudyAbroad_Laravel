@@ -1,45 +1,70 @@
 <section class="cost-living-section">
     <div class="tuition-container">
-    <div class="left">
-    <h2>{{ $ukCostOfLiving['heading'] }}</h2>
-    <p>{{ $description }}</p>
-    <p>{{ $ukCostOfLiving['description'] }}</p>
+        <div class="left">
+            <h2>{{ $ukCostOfLiving['heading'] }}</h2>
+            <p>{{ $description }}</p>
+            <p>{{ $ukCostOfLiving['description'] }}</p>
 
-    <div class="info-highlight">
-    <p>
-            Aside from tuition fees, a student also has to plan for
-            <strong>accommodation ({{ $ukCostOfLiving['highlights']['accommodation'] }})</strong>,
-            <strong>food ({{ $ukCostOfLiving['highlights']['food'] }})</strong>, and
-            <strong>transportation ({{ $ukCostOfLiving['highlights']['transportation'] }})</strong>.
-        </p>
-        <p>
-            <strong>{{ $ukCostOfLiving['highlights']['consultancy'] }}</strong> {{ $ukCostOfLiving['highlights']['note'] }}
-        </p>
-    </div>
-</div>
-
+            <div class="info-highlight">
+                <p>
+                    Aside from tuition fees, a student also has to plan for
+                    <strong>accommodation ({{ $ukCostOfLiving['highlights']['accommodation'] }})</strong>,
+                    <strong>food ({{ $ukCostOfLiving['highlights']['food'] }})</strong>, and
+                    <strong>transportation ({{ $ukCostOfLiving['highlights']['transportation'] }})</strong>.
+                </p>
+                <p>
+                    <strong>{{ $ukCostOfLiving['highlights']['consultancy'] }}</strong> {{ $ukCostOfLiving['highlights']['note'] }}
+                </p>
+            </div>
+        </div>
 
         <div class="right">
             <div class="tuition-box">
-                <h3 class="category-title">Annual Tuition Fees (GBP)</h3>
-                <div class="tuition-table-wrapper">
-                    <table class="tuition-table">
-                        <thead>
-                            <tr>
-                                <th>Course Type</th>
-                                <th>Tuition Fees</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($tuitionFees as $fee)
+                @if(isset($countryWiseCost))
+                    <!-- 3-Column Table (Country, Tuition Fees, Living Costs) -->
+                    <h3 class="category-title">Annual Tuition Fees & Living Costs</h3>
+                    <div class="tuition-table-wrapper">
+                        <table class="tuition-table">
+                            <thead>
                                 <tr>
-                                    <td>{{ $fee['label'] }}</td>
-                                    <td>{{ $fee['value'] }}</td>
+                                    <th>Country</th>
+                                    <th>Tuition Fees (Per Year)</th>
+                                    <th>Living Costs (Per Year)</th>
                                 </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
+                            </thead>
+                            <tbody>
+                                @foreach ($countryWiseCost as $cost)
+                                    <tr>
+                                        <td>{{ $cost['country'] }}</td>
+                                        <td>{{ $cost['tuition_fee'] }}</td>
+                                        <td>{{ $cost['living_cost'] }}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                @else
+                    <!-- 2-Column Table (Course Type & Tuition Fees) -->
+                    <h3 class="category-title">Annual Tuition Fees (GBP)</h3>
+                    <div class="tuition-table-wrapper">
+                        <table class="tuition-table">
+                            <thead>
+                                <tr>
+                                    <th>Course Type</th>
+                                    <th>Tuition Fees</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($tuitionFees as $fee)
+                                    <tr>
+                                        <td>{{ $fee['label'] }}</td>
+                                        <td>{{ $fee['value'] }}</td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
@@ -210,40 +235,40 @@
             padding: 15px;
         }
     }
+
     @media (max-width: 320px) {
-    .cost-living-section {
-        padding: 40px 15px;
-    }
+        .cost-living-section {
+            padding: 40px 15px;
+        }
 
-    .left h2 {
-        font-size: 1.1rem;
-    }
+        .left h2 {
+            font-size: 1.1rem;
+        }
 
-    .info-highlight {
-        padding: 12px;
-        font-size: 13px;
-        width: 95%;
-    }
+        .info-highlight {
+            padding: 12px;
+            font-size: 13px;
+            width: 95%;
+        }
 
-    .info-highlight p {
-        font-size: 0.75rem;
-    }
+        .info-highlight p {
+            font-size: 0.75rem;
+        }
 
-    .tuition-box {
-        padding: 12px;
-        width: 95%;
-        margin: auto;
-    }
+        .tuition-box {
+            padding: 12px;
+            width: 95%;
+            margin: auto;
+        }
 
-    .tuition-table th,
-    .tuition-table td {
-        padding: 8px 6px;
-        font-size: 13px;
-    }
+        .tuition-table th,
+        .tuition-table td {
+            padding: 8px 6px;
+            font-size: 13px;
+        }
 
-    .category-title {
-        font-size: 15px;
+        .category-title {
+            font-size: 15px;
+        }
     }
-}
-
 </style>
