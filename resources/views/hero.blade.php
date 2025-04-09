@@ -1,10 +1,10 @@
-
 <section class="hero-main">
 
     <div class="hero-content-wrapper">
 
         <div class="map-container">
-            <img src="images/white-world-map.png" alt="World Map" class="map-image">
+            <img src="images/white-world-map.png" alt="World Map" class="map-image" fetchpriority="high" width="800" height="500">
+
             <div class="UK-marker marker" data-city="UK"></div>
             <div class="usa-marker marker" data-city="USA"></div>
             <div class="canada-marker marker" data-city="Canada"></div>
@@ -13,31 +13,31 @@
 
             <div class="card-country UK-card">
                 <div class="flag-circle">
-                    <img src="images/icons/uk.png" alt="UK Flag">
+                    <img src="images/icons/uk.png" loading="lazy" alt="UK Flag">
                 </div>
                 <span>UK</span>
             </div>
             <div class="card-country france-card">
                 <div class="flag-circle">
-                    <img src="images/icons/france.png" alt="france Flag">
+                    <img src="images/icons/france.png" loading="lazy" alt="france Flag">
                 </div>
                 <span>france</span>
             </div>
             <div class="card-country usa-card">
                 <div class="flag-circle">
-                    <img src="images/icons/united-states.png" alt="USA Flag">
+                    <img src="images/icons/united-states.png" loading="lazy" alt="USA Flag">
                 </div>
                 <span>USA</span>
             </div>
             <div class="card-country canada-card">
                 <div class="flag-circle">
-                    <img src="images/icons/canada.png" alt="canada Flag">
+                    <img src="images/icons/canada.png" loading="lazy" alt="canada Flag">
                 </div>
                 <span>Canada</span>
             </div>
             <div class="card-country australia-card">
                 <div class="flag-circle">
-                    <img src="images/icons/australia.png" alt="Australia Flag">
+                    <img src="images/icons/australia.png" loading="lazy" alt="Australia Flag">
                 </div>
                 <span>Australia</span>
             </div>
@@ -73,11 +73,17 @@
     top: 0; /* Remove top margin to align properly */
 }
 
+/*.map-image {*/
+/*    width: 100%;*/
+/*    opacity: 0;*/
+/*    transform: scale(0.8);*/
+/*    animation: imageFadeIn 2s 0.5s forwards;*/
+/*}*/
 .map-image {
     width: 100%;
-    opacity: 0;
-    transform: scale(0.8);
-    animation: imageFadeIn 2s 0.5s forwards;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .marker {

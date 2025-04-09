@@ -13,28 +13,37 @@
             (object)[ 'url' => 'https://www.youtube.com/embed/h7x-BRbPco4', 'title' => 'Ayushi Review' ],
             (object)[ 'url' => 'https://www.youtube.com/embed/mWNsU_SSenY', 'title' => 'Prakhar Review' ],
         ];
+        $firstVideoId = Str::afterLast($videos[0]->url, '/');
     @endphp
+
+    
 
     <section class="video-gallery-section">
         <div class="container">
             <h2 class="section-title">Client Testimonials</h2>
-    
+
             <div class="video-slider-wrapper">
                 <button class="slide-btn left" onclick="scrollSlider(-1)">‹</button>
                 <div class="video-slider" id="videoSlider">
-                    @foreach($videos as $video)
-                        @php $videoId = Str::afterLast($video->url, '/'); @endphp
+                    @foreach($videos as $index => $video)
+                        @php
+                            $videoId = Str::afterLast($video->url, '/');
+                            // Only the first image gets fetchpriority="high"
+                            $loadingAttr = $index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
+                        @endphp
                         <div class="video-slide">
                             <div class="video-card">
                                 <div class="video-wrapper">
                                     <div class="youtube-facade" data-video-id="{{ $videoId }}" onclick="loadYoutube(this)">
-                                        <img src="https://img.youtube.com/vi/{{ $videoId }}/hqdefault.jpg" alt="{{ $video->title }}" loading="lazy">
+                                        <img src="https://img.youtube.com/vi/{{ $videoId }}/hqdefault.jpg"
+                                             alt="{{ $video->title }}"
+                                             {!! $loadingAttr !!}>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     @endforeach
+
                 </div>
                 <button class="slide-btn right" onclick="scrollSlider(1)">›</button>
             </div>
@@ -48,18 +57,18 @@
             text-align: center;
             font-family: Arial, sans-serif;
         }
-        
+
         .section-title {
             font-size: 2rem;
             margin-bottom: 30px;
             color: #333;
         }
-        
+
         .video-slider-wrapper {
             position: relative;
             overflow: hidden;
         }
-        
+
         .video-slider {
             display: flex;
             gap: 10px;
@@ -68,20 +77,21 @@
             padding: 10px 0;
             scrollbar-width: none;
         }
-        
+
         .video-slider::-webkit-scrollbar {
             display: none;
         }
-        
+
         .video-slide {
             flex: 0 0 auto;
             width: 160px;
         }
+
         @media (min-width: 576px) { .video-slide { width: 180px; } }
         @media (min-width: 768px) { .video-slide { width: 200px; } }
         @media (min-width: 992px) { .video-slide { width: 220px; } }
         @media (min-width: 1200px) { .video-slide { width: 240px; } }
-        
+
         .video-card {
             background: #fff;
             border-radius: 6px;
@@ -91,11 +101,11 @@
             text-align: center;
             padding: 5px;
         }
-        
+
         .video-card:hover {
             transform: translateY(-5px);
         }
-        
+
         .video-wrapper {
             position: relative;
             width: 100%;
@@ -104,7 +114,7 @@
             border-radius: 6px;
             overflow: hidden;
         }
-        
+
         .youtube-facade {
             position: absolute;
             width: 100%;
@@ -114,13 +124,14 @@
             background: #000;
             cursor: pointer;
         }
-        
+
         .youtube-facade img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
-        
+
         .youtube-facade::after {
             content: '▶';
             font-size: 3rem;
@@ -132,14 +143,13 @@
             pointer-events: none;
             text-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
-        
+
         .video-title {
             font-size: 0.95rem;
             margin-top: 10px;
             color: #444;
         }
-        
-        /* Slider buttons */
+
         .slide-btn {
             position: absolute;
             top: 50%;
@@ -154,22 +164,18 @@
             border-radius: 6px;
             user-select: none;
         }
-        
-        .slide-btn.left {
-            left: 10px;
-        }
-        .slide-btn.right {
-            right: 10px;
-        }
+
+        .slide-btn.left { left: 10px; }
+        .slide-btn.right { right: 10px; }
     </style>
 
     <script>
         function scrollSlider(direction) {
             const slider = document.getElementById('videoSlider');
-            const slideWidth = slider.querySelector('.video-slide').offsetWidth + 20; // gap
+            const slideWidth = slider.querySelector('.video-slide').offsetWidth + 20;
             slider.scrollLeft += direction * slideWidth;
         }
-        
+
         function loadYoutube(el) {
             const videoId = el.getAttribute('data-video-id');
             const iframe = document.createElement('iframe');
@@ -183,6 +189,7 @@
             el.appendChild(iframe);
         }
     </script>
+
 
     <section class="section-hero">
         <div class="destination">
