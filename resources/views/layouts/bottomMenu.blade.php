@@ -1,20 +1,20 @@
 <section class="bottom-menu">
     <div class="menu-item">
-        <a href="mailto:example@example.com">
+        <a href="mailto:support@wtsvisa.com">
             <!-- <i class="fa-solid fa-envelope"></i> -->
             <!-- <img src="{{ asset('icons/mail.png') }}" alt="Mail" /> -->
             <img src="{{ asset('icons/mail-yellow.png') }}" alt="Mail" />
         </a>
     </div>
     <div class="menu-item">
-        <a href="tel:+1234567890">
+        <a href="tel:+918000915743">
             <!-- <i class="fa-solid fa-phone"></i> -->
             <!-- <img src="{{ asset('icons/phone-call.png') }}" alt="phone" /> -->
             <img src="{{ asset('icons/phone-call-yellow.png') }}" alt="phone" />
         </a>
     </div>
     <div class="menu-item">
-        <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank">
+        <a href="https://wa.me/+918000915743" target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
