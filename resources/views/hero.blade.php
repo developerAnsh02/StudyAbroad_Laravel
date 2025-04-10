@@ -38,7 +38,7 @@
         <img src="images/icons/united-states.png" loading="lazy" alt="USA Flag">
     </div>
     <span>USA</span>
-    <div class="popup">
+    <div class="popup-bottom">
         <strong>Accepted Tests:</strong> IELTS, TOEFL, PTE, Duolingo, Cambridge English<br>
         <strong>Work Rights:</strong> 20 hrs/week during academic sessions, Full-time during holidays<br>
         <strong>Scholarships:</strong> $1,000 - $10,000<br>
@@ -59,7 +59,7 @@
         <img src="images/icons/canada.png" loading="lazy" alt="Canada Flag">
     </div>
     <span>Canada</span>
-    <div class="popup">
+    <div class="popup-bottom">
         <strong>Accepted Tests:</strong> IELTS, TOEFL, PTE, CAEL, CELPIP, Duolingo<br>
         <strong>Work Rights:</strong> 20 hrs/week during academic sessions, Full-time during breaks<br>
         <strong>Scholarships:</strong> $1,000 - $5,000<br>
@@ -276,7 +276,25 @@
         padding: 15px;
         font-size: 14px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 10;
+        z-index: 3000;
+        display: none;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+    .popup-bottom{
+        position: absolute;
+        top: 110%;
+        left: 90%;
+        transform: translateX(-50%) translateY(10px);
+        width: 280px;
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 14px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 3000;
         display: none;
         opacity: 0;
         transition: all 0.4s ease;
@@ -286,6 +304,13 @@
         display: block;
         opacity: 1;
         transform: translateX(-50%) translateY(0);
+        z-index: 3000;
+    }
+    .card-country:hover .popup-bottom {
+        display: block;
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+        z-index: 3000;
     }
 
     .popup ul {

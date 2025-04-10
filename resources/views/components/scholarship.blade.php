@@ -46,6 +46,7 @@
 .scholarship-text h2 {
     font-size: 32px;
     margin-bottom: 15px;
+    text-align: left;
 }
 
 .scholarship-text h2 span {

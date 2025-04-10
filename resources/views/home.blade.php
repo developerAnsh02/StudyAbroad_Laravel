@@ -18,6 +18,7 @@
 
     
 
+    <!-- Client Testimonials  -->
     <section class="video-gallery-section">
         <div class="container">
             <h2 class="section-title">Client Testimonials</h2>
@@ -191,6 +192,7 @@
     </script>
 
 
+    <!-- Find Your Destination  -->
     <section class="section-hero">
         <div class="destination">
             <h2>Find Your Study Destination</h2>
@@ -265,7 +267,7 @@
 
                 <!-- Travel Visa -->
                 <div class="visa-service-card">
-                    <img src="icons/icons8-tour-pulsar-color/icons8-tour-96.png" alt="Travel Visa">
+                    <img src="icons/icons8-tour-pulsar-color/health-insurance.png" alt="Travel Visa">
                     <div class="service-content">
                         <h3>Health Insurance & Safety Advice</h3>
                         <p class="normal-content" data-id="2">Health insurance is essential to protect yourself from
@@ -283,7 +285,7 @@
                     </div>
                 </div>
                 <div class="visa-service-card">
-                    <img src="icons/icons8-tour-pulsar-color/icons8-tour-96.png" alt="Travel Visa">
+                    <img src="icons/icons8-tour-pulsar-color/work-internship.png" alt="Travel Visa">
                     <div class="service-content">
                         <h3>Work & Internship Opportunities</h3>
                         <p class="normal-content" data-id="3">Part time job while studying abroad enhances your professional
@@ -376,13 +378,13 @@
                 <h3>Counseling Sessions</h3>
                 <p>Personalized sessions for students and their parents covering:</p>
                 <ul style="padding-left: 16px;">
-                    <li>University guidance and recommendations.</li>
-                    <li>Key points to consider before and after admission.</li>
-                    <li>Systematic explanation of our services.</li>
-                    <li>Virtual or in-person university tours.</li>
-                    <li>Nearby locations and facilities overview.</li>
-                    <li>Community connections: alumni and native groups.</li>
-                    <li>Building trust and rapport for smoother transitions.</li>
+                    <li><p style="margin: 0px; padding: 0px">University guidance and recommendations.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Key points to consider before and after admission.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Systematic explanation of our services.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Virtual or in-person university tours.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Nearby locations and facilities overview.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Community connections: alumni and native groups.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Building trust and rapport for smoother transitions.</p></li>
                 </ul>
             </div>
         </div>
@@ -393,10 +395,10 @@
                 <h3>Accommodation Support</h3>
                 <p>Assistance with finding suitable housing based on:</p>
                 <ul style="padding-left: 16px;">
-                    <li>On-campus or off-campus options.</li>
-                    <li>Preferred locations.</li>
-                    <li>Budget considerations.</li>
-                    <li>Room type preferences (private/shared, en-suite/studio, etc.)</li>                    
+                    <li><p style="margin: 0px; padding: 0px">On-campus or off-campus options.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Preferred locations.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Budget considerations.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Room type preferences (private/shared, en-suite/studio, etc.)</p></li>                    
                 </ul>
             </div>
         </div>
@@ -407,10 +409,10 @@
                 <h3>Part-Time Job Assistance</h3>
                 <p>Helping students’ secure suitable part-time employment:</p>
                 <ul style="padding-left: 16px;">
-                    <li>CV and cover letter support.</li>
-                    <li>Interview preparation.</li>
-                    <li>Job search strategies.</li>
-                    <li>Employer connections (if applicable)</li>                    
+                    <li><p style="margin: 0px; padding: 0px">CV and cover letter support.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Interview preparation.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Job search strategies.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Employer connections (if applicable)</p></li>                    
                 </ul>
             </div>
         </div>
@@ -420,8 +422,8 @@
             <div>
                 <h3>Airport Pickup Service</h3>
                 <ul style="padding-left: 16px;">
-                    <li>Reliable pickup from UK airports.</li>
-                    <li>Comfort and safety ensured upon arrival.</li>             
+                    <li><p style="margin: 0px; padding: 0px">Reliable pickup from UK airports.</p></li>
+                    <li><p style="margin: 0px; padding: 0px">Comfort and safety ensured upon arrival.</p></li>             
                 </ul>
             </div>
         </div>
