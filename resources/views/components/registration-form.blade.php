@@ -1,5 +1,5 @@
 <div class="registration-form">
-    <h2 style="margin: 0px;">Register for Visa Assistance</h2>
+    <h2 style="margin: 0px;">Get FREE Counselling Today!</h2>    
     <form id="registrationForm" method="POST">
         @csrf
         <div class="form-group">
@@ -24,6 +24,30 @@
                 <option value="Business Visa">Business Visa</option>
             </select>
         </div>
+
+        <div class="radio-group-wrapper">
+            <label class="group-title">Select Your Preferred Counselling Mode:</label>
+            <div class="custom-radio-group" role="group" aria-label="Counselling Mode">
+                <input type="radio" name="counselling_mode" value="Phone" id="radioPhone">
+                <label for="radioPhone">
+                    <span class="icon">📞</span>
+                    <span class="text">Phone Call</span>
+                </label>
+
+                <input type="radio" name="counselling_mode" value="Video" id="radioVideo">
+                <label for="radioVideo">
+                    <span class="icon">💻</span>
+                    <span class="text">Video Session</span>
+                </label>
+
+                <input type="radio" name="counselling_mode" value="Home" id="radioHome">
+                <label for="radioHome">
+                    <span class="icon">🏠</span>
+                    <span class="text">In-Home Visit</span>
+                </label>
+            </div>
+        </div>
+        
         <button type="submit" class="submit-btn">Submit</button>
     </form>
 </div>
@@ -46,6 +70,16 @@
     $("form").submit(function(e) {
         e.preventDefault(); // Prevent the default form submission
 
+        // Check if any counselling_mode is selected
+        if (!$("input[name='counselling_mode']:checked").val()) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Counselling Mode Required',
+                text: 'Please select your preferred counselling mode before submitting the form.',
+                confirmButtonText: 'Okay'
+            });
+            return; // Stop form submission
+        }
         // Disable the submit button to prevent multiple submissions
         $('button[type="submit"]').prop('disabled', true);
 
@@ -183,5 +217,74 @@
         font-size: 14px !important;
     }
 }
+
+</style>
+<style>
+    .radio-group-wrapper {
+        margin: 12px 0;
+        color: #fff;
+    }
+
+    .group-title {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #f8f9fa;
+    }
+
+    .custom-radio-group {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .custom-radio-group input[type="radio"] {
+        display: none;
+    }
+
+    .custom-radio-group label {
+        background-color: #1e1e2f;
+        color: #ccc;
+        border: 2px solid #333;
+        border-radius: 8px;
+        padding: 5px 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+        transition: all 0.3s ease;
+        min-width: 100px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .custom-radio-group label:hover {
+        background-color: #2a2a3d;
+        border-color: #444;
+        color: #eee;
+    }
+
+    .custom-radio-group input[type="radio"]:checked + label {
+        background-color: #003366;
+        color: #fff;
+        border-color: var(--primary-dark);
+    }
+
+    .custom-radio-group .icon {
+        font-size: 18px;
+    }
+
+    @media (max-width: 480px) {
+    .custom-radio-group {
+        flex-direction: column;
+    }
+
+    .custom-radio-group label {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    }
 
 </style>

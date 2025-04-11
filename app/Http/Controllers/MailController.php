@@ -23,6 +23,7 @@ class MailController extends Controller
             'email.email' => 'Please provide a valid email address.',
             'visa_country.required' => 'The visa country field is required.',
             'visa_type.required' => 'The visa type is required.',
+            'counselling_mode.required' => 'Please select a preferred counselling mode.',
         ];
 
         // Validate the incoming request data with custom messages
@@ -33,6 +34,7 @@ class MailController extends Controller
             'email' => 'required|email|max:255',
             'visa_country' => 'required|string|max:255',
             'visa_type' => 'required|string|max:255',
+            'counselling_mode' => 'required|string|in:Phone,Video,Home',
         ], $customMessages);
 
         // Extract the full phone number (e.g., +911234567890)
@@ -52,22 +54,25 @@ class MailController extends Controller
             'email' => $validatedData['email'],
             'visa_country' => $validatedData['visa_country'],
             'visa_type' => $validatedData['visa_type'],
+            'counselling_mode' => $validatedData['counselling_mode'],
         ];
 
-        try {
-            // Try sending the email to the recipient
-            Mail::to('anshjangid02@gmail.com') // Replace with the recipient email address
+        Mail::to('vikramsuthar.wm@gmail.com') // Replace with the recipient email address
                 ->send(new VisaAssistanceFormSubmitted($formData));
+        // try {
+        //     // Try sending the email to the recipient
+        //     Mail::to('vikramsuthar.wm@gmail.com') // Replace with the recipient email address
+        //         ->send(new VisaAssistanceFormSubmitted($formData));
 
-            // If successful, return a success message
-            return back()->with('success', 'Your form has been submitted successfully!');
-        } catch (\Exception $e) {
-            // If an error occurs, catch the exception and log the error
-            \Log::error('Email sending failed: ' . $e->getMessage());
+        //     // If successful, return a success message
+        //     return back()->with('success', 'Your form has been submitted successfully!');
+        // } catch (\Exception $e) {
+        //     // If an error occurs, catch the exception and log the error
+        //     \Log::error('Email sending failed: ' . $e->getMessage());
 
-            // Optionally, you can provide a user-friendly message to the user
-            return back()->with('error', 'There was an issue sending your email. Please try again later.');
-        }
+        //     // Optionally, you can provide a user-friendly message to the user
+        //     return back()->with('error', 'There was an issue sending your email. Please try again later.');
+        // }
     }
     
     public function contactSubmit(Request $request)
@@ -114,7 +119,7 @@ class MailController extends Controller
         ];
         try {
             // Try sending the email to the recipient
-            Mail::to('anshjangid02@gmail.com') // Replace with the recipient email address
+            Mail::to('vikramsuthar.wm@gmail.com') // Replace with the recipient email address
                 ->send(new ContactFormSubmitted($formData));
 
             // If successful, return a success message

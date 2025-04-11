@@ -84,11 +84,11 @@
             <p><strong>Phone:</strong> {{ $formData['country_code'] }} {{ $formData['phone_number_main'] }}</p>
             <p><strong>Message:</strong> {{ $formData['message'] }}</p>
 
-            <a style="color: #ffb400" href="https://wtsvisa.com" class="button">Visit wtsvisa.com</a>
+            <a style="color: #ffb400" href="https://www.wtsvisa.com" class="button">Visit wtsvisa.com</a>
         </div>
 
         <div class="footer">
-            <p>&copy; 2025 <a href="https://wtsvisa.com" target="_blank">wtsvisa.com</a>. All rights reserved.</p>
+            <p>&copy; 2025 <a href="https://www.wtsvisa.com" target="_blank">wtsvisa.com</a>. All rights reserved.</p>
         </div>
     </div>
 </body>
