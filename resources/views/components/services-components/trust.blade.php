@@ -1,19 +1,6 @@
 <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #f5f7f8;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
+        
+        .trust-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
@@ -46,10 +33,11 @@
             align-items: center;
             justify-content: space-between;
             position: relative;
+            margin-top: -34px;
             z-index: 2;
         }
 
-        .section:nth-child(even) {
+        .section:nth-child(odd) {
             flex-direction: row-reverse;
         }
 
@@ -66,7 +54,7 @@
         }
 
         .section-image img {
-            max-width: 100%;
+            max-width: 30%;
             height: auto;
             max-height: 200px;
             border-radius: 10px;
@@ -76,7 +64,7 @@
         .section-title {
             font-size: 22px;
             color: #1f2937;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             font-weight: bold;
         }
 
@@ -113,38 +101,65 @@
         }
 
         .padding-space{
-            padding:55px;
-        }
-
-        .c-shape {
-            width: 200px;
-            height: 180px;
-            border: 5px solid black;
-            border-radius: 50%;
-            border-right-color: transparent; 
-            border-bottom-color: transparent; 
-            transform: rotate(-45deg); 
-        }
-
-        .c-shape-flip {
-            width: 200px;
-            height: 180px;
-            border: 5px solid black;
-            border-radius: 50%;
-            border-left-color: transparent; 
-            border-top-color: transparent; 
-            transform: rotate(-45deg); 
+            padding:26px;
         }
 
         .road-canvas {
-            width: 200px;
-            height: 180px;
+            position: relative;
+            width: 146px;
+            height: 108px;
             display: block;
             transform: rotate(-90deg); 
         }
 
         .flip-road {
             transform: rotate(-270deg);
+        }
+
+        .numbering{
+            position: absolute;
+            top: 32%;
+            left: 47%;
+        }
+
+        .numbering-block{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 800;
+            border: 2px solid black;
+            height:60px;
+            width: 60px;
+        }
+        .violet{
+            background-color: violet;
+            color: white;
+        }
+
+        .indigo{
+            background-color: indigo;
+            color: white;
+        }
+
+        .green{
+            background-color: green;
+            color: white;
+        }
+
+        .yellow{
+            background-color: yellow;
+            color: black;
+        }
+
+        .orange{
+            background-color: orange;
+            color: white;
+        }
+        .red{
+            background-color: red;
+            color: white;
         }
 
         @media (min-width: 768px) and (max-width: 1024px) {
@@ -154,7 +169,7 @@
         }
         /* Responsive styles */
         @media (max-width: 768px) {
-            .section {
+            /* .section {
                 flex-direction: column;
                 text-align: center;
                 margin-bottom: 0px;
@@ -162,16 +177,30 @@
 
             .section:nth-child(even) {
                 flex-direction: column;
-            }
+            } */
 
             .section-content, .section-image {
                 width: 100%;
+            }
+            .section {
+                display: flex;
+                gap: 0px;
+                margin: 0px 0px;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                margin-top: -65px;
+                z-index: 2;
             }
 
             .section-image {
                 margin-bottom: 20px;
             }
-
+            
+            .section-image img {
+                max-width: 90%;
+                max-height: 150px;
+            }
             .path-container {
                 display: none;
             }
@@ -185,29 +214,46 @@
                 font-size: 28px;
             }
             .padding-space{
-                display: none;
+                padding: 0px;
             }
             .title{
                 margin-bottom: 20px;
             }
+            .section-description{
+                display: none;
+            }
+            .section-title {
+                font-size: 15px;
+                color: #1f2937;
+                font-weight: bold;
+            }
+            .extra-space{
+                padding: 20px;
+            }
+            .numbering{
+                top: 30%;
+                left: 41%;
+            }
         }
-    </style>
+</style>
 
-    <body>
-    <div class="container">
+<section>
+    <div class="trust-container">
 
         <!-- Title  -->
          <h2 class="title">Your Trusted Partner for a Hassle-Free Student Visa Success!</h2>
 
+        <div class="extra-space"></div>
         <!-- Section 1 -->
         <div class="section">
+            <div class="numbering">
+                <div class="numbering-block orange">1</div>
+            </div>
             <div class="padding-space"></div>
             <div class="section-image">
                 <img src="/images/trusted-comp-img/success_rate.png" alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
-
-            <!-- <div class="c-shape"></div> -->
 
             <canvas class="road-canvas"></canvas>
 
@@ -218,14 +264,15 @@
         </div>
 
         <!-- Section 2 -->
-        <div style="margin-top: -20px;" class="section">
+        <div style=" " class="section">
+            <div class="numbering">
+                <div class="numbering-block indigo">2</div>
+            </div>
             <div class="padding-space"></div>
             <div class="section-image">
                 <img src="/images/trusted-comp-img/visa_assist.png" alt="image">
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
-
-            <!-- <div class="c-shape-flip"></div> -->
 
             <canvas class="road-canvas flip-road"></canvas>
 
@@ -236,14 +283,15 @@
         </div>
 
         <!-- Section 3 -->
-        <div style="margin-top: -20px;" class="section">
+        <div style=" " class="section">
+            <div class="numbering">
+                <div class="numbering-block green">3</div>
+            </div>
             <div class="padding-space"></div>
             <div class="section-image">
                 <img src="/icons/image.png" alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
-
-            <!-- <div class="c-shape"></div> -->
 
             <canvas class="road-canvas"></canvas>
 
@@ -254,14 +302,15 @@
         </div>
 
         <!-- Section 4 -->
-        <div style="margin-top: -20px;" class="section">
+        <div style=" " class="section">
+            <div class="numbering">
+                <div class="numbering-block yellow">4</div>
+            </div>
             <div class="padding-space"></div>
             <div class="section-image">
                  <img src="/images/trusted-comp-img/expert_advice.png" alt="image">
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
-
-             <!-- <div class="c-shape-flip"></div> -->
 
              <canvas class="road-canvas flip-road"></canvas>
 
@@ -272,14 +321,15 @@
         </div>
 
         <!-- Section 5 -->
-        <div style="margin-top: -20px;" class="section">
+        <div style=" " class="section">
+            <div class="numbering">
+                <div class="numbering-block violet">5</div>
+            </div>
             <div class="padding-space"></div>
             <div class="section-image">
                 <img src="/images/trusted-comp-img/fast_track.png" alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
-
-             <!-- <div class="c-shape"></div> -->
 
             <canvas class="road-canvas"></canvas>
 
@@ -290,14 +340,15 @@
         </div>
 
         <!-- Section 6 -->
-        <div style="margin-top: -20px;" class="section">
+        <div style=" " class="section">
+            <div class="numbering">
+                <div class="numbering-block red">6</div>
+            </div>
             <div class="padding-space"></div>
             <div class="section-image">
                 <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
-
-             <!-- <div class="c-shape-flip"></div> -->
 
              <canvas class="road-canvas flip-road"></canvas>
 
@@ -307,30 +358,33 @@
             </div>
         </div>
     </div>
+</section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
             function checkIfInView() {
                 const sections = document.querySelectorAll('.section');
                 const windowHeight = window.innerHeight;
-                
+
                 sections.forEach(section => {
                     const sectionTop = section.getBoundingClientRect().top;
-                    
-                    if (sectionTop < windowHeight * 0.75) {
+                    const sectionBottom = section.getBoundingClientRect().bottom;
+
+                    if (sectionTop < windowHeight * 0.85 && sectionBottom > 0) {
                         section.style.opacity = '1';
+                    } else {
+                        section.style.opacity = '0';
                     }
                 });
             }
-            
-            // Set initial opacity
+
+            // Set initial opacity and transition
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => {
                 section.style.opacity = '0';
                 section.style.transition = 'opacity 0.5s ease-in-out';
             });
-            
+
             // Check positions on load and scroll
             checkIfInView();
             window.addEventListener('scroll', checkIfInView);
@@ -338,11 +392,14 @@
 
         // Drawing road 
         document.addEventListener('DOMContentLoaded', function () {
-    function drawSemicircleRoad(canvas, flip = false) {
+        function drawSemicircleRoad(canvas, flip = false) {
         if (!canvas) return;
         const ctx = canvas.getContext('2d');
-        canvas.width = 200;
-        canvas.height = 120;
+
+        const isMobile = window.innerWidth <= 768;
+
+        canvas.width = isMobile ? 192 : 220;
+        canvas.height = isMobile ? 180 : 120;
         
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -352,7 +409,7 @@
         }
 
         ctx.beginPath();
-        ctx.lineWidth = 8;
+        ctx.lineWidth = 25;
         ctx.strokeStyle = "#333"; 
         ctx.arc(100, 100, 80, Math.PI, 2 * Math.PI);
         ctx.stroke();
@@ -366,13 +423,18 @@
         ctx.setLineDash([]);
     }
 
-    document.querySelectorAll('.road-canvas').forEach((canvas, index) => {
-        const isFlipped = canvas.classList.contains('flip-road');
-        drawSemicircleRoad(canvas, isFlipped);
+    function updateCanvasSize() {
+        document.querySelectorAll('.road-canvas').forEach((canvas) => {
+            const isFlipped = canvas.classList.contains('flip-road');
+            drawSemicircleRoad(canvas, isFlipped);
+        });
+    }
+
+    updateCanvasSize();
+
+    window.addEventListener('resize', updateCanvasSize);
+    
     });
-});
 
 
-
-    </script>
-</body>
+</script>
