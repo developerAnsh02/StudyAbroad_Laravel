@@ -64,7 +64,7 @@
         e.preventDefault(); // Prevent the default form submission
 
         // Disable the submit button to prevent multiple submissions
-        $('button[type="submit"]').prop('disabled', true);
+        $('button[type="submit"]').prop('disabled', true).text('Please wait...');
 
         // Get the full phone number in E164 format
         var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
@@ -88,7 +88,7 @@
                     // Optionally, reset the form after success
                     $('#contact_us_form')[0].reset();
                     // Re-enable the submit button after success
-                    $('button[type="submit"]').prop('disabled', false);
+                    $('button[type="submit"]').prop('disabled', false).text('Send Message');
                 });
             },
             error: function(xhr) {
@@ -111,7 +111,7 @@
                     showConfirmButton: true
                 }).then(function() {
                     // Re-enable the submit button after error
-                    $('button[type="submit"]').prop('disabled', false);
+                    $('button[type="submit"]').prop('disabled', false).text('Send Message');
                 });
             }
         });
