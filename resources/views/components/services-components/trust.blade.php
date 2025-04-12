@@ -204,7 +204,7 @@
                 align-items: center;
                 justify-content: space-between;
                 position: relative;
-                margin-top: -65px;
+                margin-top: -64px;
                 z-index: 2;
             }
 
@@ -229,7 +229,7 @@
                 font-size: 28px;
             }
             .padding-space{
-                padding: 0px;
+                padding: 3px;
             }
             .title{
                 margin-bottom: 20px;
