@@ -37,7 +37,7 @@
             z-index: 2;
         }
 
-        .section:nth-child(odd) {
+        .section:nth-child(even) {
             flex-direction: row-reverse;
         }
 
@@ -162,6 +162,21 @@
             color: white;
         }
 
+        #road-object {
+    position: absolute;
+    top: 10px;
+
+    z-index: 10;
+    transition: transform 1s ease;
+    pointer-events: none;
+}
+#road-object img{
+    height: 70px;
+    width: 70px;
+
+}
+
+
         @media (min-width: 768px) and (max-width: 1024px) {
             .section-description{
                 display: none;
@@ -242,6 +257,10 @@
 
         <!-- Title  -->
          <h2 class="title">Your Trusted Partner for a Hassle-Free Student Visa Success!</h2>
+
+         <div id="road-object">
+            <img src="/images/trusted-comp-img/moving_child.png" alt="image">
+         </div>
 
         <div class="extra-space"></div>
         <!-- Section 1 -->
@@ -370,7 +389,7 @@
                     const sectionTop = section.getBoundingClientRect().top;
                     const sectionBottom = section.getBoundingClientRect().bottom;
 
-                    if (sectionTop < windowHeight * 0.85 && sectionBottom > 0) {
+                    if (sectionTop < windowHeight * 0.88 && sectionBottom > 0) {
                         section.style.opacity = '1';
                     } else {
                         section.style.opacity = '0';
@@ -391,16 +410,16 @@
         });
 
         // Drawing road 
-        document.addEventListener('DOMContentLoaded', function () {
-        function drawSemicircleRoad(canvas, flip = false) {
+
+    document.addEventListener('DOMContentLoaded', function () {
+    function drawSemicircleRoad(canvas, flip = false) {
         if (!canvas) return;
         const ctx = canvas.getContext('2d');
-
         const isMobile = window.innerWidth <= 768;
 
         canvas.width = isMobile ? 192 : 220;
         canvas.height = isMobile ? 180 : 120;
-        
+
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         if (flip) {
@@ -410,7 +429,7 @@
 
         ctx.beginPath();
         ctx.lineWidth = 25;
-        ctx.strokeStyle = "#333"; 
+        ctx.strokeStyle = "#333";
         ctx.arc(100, 100, 80, Math.PI, 2 * Math.PI);
         ctx.stroke();
 
@@ -418,7 +437,7 @@
         ctx.setLineDash([10, 10]);
         ctx.strokeStyle = "#fff";
         ctx.lineWidth = 3;
-        ctx.arc(100, 100, 80, Math.PI, 2 * Math.PI); 
+        ctx.arc(100, 100, 80, Math.PI, 2 * Math.PI);
         ctx.stroke();
         ctx.setLineDash([]);
     }
@@ -431,10 +450,67 @@
     }
 
     updateCanvasSize();
-
     window.addEventListener('resize', updateCanvasSize);
-    
+
+    const roadObject = document.getElementById('road-object');
+    const sections = document.querySelectorAll('.section');
+
+    function moveObjectAlongArc(canvas, flip = false) {
+    if (!canvas) return;
+
+    const isMobile = window.innerWidth <= 768;
+    const trustContainer = document.querySelector('.trust-container');
+    const containerTop = trustContainer.getBoundingClientRect().top + window.scrollY;
+
+    const canvasRect = canvas.getBoundingClientRect();
+    const scrollY = window.scrollY || window.pageYOffset;
+    const canvasTop = canvasRect.top + scrollY - containerTop;
+
+    const radius = 80;
+    const centerX = canvas.offsetLeft + 100;
+    const centerY = canvasTop ;
+
+    let progress = 0;
+    const duration = 1000;
+    const start = performance.now();
+
+    function animate(time) {
+        const elapsed = time - start;
+        progress = Math.min(elapsed / duration, 1);
+
+        const angle = (Math.PI - 1) + progress * Math.PI;
+        const x = centerX + radius * Math.cos(angle) * (flip ? 1 : -1);
+        const y = centerY + radius * Math.sin(angle);
+
+        if(isMobile){
+            roadObject.style.transform = `translate(${x - 80}px, ${y + 40}px)`; 
+        } else{
+            roadObject.style.transform = `translate(${x - 10}px, ${y + 70}px)`; 
+        }
+
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        }
+    }
+
+    requestAnimationFrame(animate);
+}
+
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const canvas = entry.target.querySelector('canvas.road-canvas');
+                const isFlipped = canvas.classList.contains('flip-road');
+                moveObjectAlongArc(canvas, isFlipped);
+            }
+        });
+    }, {
+        threshold: 0.6
     });
+
+    sections.forEach(section => observer.observe(section));
+});
 
 
 </script>
