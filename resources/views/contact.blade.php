@@ -35,7 +35,7 @@
             <!-- Contact Details -->
             <div class="contact-info">
                 <h3>Contact Info</h3>
-                <p><strong>Email:</strong> support@wtsvisa.com</p>
+                <p><strong>Email:</strong> info.wtsvisaconsultancy@gmail.com</p>
                 <p><strong>Phone:</strong> +91 8000915743</p>
                 <p><strong>Address:</strong>4th floor, Ashoka palace, 410, Shobhagpura, Udaipur, Rajasthan 313001</p>
                 <!-- Map Integration -->

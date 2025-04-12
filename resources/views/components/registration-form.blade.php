@@ -21,7 +21,7 @@
                 <option value="Tourist Visa">Tourist Visa</option>
                 <option value="Work Visa">Work Visa</option>
                 <option value="Student Visa">Student Visa</option>
-                <option value="Business Visa">Business Visa</option>
+                <!-- <option value="Business Visa">Business Visa</option> -->
             </select>
         </div>
 
@@ -67,19 +67,43 @@
         utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
     });
 
+    $(document).ready(function () {
+        // Hide counselling mode by default
+        $('.radio-group-wrapper').hide();
+
+        // Show it only if "Student Visa" is already selected
+        if ($('#visa-type').val() === 'Student Visa') {
+            $('.radio-group-wrapper').show();
+        }
+
+        // Watch for changes in visa type
+        $('#visa-type').on('change', function () {
+            if ($(this).val() === 'Student Visa') {
+                $('.radio-group-wrapper').slideDown();
+            } else {
+                $('.radio-group-wrapper').slideUp();
+                $('input[name="counselling_mode"]').prop('checked', false); // Optional reset
+            }
+        });
+    });
+
     $("form").submit(function(e) {
         e.preventDefault(); // Prevent the default form submission
 
-        // Check if any counselling_mode is selected
-        if (!$("input[name='counselling_mode']:checked").val()) {
-            Swal.fire({
-                icon: 'warning',
-                title: 'Counselling Mode Required',
-                text: 'Please select your preferred counselling mode before submitting the form.',
-                confirmButtonText: 'Okay'
-            });
-            return; // Stop form submission
+        // Check if "Student Visa" is selected
+        if ($('#visa-type').val() === 'Student Visa') {
+            // Then ensure counselling mode is selected
+            if (!$("input[name='counselling_mode']:checked").val()) {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Counselling Mode Required',
+                    text: 'Please select your preferred counselling mode before submitting the form.',
+                    confirmButtonText: 'Okay'
+                });
+                return; // Stop form submission
+            }
         }
+        
         // Disable the submit button to prevent multiple submissions
         $('button[type="submit"]').prop('disabled', true).text('Please wait...');
 

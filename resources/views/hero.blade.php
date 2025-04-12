@@ -17,7 +17,7 @@
         <img src="images/icons/uk.png" loading="lazy" alt="UK Flag">
     </div>
     <span>UK</span>
-    <div class="popup">
+    <div class="popup popup-uk">
         <strong>Accepted Tests:</strong> IELTS, TOEFL, PTE, Cambridge English, Duolingo<br>
         <strong>Work Rights:</strong> 20 hrs/week during term time, Full-time during vacations<br>
         <strong>Scholarships:</strong> £1,000 - £5,000<br>
@@ -38,7 +38,7 @@
         <img src="images/icons/united-states.png" loading="lazy" alt="USA Flag">
     </div>
     <span>USA</span>
-    <div class="popup-bottom">
+    <div class="popup popup-usa">
         <strong>Accepted Tests:</strong> IELTS, TOEFL, PTE, Duolingo, Cambridge English<br>
         <strong>Work Rights:</strong> 20 hrs/week during academic sessions, Full-time during holidays<br>
         <strong>Scholarships:</strong> $1,000 - $10,000<br>
@@ -59,7 +59,7 @@
         <img src="images/icons/canada.png" loading="lazy" alt="Canada Flag">
     </div>
     <span>Canada</span>
-    <div class="popup-bottom">
+    <div class="popup popup-canada">
         <strong>Accepted Tests:</strong> IELTS, TOEFL, PTE, CAEL, CELPIP, Duolingo<br>
         <strong>Work Rights:</strong> 20 hrs/week during academic sessions, Full-time during breaks<br>
         <strong>Scholarships:</strong> $1,000 - $5,000<br>
@@ -80,7 +80,7 @@
         <img src="images/icons/france.png" loading="lazy" alt="France Flag">
     </div>
     <span>France</span>
-    <div class="popup">
+    <div class="popup popup-france">
         <strong>Accepted Tests:</strong> IELTS, TOEFL, TCF, DELF, Cambridge English<br>
         <strong>Work Rights:</strong> 964 hrs/year (about 20 hrs/week)<br>
         <strong>Scholarships:</strong> €1,000 - €3,000<br>
@@ -101,7 +101,7 @@
         <img src="images/icons/australia.png" loading="lazy" alt="Australia Flag">
     </div>
     <span>Australia</span>
-    <div class="popup">
+    <div class="popup popup-au">
         <strong>Accepted Tests:</strong> IELTS, TOEFL, PTE, Cambridge English, Duolingo<br>
         <strong>Work Rights:</strong> 40 hrs/fortnight during academic sessions, Full-time during holidays<br>
         <strong>Scholarships:</strong> AUD 1,000 - AUD 5,000<br>
@@ -120,6 +120,7 @@
         </div>
         @include('./components/registration-form')
     </div>
+    <span class="tip" style="display: block; text-align: center; margin: 0 auto;">Visa counseling is completely free for study visas. We offer end-to-end support—from application to accommodation—and proudly serve students pan India.</span>
 
 </section>
 
@@ -267,7 +268,6 @@
         position: absolute;
         bottom: 110%;
         left: 50%;
-        transform: translateX(-50%) translateY(10px);
         width: 280px;
         background-color: #ffffff;
         color: #333;
@@ -276,42 +276,55 @@
         padding: 15px;
         font-size: 14px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 3000;
         display: none;
         opacity: 0;
         transition: all 0.4s ease;
     }
-    .popup-bottom{
-        position: absolute;
-        top: 110%;
-        left: 90%;
-        transform: translateX(-50%) translateY(10px);
-        width: 280px;
-        background-color: #ffffff;
-        color: #333;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 15px;
-        font-size: 14px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        z-index: 3000;
-        display: none;
-        opacity: 0;
-        transition: all 0.4s ease;
+    
+
+    .card-country:hover {
+        z-index: 1; /* raise z-index on hover */
+    }
+    .card-country:hover .popup-canada {
+        display: block;
+        opacity: 1;
+        transform: translateX(23%) translateY(225px);
+    }
+    .card-country:hover .popup-usa {
+        display: block;
+        opacity: 1;
+        transform: translateX(22%) translateY(210px);
+    }
+    .card-country:hover .popup-uk {
+        display: block;
+        opacity: 1;
+        transform: translateX(18%) translateY(145px);
+    }
+    /* ✅ For screens 1045px and wider */
+    @media screen and (min-width: 1045px) {
+        .card-country:hover .popup-france {
+            display: block;
+            opacity: 1;
+            transform: translateX(-122%) translateY(165px);
+        }        
     }
 
-    .card-country:hover .popup {
+    /* ✅ For screens below 1045px */
+    @media screen and (max-width: 1044px) {
+        .card-country:hover .popup-france {
+            display: block;
+            opacity: 1;
+            transform: translateX(22%) translateY(165px);
+        }
+        
+    }
+    .card-country:hover .popup-au {
         display: block;
         opacity: 1;
-        transform: translateX(-50%) translateY(0);
-        z-index: 3000;
+        transform: translateX(-121%) translateY(7px);
     }
-    .card-country:hover .popup-bottom {
-        display: block;
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-        z-index: 3000;
-    }
+    
+    
 
     .popup ul {
         margin: 5px 0;

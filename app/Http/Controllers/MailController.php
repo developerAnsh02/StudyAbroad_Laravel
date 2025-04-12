@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Mail\VisaAssistanceFormSubmitted; // Import the Mailable class
 use App\Mail\ContactFormSubmitted; // Import the Mailable class
 use Illuminate\Support\Facades\Mail; // Import the Mail facade
+use Illuminate\Validation\Rule;
 
 class MailController extends Controller
 {
@@ -34,7 +35,15 @@ class MailController extends Controller
             'email' => 'required|email|max:255',
             'visa_country' => 'required|string|max:255',
             'visa_type' => 'required|string|max:255',
-            'counselling_mode' => 'required|string|in:Phone,Video,Home',
+            // 'counselling_mode' => 'required|string|in:Phone,Video,Home',
+            // ✅ counselling_mode is only required if visa_type == 'Student Visa'
+            'counselling_mode' => [
+                Rule::requiredIf(function () use ($request) {
+                    return $request->visa_type === 'Student Visa';
+                }),
+                'string',
+                Rule::in(['Phone', 'Video', 'Home']),
+            ],
         ], $customMessages);
 
         // Extract the full phone number (e.g., +911234567890)
@@ -54,8 +63,12 @@ class MailController extends Controller
             'email' => $validatedData['email'],
             'visa_country' => $validatedData['visa_country'],
             'visa_type' => $validatedData['visa_type'],
-            'counselling_mode' => $validatedData['counselling_mode'],
+            // 'counselling_mode' => $validatedData['counselling_mode'],
         ];
+        // ✅ Only include counselling_mode if it was submitted (in case it's not required)
+        if (isset($validatedData['counselling_mode'])) {
+            $formData['counselling_mode'] = $validatedData['counselling_mode'];
+        }
 
         Mail::to('vikramsuthar.wm@gmail.com') // Replace with the recipient email address
                 ->send(new VisaAssistanceFormSubmitted($formData));

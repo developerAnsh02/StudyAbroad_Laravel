@@ -9,8 +9,8 @@
         <section class="who-we-are fade-in">
             <div class="accent-dot"></div>
             <div class="accent-dot"></div>
-            <h2>Who We Are</h2>
-            <p>We began at <span class="highlight">WTS Visa Consultancy</span> as a student visa consultancy company and specialized in student visas. But through sheer hard work and devotion to excellence we have evolved as a company that specializes in student visas for leading destinations such as Canada, Australia, New Zealand, USA, UK, Europe, and others. Within a short time span we have established a strong network of institutions across the globe and have offices both in India and abroad and we are growing rapidly. Our excellent visa success rate is a testament to our commitment and our team of specialists guarantees a hassle-free process from documentation to visa interview.</p>
+            <h2>Who We Are</h2>            
+            <p>WTS Visa Consultancy, owned by <span class="highlight">Warrgyizmorsch Pvt. Ltd.</span>, began its journey as a student visa consultancy company and specialized in student visas. But through sheer hard work and devotion to excellence we have evolved as a company that specializes in student visas for leading destinations such as Canada, Australia, New Zealand, USA, UK, Europe, and others. Within a short time span we have established a strong network of institutions across the globe and have offices both in India and abroad and we are growing rapidly. Our excellent visa success rate is a testament to our commitment and our team of specialists guarantees a hassle-free process from documentation to visa interview.</p>
         </section>
 
         <section class="why-choose fade-in">
@@ -35,30 +35,13 @@
 </section>
 <section class="about-us-white">
     <div class="container">
-    <section class="process fade-in">
+        <section class="process fade-in">
             <div class="accent-dot"></div>
             <div class="accent-dot"></div>
             <h2>Our Process – How We Work</h2>
-            <p>We have a systematic and streamlined process in every area of your foreign journey. Since the first contact you have with us, we assist you step by step to make sure everything is smooth sailing.</p>
+            <p>We have a systematic and streamlined process in every area of your foreign journey. Since the first contact you have with us, we assist you step by step to make sure everything is smooth sailing. For student visas, we evaluate your profile, assist with university application and visa preparation. Our passport-making services, IELTS training and spoken English programs are crafted to help you succeed. For tourist visas and permanent residence applications, we handle all documentation and submissions with professionalism. We also provide post-landing services, foreign exchange and air ticketing, as well as travel insurance so that you can concentrate on your future while we attend to the process.</p>
             
-            <div class="process-steps">
-                <div class="process-step">
-                    <h3>Profile Evaluation</h3>
-                    <p>We evaluate your academic background, interests, and career goals to recommend the best options.</p>
-                </div>
-                <div class="process-step">
-                    <h3>University Application</h3>
-                    <p>We assist with preparing and submitting applications to your chosen institutions.</p>
-                </div>
-                <div class="process-step">
-                    <h3>Visa Preparation</h3>
-                    <p>Our experts handle all documentation and prepare you for interviews if required.</p>
-                </div>
-                <div class="process-step">
-                    <h3>Pre-Departure Services</h3>
-                    <p>We provide comprehensive guidance before you leave, including accommodation and travel arrangements.</p>
-                </div>
-            </div>
+            
         </section>
     </div>
 </section>
@@ -118,30 +101,8 @@
             <div class="accent-dot"></div>
             <div class="accent-dot"></div>
             <h2>Common Visa Challenges and How We Solve Them</h2>
-            <p>There are various student visa application challenges but we ensure that students overcome them effortlessly:</p>
+            <p>There are various student visa application challenges but we ensure that students overcome them effortlessly. The biggest problem is defective or incomplete documentation that may result in delays or denial. We address this by giving them a comprehensive checklist and checking all documents carefully prior to submission. The other challenge is demonstrating financial stability since students must prove they have sufficient funds for tuition and living costs. We assist them in preparing the appropriate financial documents so that we comply with embassy requirements. Most students face visa interviews due to anxiety or unpreparedness. To ensure their success, we provide professional coaching, hold mock interviews and give vital tips. Delay in processing is also an issue but we monitor applications closely and follow up with authorities as required. In case a student is rejected a visa, we examine the reasons and assist them in reapplying with a solid case so that they get maximum chances of approval.</p>
             
-            <div class="challenge-solutions">
-                <div class="challenge">
-                    <h3><span class="highlight">Documentation Issues</span></h3>
-                    <p>We provide a comprehensive checklist and review all documents carefully before submission to avoid delays or denials.</p>
-                </div>
-                <div class="challenge">
-                    <h3><span class="highlight">Financial Stability Proof</span></h3>
-                    <p>We assist in preparing appropriate financial documents that comply with embassy requirements.</p>
-                </div>
-                <div class="challenge">
-                    <h3><span class="highlight">Visa Interview Anxiety</span></h3>
-                    <p>We provide professional coaching, conduct mock interviews, and share vital tips to ensure success.</p>
-                </div>
-                <div class="challenge">
-                    <h3><span class="highlight">Processing Delays</span></h3>
-                    <p>We monitor applications closely and follow up with authorities as needed to minimize waiting times.</p>
-                </div>
-                <div class="challenge">
-                    <h3><span class="highlight">Visa Rejection</span></h3>
-                    <p>If a visa is rejected, we analyze the reasons and help reapply with a stronger case for maximum approval chances.</p>
-                </div>
-            </div>
         </section>
 
         <section class="future-plans fade-in">
@@ -382,7 +343,7 @@
         font-size: 0.9rem;
     }
 
-    /* Process steps */
+    /* Process steps
     .process-steps {
         counter-reset: step-counter;
         margin-top: 2rem;
@@ -415,10 +376,10 @@
     .process-step h3 {
         color: #ff6b00;
         margin-bottom: 0.5rem;
-    }
+    } */
 
     /* Challenge solutions */
-    .challenge-solutions {
+    /* .challenge-solutions {
         margin-top: 1.5rem;
     }
 
@@ -431,7 +392,7 @@
     .challenge h3 {
         color: #e6d51e;
         margin-bottom: 0.5rem;
-    }
+    } */
 
     /* process section styling  */
     .process{

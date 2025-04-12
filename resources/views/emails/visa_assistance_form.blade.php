@@ -88,7 +88,9 @@
 
             <p><strong>Visa Required Country:</strong> {{ $formData['visa_country'] }}</p>
             <p><strong>Visa Type:</strong> {{ $formData['visa_type'] }}</p>
-            <p><strong>Counselling Mode:</strong> {{ $formData['counselling_mode'] }}</p>
+            @if (!empty($formData['counselling_mode']))
+                <p><strong>Counselling Mode:</strong> {{ $formData['counselling_mode'] }}</p>
+            @endif
             
             <!-- Optional Button (can be used to redirect or for more actions) -->
             <a style="color: #ffb400" href="https://www.wtsvisa.com" class="button">Visit wtsvisa.com</a>
