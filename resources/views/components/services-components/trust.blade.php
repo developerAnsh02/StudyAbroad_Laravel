@@ -129,7 +129,7 @@
             border-radius: 50%;
             font-size: 20px;
             font-weight: 800;
-            border: 2px solid black;
+
             height:60px;
             width: 60px;
         }
@@ -171,8 +171,8 @@
     pointer-events: none;
 }
 #road-object img{
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
 
 }
 
@@ -259,7 +259,7 @@
          <h2 class="title">Your Trusted Partner for a Hassle-Free Student Visa Success!</h2>
 
          <div id="road-object">
-            <img src="/images/trusted-comp-img/childwithbag.png" alt="image">
+            <img src="/images/vecteezy_walking-man-in-orange-hoodie-and-backpack_56099201.png" alt="image">
          </div>
 
         <div class="extra-space"></div>
