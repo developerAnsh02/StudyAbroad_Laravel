@@ -37,7 +37,7 @@
             z-index: 2;
         }
 
-        .section:nth-child(even) {
+        .section:nth-child(odd) {
             flex-direction: row-reverse;
         }
 
@@ -134,31 +134,31 @@
             width: 60px;
         }
         .violet{
-            background-color: violet;
+            background-color: #9259ec;
             color: white;
         }
 
         .indigo{
-            background-color: indigo;
+            background-color: #97cc42;
             color: white;
         }
 
         .green{
-            background-color: green;
+            background-color: #f8bc31;
             color: white;
         }
 
         .yellow{
-            background-color: yellow;
-            color: black;
+            background-color: #67c1ff;
+            color: white;
         }
 
         .orange{
-            background-color: orange;
+            background-color: #ff529b;
             color: white;
         }
         .red{
-            background-color: red;
+            background-color: #31bd78;
             color: white;
         }
 
@@ -259,7 +259,7 @@
          <h2 class="title">Your Trusted Partner for a Hassle-Free Student Visa Success!</h2>
 
          <div id="road-object">
-            <img src="/images/trusted-comp-img/moving_child.png" alt="image">
+            <img src="/images/trusted-comp-img/childwithbag.png" alt="image">
          </div>
 
         <div class="extra-space"></div>
@@ -274,7 +274,8 @@
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
 
-            <canvas class="road-canvas"></canvas>
+            <!-- <canvas class="road-canvas"></canvas> -->
+             <canvas class="road-canvas flip-road"></canvas>
 
             <div class="section-content">
                 <h2 class="section-title">98% Visa Success Rate</h2>
@@ -293,7 +294,8 @@
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
-            <canvas class="road-canvas flip-road"></canvas>
+            <!-- <canvas class="road-canvas flip-road"></canvas> -->
+             <canvas class="road-canvas"></canvas>
 
             <div class="section-content">
                 <h2 class="section-title">Complete Visa Assistance</h2>
@@ -312,7 +314,8 @@
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
 
-            <canvas class="road-canvas"></canvas>
+            <!-- <canvas class="road-canvas"></canvas> -->
+             <canvas class="road-canvas flip-road"></canvas>
 
             <div class="section-content">
                 <h2 class="section-title">Winning SOPs & Perfect Paperwork</h2>
@@ -331,7 +334,8 @@
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
-             <canvas class="road-canvas flip-road"></canvas>
+             <!-- <canvas class="road-canvas flip-road"></canvas> -->
+              <canvas class="road-canvas"></canvas>
 
             <div class="section-content">
                 <h2 class="section-title">One-on-One Expert Guidance</h2>
@@ -350,7 +354,8 @@
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
 
-            <canvas class="road-canvas"></canvas>
+            <!-- <canvas class="road-canvas"></canvas> -->
+             <canvas class="road-canvas flip-road"></canvas>
 
             <div class="section-content">
                 <h2 class="section-title">Fast-Track, Hassle-Free Process</h2>
@@ -369,7 +374,8 @@
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
-             <canvas class="road-canvas flip-road"></canvas>
+             <!-- <canvas class="road-canvas flip-road"></canvas> -->
+              <canvas class="road-canvas "></canvas>
 
             <div class="section-content">
                 <h2 class="section-title">Scholarships & Financial Aid Help</h2>
@@ -429,13 +435,13 @@
 
         ctx.beginPath();
         ctx.lineWidth = 25;
-        ctx.strokeStyle = "#333";
+        // ctx.strokeStyle = "#333";
         ctx.arc(100, 100, 80, Math.PI, 2 * Math.PI);
         ctx.stroke();
 
         ctx.beginPath();
         ctx.setLineDash([10, 10]);
-        ctx.strokeStyle = "#fff";
+        // ctx.strokeStyle = "#fff";
         ctx.lineWidth = 3;
         ctx.arc(100, 100, 80, Math.PI, 2 * Math.PI);
         ctx.stroke();
