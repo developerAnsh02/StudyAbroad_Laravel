@@ -487,7 +487,7 @@
     const centerY = canvasTop ;
 
     let progress = 0;
-    const duration = 1000;
+    const duration = 10;
     const start = performance.now();
 
     function animate(time) {
