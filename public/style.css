@@ -239,6 +239,121 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+
+
+.error-page {
+    background-color: #222;
+    display: flex;
+    padding: 150px 5% 80px 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+.error-container {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.error-code {
+    font-size: 120px;
+    font-weight: 900;
+    color: #f47c20;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.error-description {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.btn-back-home {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f47c20;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back-home:hover {
+    background-color: #d86510;
+}
+
+/* Tablet screens (≤ 768px) */
+@media (max-width: 768px) {
+    .error-page {
+        flex-direction: column;
+        padding: 80px 20px 60px 20px;
+        gap: 1rem;
+    }
+
+    .error-container {
+        max-width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .error-code {
+        font-size: 80px;
+    }
+
+    .error-message {
+        font-size: 26px;
+    }
+
+    .error-description {
+        font-size: 16px;
+    }
+
+    .btn-back-home {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    .hero-form {
+        width: 100%;
+    }
+}
+
+/* Mobile screens (≤ 480px) */
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 60px;
+    }
+
+    .error-message {
+        font-size: 22px;
+    }
+
+    .error-description {
+        font-size: 14px;
+    }
+
+    .error-container {
+        padding: 20px;
+    }
+
+    .btn-back-home {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
 /* subhero section  */
 .sub-hero {
     background-color: var(--bg-light);
@@ -1444,6 +1559,7 @@ h3{
 /* Fade-in animation */
 .footer{
     background-color: var(--bg-dark);
+    padding: 1rem 2rem 0 2rem;
 }
 .footer .footer-container {
     opacity: 0;
@@ -1618,7 +1734,9 @@ h3{
     text-align: center;
     color: var(--text-light);
 }
-
+.footer-offices{
+    width: 360px;
+}
 .footer-bottom p {
     font-size: 14px;
 }

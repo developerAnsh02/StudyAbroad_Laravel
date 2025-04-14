@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
 
+
 Route::get('/', function () {
     return view("home");
 })->name('home');
@@ -22,6 +23,12 @@ Route::get('/about', function () {
 // Route::post('/contact-submit', [MasterController::class, 'submit'])->name('contact.submit');
 
 Route::get('/component-hero', [MasterController::class, 'hero'])->name('component-hero');
+
+
+Route::fallback(function () {
+    return response()->view('errors.404', [], 404);
+});
+
 
 // services routes start
 

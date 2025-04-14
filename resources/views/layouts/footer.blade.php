@@ -14,25 +14,29 @@
             <!-- Middle Section -->
             <div class="footer-links">
                 <div class="footer-column">
-                    <h3>About</h3>
+                    <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="{{ url('/about') }}">About Us</a></li>
+                        <li><a href="{{ url('/contact') }}">Contact Us</a></li>
+                        <li><a href="{{ url('/') }}">Privacy Policy</a></li>
+                        <li><a href="{{ url('/') }}">Terms of Service</a></li>
+
                     </ul>
                 </div>
-                <div class="footer-column">
+                <!-- <div class="footer-column">
                     <h3>Help</h3>
                     <ul>
                         <li><a >Support</a></li>
                         <li><a >FAQs</a></li>
                         <li><a >Guides</a></li>
                     </ul>
-                </div>
-                <div class="footer-column">
+                </div> -->
+                <!-- <div class="footer-column">
                     <h3>Get In Touch</h3>
                     <ul>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
 
             <!-- Right Section -->
