@@ -7,6 +7,7 @@ use App\Mail\VisaAssistanceFormSubmitted; // Import the Mailable class
 use App\Mail\ContactFormSubmitted; // Import the Mailable class
 use Illuminate\Support\Facades\Mail; // Import the Mail facade
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Session;
 
 class MailController extends Controller
 {
@@ -86,6 +87,13 @@ class MailController extends Controller
         //     // Optionally, you can provide a user-friendly message to the user
         //     return back()->with('error', 'There was an issue sending your email. Please try again later.');
         // }
+
+        Session::put('visa_form_submitted', true);
+
+        return response()->json([
+            'success' => true,
+            'redirect_url' => route('thankyou')
+        ]);
     }
     
     public function contactSubmit(Request $request)
@@ -136,7 +144,7 @@ class MailController extends Controller
                 ->send(new ContactFormSubmitted($formData));
 
             // If successful, return a success message
-            return back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
+            // return back()->with('success', 'Thank you for contacting us! We will get back to you soon.');
         } catch (\Exception $e) {
             // If an error occurs, catch the exception and log the error
             \Log::error('Email sending failed: ' . $e->getMessage());
@@ -144,6 +152,13 @@ class MailController extends Controller
             // Optionally, you can provide a user-friendly message to the user
             return back()->with('error', 'There was an issue sending your email. Please try again later.');
         }
+
+        Session::put('visa_form_submitted', true);
+
+        return response()->json([
+            'success' => true,
+            'redirect_url' => route('thankyou')
+        ]);
         
     }
 

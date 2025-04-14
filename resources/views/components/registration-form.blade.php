@@ -103,7 +103,7 @@
                 return; // Stop form submission
             }
         }
-        
+
         // Disable the submit button to prevent multiple submissions
         $('button[type="submit"]').prop('disabled', true).text('Please wait...');
 
@@ -119,18 +119,19 @@
             method: "POST",
             data: formData,
             success: function(response) {
-                // Success: Show a success message using SweetAlert
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Form Submitted!',
-                    text: 'Your form has been successfully submitted.',
-                    showConfirmButton: true,
-                }).then(function() {
-                    // Optionally, reset the form after success
-                    $('#registrationForm')[0].reset();
-                    // Re-enable the submit button after success
-                    $('button[type="submit"]').prop('disabled', false).text('Submit');
-                });
+                if (response.success && response.redirect_url) {
+                    window.location.href = response.redirect_url; // ✅ Redirect here
+                } else {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Form Submitted!',
+                        text: 'Your form has been successfully submitted.',
+                        showConfirmButton: true,
+                    }).then(function() {
+                        $('#registrationForm')[0].reset();
+                        $('button[type="submit"]').prop('disabled', false).text('Submit');
+                    });
+                }
             },
             error: function(xhr) {
                 // Handle errors from the backend

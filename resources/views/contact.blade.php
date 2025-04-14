@@ -78,18 +78,22 @@
             method: "POST",
             data: formData,
             success: function(response) {
-                // Success: Show a success message using SweetAlert
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Thank you for contacting us!',
-                    text: 'We will get back to you soon.',
-                    showConfirmButton: true,
-                }).then(function() {
-                    // Optionally, reset the form after success
-                    $('#contact_us_form')[0].reset();
-                    // Re-enable the submit button after success
-                    $('button[type="submit"]').prop('disabled', false).text('Send Message');
-                });
+                if (response.success && response.redirect_url) {
+                    window.location.href = response.redirect_url; // ✅ Redirect here
+                } else {
+                    // Success: Show a success message using SweetAlert
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Thank you for contacting us!',
+                        text: 'We will get back to you soon.',
+                        showConfirmButton: true,
+                    }).then(function() {
+                        // Optionally, reset the form after success
+                        $('#contact_us_form')[0].reset();
+                        // Re-enable the submit button after success
+                        $('button[type="submit"]').prop('disabled', false).text('Send Message');
+                    });
+                }
             },
             error: function(xhr) {
                 // Handle errors from the backend

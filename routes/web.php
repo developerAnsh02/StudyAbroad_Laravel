@@ -4,6 +4,7 @@ use App\Http\Controllers\MasterController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 
 Route::get('/', function () {
@@ -109,5 +110,15 @@ Route::middleware('auth')->group(function () {
 Route::post('/submit-registration', [MailController::class, 'sendVisaAssistanceEmail'])->name('submit.registration');
 Route::post('/contact-submit', [MailController::class, 'contactSubmit'])->name('contact.submit');
 
+Route::get('/thankyou', function () {
+    if (!session('visa_form_submitted')) {
+        abort(404); // prevent direct access
+    }
+
+    // Forget the session so refresh won't keep working
+    session()->forget('visa_form_submitted');
+
+    return view('thankyou'); // adjust view path as needed
+})->name('thankyou');
 
 require __DIR__.'/auth.php';
