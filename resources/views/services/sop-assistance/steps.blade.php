@@ -5,7 +5,7 @@
         <div class="timeline">
             
             <div class="steps">
-                <div class="icon"><i class="fas fa-user-edit"></i></div>
+                <div class="icons"><i class="fas fa-user-edit"></i></div>
                 <div class="content">
                     <h3>Step 1: Custom Consultation </h3>
                     <p>We learn about your history, achievements, and career goals to produce an SOP that is most characteristic of you. 
@@ -14,7 +14,7 @@
             </div>
 
             <div class="steps">
-                <div class="icon"><i class="fas fa-file-alt"></i></div>
+                <div class="icons"><i class="fas fa-file-alt"></i></div>
                 <div class="content">
                     <h3>Step 2: Professional Writing & Editing</h3>
                     <p>We compose an effective SOP using a clear template, solid writing, and formal tone that awes. 
@@ -23,7 +23,7 @@
             </div>
 
             <div class="steps">
-            <div class="icon"><i class="fas fa-check-circle"></i></div>
+            <div class="icons"><i class="fas fa-check-circle"></i></div>
                 <div class="content">
                     <h3>Step 3: Final Touch-Ups & Punctuation</h3>
                     <p>We edit, touch up, and refine your SOP to perfection and make it submissions-ready.</p>
@@ -89,7 +89,7 @@
     flex-direction: row-reverse;
 } */
 
-.icon {
+.icons {
     background: #ffcc00;
     width: 60px;
     height: 60px;
@@ -102,7 +102,7 @@
     margin: 0 15px;
 }
 
-.icon i {
+.icons i {
     color: #222;
 }
 
@@ -161,7 +161,7 @@
         padding: 15px;
         width: 90%;
     }
-    .icon {
+    .icons {
         margin: 0 auto 10px auto;
     }
     .content {
@@ -189,7 +189,7 @@
         padding: 12px;
         margin: 15px 0;
     }
-    .icon {
+    .icons {
         width: 50px;
         height: 50px;
         font-size: 1.5rem;
@@ -214,7 +214,7 @@
         margin: 10px 0;
         width: 98%;
     }
-    .icon {
+    .icons {
         width: 45px;
         height: 45px;
         font-size: 1.4rem;
