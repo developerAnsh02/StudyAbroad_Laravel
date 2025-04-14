@@ -33,7 +33,8 @@
             align-items: center;
             justify-content: space-between;
             position: relative;
-            margin-top: -34px;
+            /* margin-top: -34px; */
+            margin-top: 30px;
             z-index: 2;
         }
 
@@ -50,26 +51,25 @@
             width: 45%;
             height: 140px;
             display: flex;
-            justify-content: center;
         }
 
         .section-image img {
-            max-width: 30%;
+            max-width: 60%;
             height: auto;
             max-height: 200px;
             border-radius: 10px;
-            object-fit: contain;
+            object-fit: cover;
         }
 
         .section-title {
-            font-size: 22px;
+            font-size: 19px;
             color: #1f2937;
             margin-bottom: 5px;
             font-weight: bold;
         }
 
         .section-description {
-            font-size: 16px;
+            font-size: 13px;
             color: #4b5563;
             text-align: center;
         }
@@ -106,9 +106,12 @@
 
         .road-canvas {
             position: relative;
-            width: 146px;
-            height: 108px;
+            width: 255px;
+            height: 150px;
+            /* width: 146px;
+            height: 108px; */
             display: block;
+            opacity: 0;
             transform: rotate(-90deg); 
         }
 
@@ -118,7 +121,7 @@
 
         .numbering{
             position: absolute;
-            top: 32%;
+            top: 39%;
             left: 47%;
         }
 
@@ -269,10 +272,11 @@
                 <div class="numbering-block orange">1</div>
             </div>
             <div class="padding-space"></div>
-            <div class="section-image">
+            <div style="justify-content: right;" class="section-image">
                 <img src="/images/trusted-comp-img/success_rate.png" alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
+             <img style = "height: 250px; position: absolute; left:49%; top:-25px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
 
             <!-- <canvas class="road-canvas"></canvas> -->
              <canvas class="road-canvas flip-road"></canvas>
@@ -289,10 +293,11 @@
                 <div class="numbering-block indigo">2</div>
             </div>
             <div class="padding-space"></div>
-            <div class="section-image">
+            <div style="justify-content: left;" class="section-image">
                 <img src="/images/trusted-comp-img/visa_assist.png" alt="image">
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
+            <img class="flip" style = "height: 250px; position: absolute; left:37%; top:-29.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
 
             <!-- <canvas class="road-canvas flip-road"></canvas> -->
              <canvas class="road-canvas"></canvas>
@@ -309,9 +314,11 @@
                 <div class="numbering-block green">3</div>
             </div>
             <div class="padding-space"></div>
-            <div class="section-image">
-                <img src="/icons/image.png" alt="image">
+            <div style="justify-content: right;" class="section-image">
+                <!-- <img src="/images/trusted-comp-img/paperwork.png" alt="image"> -->
+                 <img src="/icons/image.png" alt="image">
             </div>
+            <img style = "height: 250px; position: absolute; left:49%; top:-34px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -329,9 +336,10 @@
                 <div class="numbering-block yellow">4</div>
             </div>
             <div class="padding-space"></div>
-            <div class="section-image">
+            <div style="justify-content: left;" class="section-image">
                  <img src="/images/trusted-comp-img/expert_advice.png" alt="image">
             </div>
+            <img class="flip" style = "height: 250px; position: absolute; left:37%; top:-38.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -349,9 +357,10 @@
                 <div class="numbering-block violet">5</div>
             </div>
             <div class="padding-space"></div>
-            <div class="section-image">
+            <div style="justify-content: right;" class="section-image">
                 <img src="/images/trusted-comp-img/fast_track.png" alt="image">
             </div>
+            <img style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -369,9 +378,10 @@
                 <div class="numbering-block red">6</div>
             </div>
             <div class="padding-space"></div>
-            <div class="section-image">
+            <div style="justify-content: left;" class="section-image">
                 <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
             </div>
+            <img class="flip" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -491,7 +501,7 @@
         if(isMobile){
             roadObject.style.transform = `translate(${x - 80}px, ${y + 40}px)`; 
         } else{
-            roadObject.style.transform = `translate(${x - 10}px, ${y + 70}px)`; 
+            roadObject.style.transform = `translate(${x + 20}px, ${y + 50}px)`; 
         }
 
         if (progress < 1) {
