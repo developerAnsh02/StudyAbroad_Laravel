@@ -93,5 +93,16 @@ return [
             'description' => 'Discover top global universities and pursue higher education abroad. Get free expert guidance on admissions, scholarships, and top-rated institutions.',
             'keywords' => '',
         ],
+        //policy
+        'privacy_policy'=>[
+            'title' => 'Privacy Policy | Secure Data Use at WTS Visa Consultancy',
+            'description' =>  'Learn how wtsvisa.com protects your personal data during visa applications. Discover our secure practices, cookie use, and your rights as a user.',
+            'keywords' => '',
+        ],
+        'terms_of_service'=>[
+            'title' => 'WTS Visa Consultancy | Terms & Conditions of Service',
+            'description' => 'Discover the terms of using WTS Visa Consultancy’s services. Learn your rights, responsibilities, and our legal policies before using our platform.',
+            'keywords' => '',
+        ],
     ],
 ];

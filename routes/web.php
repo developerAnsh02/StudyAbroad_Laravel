@@ -21,10 +21,10 @@ Route::get('/about', function () {
 })->name('about');
 Route::get('/privacy-policy', function () {
     return view("privacy-policy");
-})->name('privacy-policy');
+})->name('privacy_policy');
 Route::get('/terms-of-service', function () {
     return view("terms-of-service");
-})->name('terms-of-service');
+})->name('terms_of_service');
 
 
 

@@ -253,7 +253,7 @@
 
 
             <h2 class="section-heading">V. PRIVACY POLICY</h2>
-            <p>Your privacy is important to us. Please review our <a href="{{ route('privacy-policy') }}">Privacy Policy</a>
+            <p>Your privacy is important to us. Please review our <a href="{{ route('privacy_policy') }}">Privacy Policy</a>
                 to understand how we collect, use, and protect your personal information. Our Privacy Policy is an integral
                 part of these Terms. </p>
 
