@@ -19,7 +19,7 @@
                         <li><a href="{{ url('/about') }}">About Us</a></li>
                         <li><a href="{{ url('/contact') }}">Contact Us</a></li>
                         <li><a href="{{ url('/privacy-policy') }}">Privacy Policy</a></li>
-                        <li><a href="{{ url('/') }}">Terms of Service</a></li>
+                        <li><a href="{{ url('/terms-of-service') }}">Terms of Service</a></li>
 
                     </ul>
                 </div>
@@ -56,6 +56,6 @@
 
         <div class="footer-bottom">
             <p>© 2025 WTS Visa Consultancy. develop  by Warrgyizmorsch.</p>
-            <p><a href="{{ url('/privacy-policy') }}" >Privacy Policy</a> | <a >Terms of Service</a></p>
+            <p><a href="{{ url('/privacy-policy') }}" >Privacy Policy</a> | <a href="{{ url('/terms-of-service') }}">Terms of Service</a></p>
         </div>
     </footer>

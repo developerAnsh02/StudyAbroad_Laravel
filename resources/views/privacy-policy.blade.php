@@ -2,7 +2,7 @@
 @section('content')
 <section class="privacy-policy-section">
   <div class="container">
-    <h1 class="section-heading">Your Commitment to Privacy Policy</h1>
+    <h1 class="main-heading">Your Commitment to <span>Privacy Policy</span></h1>
     <p>We care about your privacy at wtsvisa.com and work hard to keep your data safe.</p>
     <div class="card glass">
       
@@ -90,21 +90,33 @@
 <style>
 .privacy-policy-section {
   background: linear-gradient(to bottom, #2a2a2a, #1c1c1c);
-  padding: 100px 20px 60px;
+  padding: 120px 20px 60px 20px;
   color: #f5f5f5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .privacy-policy-section .container {
   max-width: 960px;
   margin: auto;
 }
-
+.main-heading {
+        font-size: 34px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #444;
+        padding-bottom: 10px;
+        animation: slideDown 0.6s ease-in-out;
+    }
+    .main-heading span{
+        color: #ffa500;
+    }
 .section-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 40px 0 20px;
   border-left: 5px solid #ffa500;
   padding-left: 15px;
+  text-align: left;
   color: #fff;
 }
 
