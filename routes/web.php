@@ -19,6 +19,9 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return view("about");
 })->name('about');
+Route::get('/privacy-policy', function () {
+    return view("privacy-policy");
+})->name('privacy-policy');
 
 // Route::post('/contact-submit', [MasterController::class, 'submit'])->name('contact.submit');
 

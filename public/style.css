@@ -1690,6 +1690,7 @@ h3{
     }
     .footer{
         padding-bottom: 24px;
+        padding: 0;
     }
 }
 
@@ -1711,9 +1712,12 @@ h3{
 
 .office-item {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 12px;
     color: var(--text-light);
     transition: transform 0.3s ease;
+}
+.office-item p{
+    font-size: 14px;
 }
 
 .office-item span {
@@ -2058,6 +2062,9 @@ h3{
     .footer-column h3 {
         font-size: 16px;
     }
+    .footer-offices h3{
+        font-size: 16px;
+    }
 
     .footer-column a {
         font-size: 14px;
@@ -2355,8 +2362,11 @@ h3{
 
 
 
-    Footer
+    /* Footer */
     .footer-column h3 {
+        font-size: 14px;
+    }
+    .footer-offices h3{
         font-size: 14px;
     }
 
