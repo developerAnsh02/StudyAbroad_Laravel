@@ -170,7 +170,7 @@
     top: 10px;
 
     z-index: 10;
-    transition: transform 1s ease;
+    transition: transform 0.5s ease;
     pointer-events: none;
 }
 #road-object img{
@@ -183,6 +183,9 @@
         @media (min-width: 768px) and (max-width: 1024px) {
             .section-description{
                 display: none;
+            }
+            .section-image img{
+                max-width: 100%;
             }
         }
         /* Responsive styles */
@@ -207,17 +210,21 @@
                 align-items: center;
                 justify-content: space-between;
                 position: relative;
-                margin-top: -64px;
+                /* margin-top: -64px; */
+                /* margin-top: -40px; */
+                margin-top: -28px;
                 z-index: 2;
             }
 
             .section-image {
+                display: flex;
+                align-items: center;
                 margin-bottom: 20px;
             }
             
             .section-image img {
-                max-width: 90%;
-                max-height: 150px;
+                max-width: 100%;
+                max-height: 100px;
             }
             .path-container {
                 display: none;
@@ -252,6 +259,16 @@
                 top: 30%;
                 left: 41%;
             }
+            .hide{
+                display: none;
+            }
+            #road-object img{
+                height: 60px;
+                width: 60px;
+            }
+            .road-canvas{
+                opacity: 1;
+            }
         }
 </style>
 
@@ -276,7 +293,7 @@
                 <img src="/images/trusted-comp-img/success_rate.png" alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
-             <img style = "height: 250px; position: absolute; left:49%; top:-25px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+             <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-25px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
 
             <!-- <canvas class="road-canvas"></canvas> -->
              <canvas class="road-canvas flip-road"></canvas>
@@ -297,7 +314,7 @@
                 <img src="/images/trusted-comp-img/visa_assist.png" alt="image">
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
-            <img class="flip" style = "height: 250px; position: absolute; left:37%; top:-29.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-29.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
 
             <!-- <canvas class="road-canvas flip-road"></canvas> -->
              <canvas class="road-canvas"></canvas>
@@ -318,7 +335,7 @@
                 <!-- <img src="/images/trusted-comp-img/paperwork.png" alt="image"> -->
                  <img src="/icons/image.png" alt="image">
             </div>
-            <img style = "height: 250px; position: absolute; left:49%; top:-34px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-34px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -339,7 +356,7 @@
             <div style="justify-content: left;" class="section-image">
                  <img src="/images/trusted-comp-img/expert_advice.png" alt="image">
             </div>
-            <img class="flip" style = "height: 250px; position: absolute; left:37%; top:-38.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-38.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -360,7 +377,7 @@
             <div style="justify-content: right;" class="section-image">
                 <img src="/images/trusted-comp-img/fast_track.png" alt="image">
             </div>
-            <img style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -381,7 +398,7 @@
             <div style="justify-content: left;" class="section-image">
                 <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
             </div>
-            <img class="flip" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -487,7 +504,7 @@
     const centerY = canvasTop ;
 
     let progress = 0;
-    const duration = 10;
+    const duration = 1;
     const start = performance.now();
 
     function animate(time) {
