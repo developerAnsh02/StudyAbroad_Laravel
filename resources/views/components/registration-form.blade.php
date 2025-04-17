@@ -47,6 +47,13 @@
                 </label>
             </div>
         </div>
+
+        <div class="form-group">
+            <label style="display: flex; align-items: center; font-size: 13px; color: #ffcc00;">
+                <input type="checkbox" id="termsCheckbox" name="tac_check" style="margin-right: 8px;">
+                I agree to the&nbsp;<a href="/terms-of-service" target="_blank" style="color: #fff; text-decoration: underline;">Terms & Conditions</a>
+            </label>
+        </div>
         
         <button type="submit" class="submit-btn">Submit</button>
     </form>
@@ -102,6 +109,17 @@
                 });
                 return; // Stop form submission
             }
+        }
+
+        // Check if Terms & Conditions is checked
+        if (!$('#termsCheckbox').is(':checked')) {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Terms & Conditions',
+                text: 'Please agree to the Terms & Conditions before submitting.',
+                confirmButtonText: 'Okay'
+            });
+            return;
         }
 
         // Disable the submit button to prevent multiple submissions
@@ -310,6 +328,12 @@
         width: 100%;
         justify-content: flex-start;
     }
+    }
+
+    .form-group input[type="checkbox"] {
+        accent-color: #ffcc00;
+        width: 16px;
+        height: 16px;
     }
 
 </style>

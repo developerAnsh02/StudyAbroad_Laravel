@@ -26,6 +26,8 @@ class MailController extends Controller
             'visa_country.required' => 'The visa country field is required.',
             'visa_type.required' => 'The visa type is required.',
             'counselling_mode.required' => 'Please select a preferred counselling mode.',
+            'tac_check.required' => 'You must agree to the Terms & Conditions.',
+            'tac_check.in' => 'You must agree to the Terms & Conditions.',
         ];
 
         // Validate the incoming request data with custom messages
@@ -45,6 +47,7 @@ class MailController extends Controller
                 'string',
                 Rule::in(['Phone', 'Video', 'Home']),
             ],
+            'tac_check' => 'required|in:on',
         ], $customMessages);
 
         // Extract the full phone number (e.g., +911234567890)
@@ -110,6 +113,8 @@ class MailController extends Controller
             'phone_number.full.regex' => 'The full phone number must be in international format.',
             'message.required' => 'The message field is mandatory.',
             'message.string' => 'The message must be a valid string.',
+            'tac_check.required' => 'You must agree to the Terms & Conditions.',
+            'tac_check.in' => 'You must agree to the Terms & Conditions.',
         ];
 
         // Validate the incoming request data with custom messages
@@ -119,6 +124,7 @@ class MailController extends Controller
             'phone_number.main' => 'required|string|regex:/^\d{10}$/', // 10-digit phone number validation
             'phone_number.full' => 'required|string|regex:/^\+[1-9]{1}[0-9]{3,14}$/', // Full phone number validation (international format)
             'message' => 'required|string|max:500',
+            'tac_check' => 'required|in:on',
         ], $customMessages);
 
         // Extract the full phone number (e.g., +911234567890)
