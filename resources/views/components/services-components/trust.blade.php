@@ -293,7 +293,7 @@
                 <img src="/images/trusted-comp-img/success_rate.png" alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
-             <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-25px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+             <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-25px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
 
             <!-- <canvas class="road-canvas"></canvas> -->
              <canvas class="road-canvas flip-road"></canvas>
@@ -314,7 +314,8 @@
                 <img src="/images/trusted-comp-img/visa_assist.png" alt="image">
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
-            <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-29.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-29.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
+            <img class="flip hide" style = "height: 250px; position: absolute; left:34%; top:-34.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
 
             <!-- <canvas class="road-canvas flip-road"></canvas> -->
              <canvas class="road-canvas"></canvas>
@@ -335,7 +336,8 @@
                 <!-- <img src="/images/trusted-comp-img/paperwork.png" alt="image"> -->
                  <img src="/icons/image.png" alt="image">
             </div>
-            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-34px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-34px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
+            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-44px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -356,7 +358,8 @@
             <div style="justify-content: left;" class="section-image">
                  <img src="/images/trusted-comp-img/expert_advice.png" alt="image">
             </div>
-            <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-38.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-38.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
+            <img class="flip hide" style = "height: 250px; position: absolute; left:34%; top:-53.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -377,7 +380,8 @@
             <div style="justify-content: right;" class="section-image">
                 <img src="/images/trusted-comp-img/fast_track.png" alt="image">
             </div>
-            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
+            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-63px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -398,14 +402,15 @@
             <div style="justify-content: left;" class="section-image">
                 <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
             </div>
-            <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/greenCurve.png" alt="image">
+            <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
+            <img class="flip hide" style = "height: 250px; position: absolute; left:34%; top:-72.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
               <canvas class="road-canvas "></canvas>
 
             <div class="section-content">
-                <h2 class="section-title">Scholarships & Financial Aid Help</h2>
+                <h2 class="section-title">Scholar-ships & Financial Aid Help</h2>
                 <p class="section-description">Unlock funding opportunities and reduce your study expenses.</p>
             </div>
         </div>
@@ -462,13 +467,13 @@
 
         ctx.beginPath();
         ctx.lineWidth = 25;
-        // ctx.strokeStyle = "#333";
+        ctx.strokeStyle = "#fca503";
         ctx.arc(100, 100, 80, Math.PI, 2 * Math.PI);
         ctx.stroke();
 
         ctx.beginPath();
         ctx.setLineDash([10, 10]);
-        // ctx.strokeStyle = "#fff";
+        ctx.strokeStyle = "#fff";
         ctx.lineWidth = 3;
         ctx.arc(100, 100, 80, Math.PI, 2 * Math.PI);
         ctx.stroke();
