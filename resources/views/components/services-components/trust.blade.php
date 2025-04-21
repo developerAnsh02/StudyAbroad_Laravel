@@ -119,11 +119,12 @@
             transform: rotate(-270deg);
         }
 
-        .numbering{
+        /* .numbering{
             position: absolute;
             top: 39%;
             left: 47%;
-        }
+
+        } */
 
         .numbering-block{
             display: flex;
@@ -162,6 +163,14 @@
         }
         .red{
             background-color: #31bd78;
+            color: white;
+        }
+        .olive{
+            background-color: #626F47;
+            color: white;
+        }
+        .pink{
+            background-color: #DD88CF;
             color: white;
         }
 
@@ -285,30 +294,30 @@
         <div class="extra-space"></div>
         <!-- Section 1 -->
         <div class="section">
-            <div class="numbering">
-                <div class="numbering-block orange">1</div>
-            </div>
+            
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
                 <img src="/images/trusted-comp-img/success_rate.png" alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
              <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-25px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+             
 
             <!-- <canvas class="road-canvas"></canvas> -->
              <canvas class="road-canvas flip-road"></canvas>
+             <div class="numbering">
+                <div class="numbering-block orange">1</div>
+            </div>
 
             <div class="section-content">
-                <h2 class="section-title">98% Visa Success Rate</h2>
-                <p class="section-description">Our expert support ensures a high approval rate, making your journey smooth and stress-free.</p>
+                <h2 class="section-title">Profile Evaluation </h2>
+                <p class="section-description">Send us your academic documents & resume</p>
             </div>
         </div>
 
         <!-- Section 2 -->
-        <div style=" " class="section">
-            <div class="numbering">
-                <div class="numbering-block indigo">2</div>
-            </div>
+        <div  class="section">
+            
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
                 <img src="/images/trusted-comp-img/visa_assist.png" alt="image">
@@ -320,17 +329,18 @@
             <!-- <canvas class="road-canvas flip-road"></canvas> -->
              <canvas class="road-canvas"></canvas>
 
+             <div class="numbering">
+                <div class="numbering-block indigo">2</div>
+            </div>
             <div class="section-content">
-                <h2 class="section-title">Complete Visa Assistance</h2>
-                <p class="section-description">From university selection to visa interview prep, we’ve got you covered.</p>
+                <h2 class="section-title">University Shortlisting</h2>
+                <p class="section-description">Get tailored options based on your profile</p>
             </div>
         </div>
 
         <!-- Section 3 -->
         <div style=" " class="section">
-            <div class="numbering">
-                <div class="numbering-block green">3</div>
-            </div>
+           
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
                 <!-- <img src="/images/trusted-comp-img/paperwork.png" alt="image"> -->
@@ -342,18 +352,19 @@
 
             <!-- <canvas class="road-canvas"></canvas> -->
              <canvas class="road-canvas flip-road"></canvas>
+             <div class="numbering">
+                <div class="numbering-block green">3</div>
+            </div>
 
             <div class="section-content">
-                <h2 class="section-title">Winning SOPs & Perfect Paperwork</h2>
-                <p class="section-description">Professionally crafted SOPs and error-free documentation for a strong application.</p>
+                <h2 class="section-title">Application Process</h2>
+                <p class="section-description">We help gather your personal documents & apply</p>
             </div>
         </div>
 
         <!-- Section 4 -->
         <div style=" " class="section">
-            <div class="numbering">
-                <div class="numbering-block yellow">4</div>
-            </div>
+            
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
                  <img src="/images/trusted-comp-img/expert_advice.png" alt="image">
@@ -364,18 +375,19 @@
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
               <canvas class="road-canvas"></canvas>
+              <div class="numbering">
+                <div class="numbering-block yellow">4</div>
+            </div>
 
             <div class="section-content">
-                <h2 class="section-title">One-on-One Expert Guidance</h2>
-                <p class="section-description">Personalized counseling tailored to your dream destination and career goals.</p>
+                <h2 class="section-title">Offer Letters</h2>
+                <p class="section-description">Track conditional & unconditional offers</p>
             </div>
         </div>
 
         <!-- Section 5 -->
-        <div style=" " class="section">
-            <div class="numbering">
-                <div class="numbering-block violet">5</div>
-            </div>
+        <div  class="section">
+            
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
                 <img src="/images/trusted-comp-img/fast_track.png" alt="image">
@@ -386,18 +398,19 @@
 
             <!-- <canvas class="road-canvas"></canvas> -->
              <canvas class="road-canvas flip-road"></canvas>
+             <div class="numbering">
+                <div class="numbering-block violet">5</div>
+            </div>
 
             <div class="section-content">
-                <h2 class="section-title">Fast-Track, Hassle-Free Process</h2>
-                <p class="section-description">Smooth and stress-free visa applications with expert support at every step.</p>
+                <h2 class="section-title">Initial Deposit & Financial Docs</h2>
+                <p class="section-description">Guided fund prep for CAS</p>
             </div>
         </div>
 
         <!-- Section 6 -->
         <div style=" " class="section">
-            <div class="numbering">
-                <div class="numbering-block red">6</div>
-            </div>
+            
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
                 <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
@@ -408,10 +421,59 @@
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
               <canvas class="road-canvas "></canvas>
+              <div class="numbering">
+                <div class="numbering-block red">6</div>
+            </div>
 
             <div class="section-content">
-                <h2 class="section-title">Scholar-ships & Financial Aid Help</h2>
-                <p class="section-description">Unlock funding opportunities and reduce your study expenses.</p>
+                <h2 class="section-title">CAS Issuance</h2>
+                <p class="section-description">UWe ensure you meet every requirement</p>
+            </div>
+        </div>
+
+        <!-- Section 7 -->
+        <div  class="section">
+            
+            <div class="padding-space"></div>
+            <div style="justify-content: right;" class="section-image">
+                <img src="/images/trusted-comp-img/fast_track.png" alt="image">
+            </div>
+            <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
+            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-82px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <!-- <img src="/images/path.svg" alt="path"> -->
+
+            <!-- <canvas class="road-canvas"></canvas> -->
+             <canvas class="road-canvas flip-road"></canvas>
+             <div class="numbering">
+                <div class="numbering-block pink">7</div>
+            </div>
+
+            <div class="section-content">
+                <h2 class="section-title">Initial Deposit & Financial Docs</h2>
+                <p class="section-description">Guided fund prep for CAS</p>
+            </div>
+        </div>
+
+        <!-- Section 8 -->
+        <div style=" " class="section">
+            
+            <div class="padding-space"></div>
+            <div style="justify-content: left;" class="section-image">
+                <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
+            </div>
+            <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
+            <img class="flip hide" style = "height: 250px; position: absolute; left:34%; top:-91.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
+
+             <!-- <canvas class="road-canvas flip-road"></canvas> -->
+              <canvas class="road-canvas "></canvas>
+              <div class="numbering">
+                <div class="numbering-block olive">8</div>
+            </div>
+
+            <div class="section-content">
+                <h2 class="section-title">CAS Issuance</h2>
+                <p class="section-description">UWe ensure you meet every requirement</p>
             </div>
         </div>
     </div>
