@@ -67,6 +67,7 @@ class MailController extends Controller
             'email' => $validatedData['email'],
             'visa_country' => $validatedData['visa_country'],
             'visa_type' => $validatedData['visa_type'],
+            
             // 'counselling_mode' => $validatedData['counselling_mode'],
         ];
         // ✅ Only include counselling_mode if it was submitted (in case it's not required)

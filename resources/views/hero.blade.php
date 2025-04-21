@@ -120,7 +120,7 @@
         </div>
         @include('./components/registration-form')
     </div>
-    <span class="tip" style="display: block; text-align: center; margin: 0 auto;">Visa counseling is completely free for study visas. We offer end-to-end support—from application to accommodation—and proudly serve students pan India.</span>
+    <span class="hero-tip" style="display: block; text-align: center; margin: 0 auto;">Visa counseling is completely free for study visas. We offer end-to-end support—from application to accommodation—and proudly serve students pan India.</span>
 
 </section>
 

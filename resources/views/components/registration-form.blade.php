@@ -47,6 +47,7 @@
                 </label>
             </div>
         </div>
+<<<<<<< Updated upstream
 
         <div class="form-group">
             <label style="display: flex; align-items: center; font-size: 13px; color: #ffcc00;">
@@ -54,6 +55,16 @@
                 I agree to the&nbsp;<a href="/terms-of-service" target="_blank" style="color: #fff; text-decoration: underline;">Terms & Conditions</a>
             </label>
         </div>
+=======
+        <div class="form-group terms-checkbox">
+    <label class="custom-checkbox">
+        <input type="checkbox" name="terms_accepted" id="terms_accepted" required>
+        <span class="checkmark"></span>
+        I accept the<a href="/terms-and-conditions" target="_blank">Terms and Conditions.</a>
+    </label>
+</div>
+
+>>>>>>> Stashed changes
         
         <button type="submit" class="submit-btn">Submit</button>
     </form>
@@ -179,6 +190,71 @@
 </script>
 
 <style>
+
+    /* Custom styled checkbox with tick icon */
+.terms-checkbox {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.custom-checkbox .checkmark {
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #ffa500;
+    border-color: #ffa500;
+}
+
+.custom-checkbox .checkmark::after {
+    content: "✔";
+    position: absolute;
+    display: none;
+    left: 0px;
+    top: -3px;
+    font-size: 13px;
+    
+}
+
+.custom-checkbox input:checked ~ .checkmark::after {
+    display: block;
+}
+
+/* Link styling */
+.custom-checkbox a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: .2s all;
+}
+
+.custom-checkbox a:hover {
+    color: #ffa500;
+}
+
     .iti {
         width: -webkit-fill-available !important;
     }

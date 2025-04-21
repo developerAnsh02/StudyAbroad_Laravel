@@ -267,7 +267,7 @@
 
                 <!-- Travel Visa -->
                 <div class="visa-service-card">
-                    <img src="icons/icons8-tour-pulsar-color/health-insurance.png" alt="Travel Visa">
+                    <img src="icons/icons8-health-pulsar-color/icons8-health-96.png" alt="Travel Visa">
                     <div class="service-content">
                         <h3>Health Insurance & Safety Advice</h3>
                         <p class="normal-content" data-id="2">Health insurance is essential to protect yourself from
@@ -285,7 +285,7 @@
                     </div>
                 </div>
                 <div class="visa-service-card">
-                    <img src="icons/icons8-tour-pulsar-color/work-internship.png" alt="Travel Visa">
+                    <img src="icons/icons8-working-with-a-laptop-pulsar-color/icons8-working-96.png" alt="Travel Visa">
                     <div class="service-content">
                         <h3>Work & Internship Opportunities</h3>
                         <p class="normal-content" data-id="3">Part time job while studying abroad enhances your professional
