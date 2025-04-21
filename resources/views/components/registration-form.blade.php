@@ -55,16 +55,6 @@
                 I agree to the&nbsp;<a href="/terms-of-service" target="_blank" style="color: #fff; text-decoration: underline;">Terms & Conditions</a>
             </label>
         </div>
-=======
-        <div class="form-group terms-checkbox">
-    <label class="custom-checkbox">
-        <input type="checkbox" name="terms_accepted" id="terms_accepted" required>
-        <span class="checkmark"></span>
-        I accept the<a href="/terms-and-conditions" target="_blank">Terms and Conditions.</a>
-    </label>
-</div>
-
->>>>>>> Stashed changes
         
         <button type="submit" class="submit-btn">Submit</button>
     </form>
