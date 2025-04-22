@@ -16,7 +16,125 @@
         $firstVideoId = Str::afterLast($videos[0]->url, '/');
     @endphp
 
-    
+<section class="countries-section">
+    <div class="container">
+        <h2 class="section-title">Top Countries for Higher Education</h2>
+        <div class="country-card-container">
+            <div class="country-card">
+                <img src="images/usa.jpg" alt="USA">
+                <div class="country-info">
+                    <h3>USA</h3>
+                    <ul class="country-features">
+                        <li>Top-ranked institutions</li>
+                        <li>Research-driven education</li>
+                        <li>Innovation & entrepreneurship</li>
+                        <li>Diverse campus life</li>
+                        <li>STEM OPT extension</li>
+                        <li>Flexible course structure</li>
+                        <li>Global career opportunities</li>
+                    </ul>
+                    <button class="consult-btn" onclick="openRegistrationForm()">Consult Now</button>
+                </div>
+            </div>
+            <div class="country-card">
+                <img src="images/france.jpg" alt="France">
+                <div class="country-info">
+                    <h3>France</h3>
+                    <ul class="country-features">
+                        <li>Affordable tuition fees</li>
+                        <li>Scholarships for international students</li>
+                        <li>English-taught programs</li>
+                        <li>Rich cultural experience</li>
+                        <li>Fashion & art capital</li>
+                        <li>Business school excellence</li>
+                        <li>Access to Schengen countries</li>
+                    </ul>
+                    <button class="consult-btn" onclick="openRegistrationForm()">Consult Now</button>
+                </div>
+            </div>
+            <div class="country-card">
+                <img src="images/australia.jpg" alt="Australia">
+                <div class="country-info">
+                    <h3>Australia</h3>
+                    <ul class="country-features">
+                        <li>High-quality education system</li>
+                        <li>Post-study work visa</li>
+                        <li>Safe and welcoming environment</li>
+                        <li>Paid part-time work options</li>
+                        <li>Beautiful landscapes & lifestyle</li>
+                        <li>Strong Indian student community</li>
+                        <li>Skilled migration pathway</li>
+                    </ul>
+                    <button class="consult-btn" onclick="openRegistrationForm()">Consult Now</button>
+                </div>
+            </div>
+            <div class="country-card">
+                <img src="images/germany.jpg" alt="Germany">
+                <div class="country-info">
+                    <h3>Germany</h3>
+                    <ul class="country-features">
+                        <li>No or low tuition fees</li>
+                        <li>Engineering & tech excellence</li>
+                        <li>Globally recognized degrees</li>
+                        <li>Strong job market</li>
+                        <li>English-taught courses</li>
+                        <li>Paid internships</li>
+                        <li>Research opportunities</li>
+                    </ul>
+                    <button class="consult-btn" onclick="openRegistrationForm()">Consult Now</button>
+                </div>
+            </div>
+            <div class="country-card">
+                <img src="images/canada.jpg" alt="Canada">
+                <div class="country-info">
+                    <h3>Canada</h3>
+                    <ul class="country-features">
+                        <li>Friendly immigration policies</li>
+                        <li>Affordable education</li>
+                        <li>Multicultural society</li>
+                        <li>Pathway to PR</li>
+                        <li>Safe and inclusive</li>
+                        <li>Co-op & internship programs</li>
+                        <li>Top global universities</li>
+                    </ul>
+                    <button class="consult-btn" onclick="openRegistrationForm()">Consult Now</button>
+                </div>
+            </div>
+            <div class="country-card">
+                <img src="images/dubai.jpg" alt="Dubai">
+                <div class="country-info">
+                    <h3>Dubai</h3>
+                    <ul class="country-features">
+                        <li>Global business hub</li>
+                        <li>Tax-free income potential</li>
+                        <li>Modern infrastructure</li>
+                        <li>Safe & student-friendly</li>
+                        <li>Indian community presence</li>
+                        <li>Internship opportunities</li>
+                        <li>Emerging education destination</li>
+                    </ul>
+                    <button class="consult-btn" onclick="openRegistrationForm()">Consult Now</button>
+                </div>
+            </div>
+            <div class="country-card">
+                <img src="images/ireland.jpg" alt="Ireland">
+                <div class="country-info">
+                    <h3>Ireland</h3>
+                    <ul class="country-features">
+                        <li>Tech industry growth</li>
+                        <li>One-year master's programs</li>
+                        <li>Post-study work visa</li>
+                        <li>English-speaking country</li>
+                        <li>Home to top global firms</li>
+                        <li>Welcoming culture</li>
+                        <li>Career-focused education</li>
+                    </ul>
+                    <button class="consult-btn" onclick="openRegistrationForm()">Consult Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Client Testimonials  -->
     <section class="video-gallery-section">
@@ -191,9 +309,8 @@
         }
     </script>
 
-
     <!-- Find Your Destination  -->
-    <section class="section-hero">
+    <!-- <section class="section-hero">
         <div class="destination">
             <h2>Find Your Study Destination</h2>
             <p>WTS Visa Consultancy assists you in selecting the optimum study destination as per your preferences, budget
@@ -234,7 +351,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="visa-services" id="visa-services">
         <div class="container">
@@ -512,6 +629,61 @@
     @endphp
 
     <x-faq :faqs="$faqs" />
-    
 
 @endsection
+
+
+
+<!-- Registration Form Modal
+<div id="registrationModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeRegistrationForm()">&times;</span>
+        <div class="registration-form">
+            <h2>Register for Consultation</h2>
+            <form id="consultationForm" action="{{ route('submit.registration') }}" method="POST">
+                @csrf
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select name="country" required>
+                        <option value="">Select Preferred Country</option>
+                        <option value="USA">USA</option>
+                        <option value="France">France</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Ireland">Ireland</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</div> -->
+
+<script>
+function openRegistrationForm() {
+    document.getElementById('registrationModal').style.display = 'block';
+}
+
+function closeRegistrationForm() {
+    document.getElementById('registrationModal').style.display = 'none';
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    var modal = document.getElementById('registrationModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+</script>
+

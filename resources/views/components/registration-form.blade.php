@@ -1,4 +1,4 @@
-<div class="registration-form">
+<div id="registrationModal"  class="registration-form ">
     <h2 style="margin: 0px;">Get FREE Counselling Today!</h2>    
     <form id="registrationForm" method="POST">
         @csrf
@@ -47,7 +47,7 @@
                 </label>
             </div>
         </div>
-<<<<<<< Updated upstream
+
 
         <div class="form-group">
             <label style="display: flex; align-items: center; font-size: 13px; color: #ffcc00;">

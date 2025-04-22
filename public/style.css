@@ -151,6 +151,7 @@ html, body {
     margin-top: 4rem;
     color: var(--accent-color);
     text-align: left;
+    font-size: 2.5rem;
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -1922,6 +1923,159 @@ h3{
     filter:grayscale(0%)
 }
 
+/* countries-home section */
+
+.countries-section {
+    background-color: #f9fbff;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #1d1d1f;
+}
+
+.country-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.country-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.country-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.country-info {
+    padding: 20px;
+}
+
+.country-info h3 {
+    font-size: 24px;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+/* Combined your country-features list style */
+.country-features {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.country-features li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+    padding-left: 20px;
+    position: relative;
+}
+
+.country-features li::before {
+    content: "•";
+    color: var(--primary-dark);
+    position: absolute;
+    left: 0;
+}
+
+/* Your custom Consult button styling */
+.consult-btn {
+    background-color: var(--primary-color);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.consult-btn:hover {
+    background-color:var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    max-width: 500px;
+}
+
+.close-modal {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #ffcc00;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-modal:hover {
+    color: #e6b800;
+}
+
+/* Simple animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .section-title {
+        font-size: 26px;
+    }
+
+    .country-info h3 {
+        font-size: 20px;
+    }
+
+    .country-features li {
+        font-size: 13px;
+    }
+}
+
+
 
 /* Service Cities Section */
 .service-cities {
@@ -2546,13 +2700,13 @@ hr {
     font-weight: 600;
     color: #f4b400;
     font-size: 1rem;
-    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .hero-tip {
     font-weight: 600;
     color: #f4b400;
     font-size: 1rem;
-    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .feature strong {

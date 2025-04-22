@@ -525,7 +525,7 @@
         }
         
         .about-us-black h1,
-        .about-us-white h1, {
+        .about-us-white h1 {
             font-size: 2rem;
         }
         
