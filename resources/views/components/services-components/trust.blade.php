@@ -278,6 +278,11 @@
             .road-canvas{
                 opacity: 1;
             }
+            .numbering{
+            position: absolute;
+            top: 29%;
+            left: 41%;
+            }
         }
 </style>
 
@@ -293,11 +298,11 @@
 
         <div class="extra-space"></div>
         <!-- Section 1 -->
-        <div class="section">
+        <div class="section"> 
             
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
-                <img src="/images/trusted-comp-img/success_rate.png" alt="image">
+                <img src="/images/trusted-comp-img/profileEval.png" alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
              <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-25px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
