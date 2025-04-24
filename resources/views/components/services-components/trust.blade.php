@@ -1,10 +1,11 @@
 <style>
-        
         .trust-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
             position: relative;
+            background-color: #e5e3d9;
+            border-radius: 50px;
         }
 
         /* Path styling */
@@ -235,6 +236,45 @@
             top:-91.5px;
         }
 
+        .apply-btn {
+    padding: 12px 36px;
+    background: linear-gradient(135deg, #fca503, #ffd700, #007BFF);
+    background-size: 300% 300%;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.apply-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: 0.6s;
+}
+
+.apply-btn:hover {
+    background-position: right center;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.5);
+}
+
+.apply-btn:hover::before {
+    left: 200%;
+}
+
+
 
         @media (min-width: 768px) and (max-width: 1024px) {
             .section-description{
@@ -390,7 +430,7 @@
     }
 </style>
 
-<section>
+<section style="padding: 30px 0px;">
     <div class="trust-container">
 
         <!-- Title  -->
@@ -429,7 +469,7 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
-                <img src="/images/trusted-comp-img/visa_assist.png" alt="image">
+                <img src="/images/trusted-comp-img/University_shortlisting.png" alt="image">
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-29.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
@@ -452,8 +492,8 @@
            
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
-                <!-- <img src="/images/trusted-comp-img/paperwork.png" alt="image"> -->
-                 <img src="/icons/image.png" alt="image">
+                <img src="/images/trusted-comp-img/application_process.png" alt="image">
+                 <!-- <img src="/icons/image.png" alt="image"> -->
             </div>
             <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-34px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
             <img class="hide section-3-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
@@ -476,7 +516,7 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
-                 <img src="/images/trusted-comp-img/expert_advice.png" alt="image">
+                 <img src="/images/trusted-comp-img/offer_letter.png" alt="image">
             </div>
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-38.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
             <img class="flip hide section-4-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
@@ -499,7 +539,7 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
-                <img src="/images/trusted-comp-img/fast_track.png" alt="image">
+                <img src="/images/trusted-comp-img/financial_deposit.png" alt="image">
             </div>
             <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
             <img class="hide section-5-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
@@ -522,7 +562,7 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
-                <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
+                <img src="/images/trusted-comp-img/cas_issue.png" alt="image">
             </div>
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
             <img class="flip hide section-6-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
@@ -545,7 +585,7 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
-                <img src="/images/trusted-comp-img/fast_track.png" alt="image">
+                <img src="/images/trusted-comp-img/medical-test.png" alt="image">
             </div>
             <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
             <img class="hide section-7-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
@@ -568,7 +608,7 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
-                <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
+                <img src="/images/trusted-comp-img/flight_booking.png" alt="image">
             </div>
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
             <img class="flip hide section-8-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
@@ -585,8 +625,31 @@
                 <p class="section-description">You're all set to fly!</p>
             </div>
         </div>
+
+        <!-- Contact Us Button  -->
+        <div style="display: flex; justify-content: center; margin-top: 40px;">
+            <button class="apply-btn" onclick="openRegistrationForm()">Apply Now</button>
+        </div>
     </div>
 </section>
+
+<!-- Registration Form Script  -->
+ <script>
+function openRegistrationForm() {
+    document.getElementById('registrationModal').style.display = 'block';
+}
+
+function closeRegistrationForm() {
+    document.getElementById('registrationModal').style.display = 'none';
+}
+
+window.onclick = function(event) {
+    var modal = document.getElementById('registrationModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+</script>
 
 <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -664,7 +727,50 @@
     const roadObject = document.getElementById('road-object');
     const sections = document.querySelectorAll('.section');
 
-    function moveObjectAlongArc(canvas, flip = false) {
+//     function moveObjectAlongArc(canvas, flip = false) {
+//     if (!canvas) return;
+
+//     const isMobile = window.innerWidth <= 768;
+//     const trustContainer = document.querySelector('.trust-container');
+//     const containerTop = trustContainer.getBoundingClientRect().top + window.scrollY;
+
+//     const canvasRect = canvas.getBoundingClientRect();
+//     const scrollY = window.scrollY || window.pageYOffset;
+//     const canvasTop = canvasRect.top + scrollY - containerTop;
+
+//     const radius = 80;
+//     const centerX = canvas.offsetLeft + 100;
+//     const centerY = canvasTop ;
+
+//     let progress = 0;
+//     const duration = 1;
+//     const start = performance.now();
+
+//     function animate(time) {
+//         const elapsed = time - start;
+//         progress = Math.min(elapsed / duration, 1);
+
+//         const angle = (Math.PI - 1) + progress * Math.PI;
+//         const x = centerX + radius * Math.cos(angle) * (flip ? 1 : -1);
+//         const y = centerY + radius * Math.sin(angle);
+
+//         if(isMobile){
+//             roadObject.style.transform = `translate(${x - 50}px, ${y + 40}px)`; 
+//         } else{
+//             roadObject.style.transform = `translate(${x + 20}px, ${y + 50}px)`; 
+//         }
+
+//         if (progress < 1) {
+//             requestAnimationFrame(animate);
+//         }
+//     }
+
+//     requestAnimationFrame(animate);
+// }
+
+let isFlippedX = false; // global flip state
+
+function moveObjectAlongArc(canvas, flip = false) {
     if (!canvas) return;
 
     const isMobile = window.innerWidth <= 768;
@@ -677,10 +783,10 @@
 
     const radius = 80;
     const centerX = canvas.offsetLeft + 100;
-    const centerY = canvasTop ;
+    const centerY = canvasTop;
 
     let progress = 0;
-    const duration = 1;
+    const duration = 1; 
     const start = performance.now();
 
     function animate(time) {
@@ -691,19 +797,22 @@
         const x = centerX + radius * Math.cos(angle) * (flip ? 1 : -1);
         const y = centerY + radius * Math.sin(angle);
 
-        if(isMobile){
-            roadObject.style.transform = `translate(${x - 50}px, ${y + 40}px)`; 
-        } else{
-            roadObject.style.transform = `translate(${x + 20}px, ${y + 50}px)`; 
-        }
+        const translateX = isMobile ? x - 50 : x + 20;
+        const translateY = isMobile ? y + 40 : y + 50;
+        const scaleX = isFlippedX ? -1 : 1;
+
+        roadObject.style.transform = `translate(${translateX}px, ${translateY}px) scaleX(${scaleX})`;
 
         if (progress < 1) {
             requestAnimationFrame(animate);
+        } else {
+            isFlippedX = !isFlippedX;
         }
     }
 
     requestAnimationFrame(animate);
 }
+
 
 
     const observer = new IntersectionObserver((entries) => {
