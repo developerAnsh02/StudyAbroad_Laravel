@@ -2697,13 +2697,12 @@ hr {
 
 /* services */
 .hero-tip {
-.hero-tip {
     font-weight: 600;
     color: #f4b400;
     font-size: 1rem;
     padding-bottom: 2rem;
 }
-.hero-tip {
+.tip {
     font-weight: 600;
     color: #f4b400;
     font-size: 1rem;

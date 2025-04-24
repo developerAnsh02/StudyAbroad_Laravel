@@ -175,18 +175,65 @@
         }
 
         #road-object {
-    position: absolute;
-    top: 10px;
+            position: absolute;
+            top: 10px;
+            z-index: 10;
+            transition: transform 0.5s ease;
+            pointer-events: none;
+        }
+        #road-object img{
+            height: 100px;
+            width: 100px;
+        }
 
-    z-index: 10;
-    transition: transform 0.5s ease;
-    pointer-events: none;
-}
-#road-object img{
-    height: 100px;
-    width: 100px;
-
-}
+        .section-1-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:49%; 
+            top:-25px;
+        }
+        .section-2-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:34%; 
+            top:-34.5px;
+        }
+        .section-3-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:49%; 
+            top:-44px;
+        }
+        .section-4-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:34%; 
+            top:-53.5px;
+        }
+        .section-5-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:49%; 
+            top:-63px;
+        }
+        .section-6-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:34%; 
+            top:-72.5px;
+        }
+        .section-7-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:49%; 
+            top:-82px;
+        }
+        .section-8-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:34%; 
+            top:-91.5px;
+        }
 
 
         @media (min-width: 768px) and (max-width: 1024px) {
@@ -196,6 +243,54 @@
             .section-image img{
                 max-width: 100%;
             }
+            .section-1-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:49%; 
+            top:-25px;
+        }
+        .section-2-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:31%; 
+            top:-35px;
+        }
+        .section-3-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:49%; 
+            top:-45px;
+        }
+        .section-4-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:31%; 
+            top:-55px;
+        }
+        .section-5-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:49%; 
+            top:-65px;
+        }
+        .section-6-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:31%; 
+            top:-75px;
+        }
+        .section-7-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:49%; 
+            top:-85px;
+        }
+        .section-8-curve-img{
+            height: 250px; 
+            position: absolute; 
+            left:31%; 
+            top:-95px;
+        }
         }
         /* Responsive styles */
         @media (max-width: 768px) {
@@ -264,10 +359,7 @@
             .extra-space{
                 padding: 20px;
             }
-            .numbering{
-                top: 30%;
-                left: 41%;
-            }
+            
             .hide{
                 display: none;
             }
@@ -278,12 +370,24 @@
             .road-canvas{
                 opacity: 1;
             }
-            .numbering{
+            
+        }
+
+    @media (max-width: 499px){
+        .numbering{
             position: absolute;
             top: 29%;
             left: 41%;
             }
-        }
+    }
+
+    @media (min-width: 500px) and (max-width: 768px){
+        .numbering{
+            position: absolute;
+            top: 29%;
+            left: 46%;
+            }
+    }
 </style>
 
 <section>
@@ -305,7 +409,7 @@
                 <img src="/images/trusted-comp-img/profileEval.png" alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
-             <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-25px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+             <img class="hide section-1-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
              
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -329,7 +433,7 @@
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-29.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="flip hide" style = "height: 250px; position: absolute; left:34%; top:-34.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="flip hide section-2-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
 
             <!-- <canvas class="road-canvas flip-road"></canvas> -->
              <canvas class="road-canvas"></canvas>
@@ -352,7 +456,7 @@
                  <img src="/icons/image.png" alt="image">
             </div>
             <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-34px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-44px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="hide section-3-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -375,7 +479,7 @@
                  <img src="/images/trusted-comp-img/expert_advice.png" alt="image">
             </div>
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-38.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="flip hide" style = "height: 250px; position: absolute; left:34%; top:-53.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="flip hide section-4-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -398,7 +502,7 @@
                 <img src="/images/trusted-comp-img/fast_track.png" alt="image">
             </div>
             <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-63px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="hide section-5-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -421,7 +525,7 @@
                 <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
             </div>
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="flip hide" style = "height: 250px; position: absolute; left:34%; top:-72.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="flip hide section-6-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -444,7 +548,7 @@
                 <img src="/images/trusted-comp-img/fast_track.png" alt="image">
             </div>
             <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-82px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="hide section-7-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -467,7 +571,7 @@
                 <img src="/images/trusted-comp-img/financial_aid.png" alt="image">
             </div>
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="flip hide" style = "height: 250px; position: absolute; left:34%; top:-91.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="flip hide section-8-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -588,7 +692,7 @@
         const y = centerY + radius * Math.sin(angle);
 
         if(isMobile){
-            roadObject.style.transform = `translate(${x - 80}px, ${y + 40}px)`; 
+            roadObject.style.transform = `translate(${x - 50}px, ${y + 40}px)`; 
         } else{
             roadObject.style.transform = `translate(${x + 20}px, ${y + 50}px)`; 
         }
