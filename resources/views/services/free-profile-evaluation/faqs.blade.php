@@ -1,0 +1,11 @@
+@php
+    $faqs = [
+        ['question' => '1. What Is a Free Profile Evaluation?', 'answer' => 'A free profile evaluation is a detailed and personalized assessment of your academic and professional background. At WTS Visa Consultancy, we use this to understand your goals, grades, test scores and preferences. The evaluation helps us match you with the right countries, courses and universities—so your study abroad journey starts with clarity and a clear plan of action.'],
+        ['question' => '2.	Is the Profile Evaluation Really Free?', 'answer' => 'Yes, it is completely free—no hidden charges, no strings attached. At WTS Visa Consultancy, we believe every student deserves expert guidance without worrying about the cost. This service is our way of helping students take the first step confidently. You’re under no obligation to use our paid services after the evaluation—it’s all about helping you get started right.'],
+        ['question' => '3.	What Documents Do I Need to Submit?', 'answer' => 'To get an accurate profile evaluation, you’ll need to share your academic transcripts, resume or CV and any standardized test scores like IELTS, TOEFL, GRE or GMAT (if available). If you haven’t taken any tests yet, that’s fine—we can still guide you. Our team will tell you exactly what’s needed and how to submit them.'],
+        ['question' => '4.	How Long Does it Take to Get My Evaluation Report?', 'answer' => 'Once we receive all the documents, we complete the evaluation within 2-3 working days. Our team reviews each profile thoroughly to give you high quality personalized advice. You’ll get a complete report along with recommendations for courses, universities and next steps to your goals.'],
+        ['question' => '5. What Happens after the Evaluation?', 'answer' => 'After we complete your evaluation, we’ll schedule a free one-on-one consultation to go through the results. You’ll get expert guidance on how to move forward, including help with applications, SOPs and timelines. You can choose to continue with our paid services or not—it’s your decision, your pace.'],
+    ];
+@endphp
+
+<x-faq :faqs="$faqs" />

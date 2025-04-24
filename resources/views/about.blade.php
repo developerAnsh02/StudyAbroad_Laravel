@@ -58,27 +58,27 @@
             <p>We assist students and tourists in attaining their holiday destinations easily. We offer visa services for multiple countries to ensure hassle-free visa procurement for you.</p>
             
             <div class="countries-grid">
-                <div class="country-card">
+                <div class="about-country-card">
                     <h3>Canada</h3>
                     <p>Student, tourist, and permanent residence visas with high success rates.</p>
                 </div>
-                <div class="country-card">
+                <div class="about-country-card">
                     <h3>Australia</h3>
                     <p>Comprehensive visa services for one of the top education destinations.</p>
                 </div>
-                <div class="country-card">
+                <div class="about-country-card">
                     <h3>New Zealand</h3>
                     <p>Expert guidance for this beautiful and welcoming country.</p>
                 </div>
-                <div class="country-card">
+                <div class="about-country-card">
                     <h3>USA</h3>
                     <p>Navigate the complex US visa process with our experienced team.</p>
                 </div>
-                <div class="country-card">
+                <div class="about-country-card">
                     <h3>UK</h3>
                     <p>Specialized services for UK student and visitor visas.</p>
                 </div>
-                <div class="country-card">
+                <div class="about-country-card">
                     <h3>Europe</h3>
                     <p>Services covering multiple European countries and Schengen visas.</p>
                 </div>
@@ -318,7 +318,7 @@
         margin-top: 2rem;
     }
 
-    .country-card {
+    .about-country-card {
         background: linear-gradient(145deg, #151515, #1a1a1a);
         border-radius: 10px;
         padding: 1.5rem;
@@ -327,18 +327,18 @@
         border: 1px solid white;
     }
 
-    .country-card:hover {
+    .about-country-card:hover {
         transform: scale(1.03);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         border-color: #e6d51e;
     }
 
-    .country-card h3 {
+    .about-country-card h3 {
         color: #ff6b00;
         margin-bottom: 0.5rem;
     }
 
-    .country-card p {
+    .about-country-card p {
         color: #bbb;
         font-size: 0.9rem;
     }

@@ -1,0 +1,11 @@
+@php
+    $faqs = [
+        ['question' => '1. Do I Need to Pre-Book Post-Landing Services before Arriving Abroad?', 'answer' => 'Yes, we recommend pre-booking your post-landing services before you travel. This way we can prepare everything in advance, including airport pickup, SIM card arrangements and accommodation support. Early booking gives you peace of mind knowing you’ll have support as soon as you land. It’s the best way to have a smooth and stress free transition.'],
+        ['question' => '2.	Which Countries Do You Offer Post-Arrival Support in?', 'answer' => 'We offer post-arrival support in six major study destinations: USA, UK, Canada, France, Australia and New Zealand. Our team is familiar with the local rules, student systems and practical details in each country. This allows us to provide tailored support to international students studying in these regions.'],
+        ['question' => '3.	Is Airport Pickup Included in Post-Landing Services?', 'answer' => 'Yes, airport pickup is one of the services we provide. When you book with us, we arrange for a trusted local representative to meet you at the airport and escort you to your accommodation. It takes away the stress of finding transportation and navigating a new city after a long flight.'],
+        ['question' => '4.	Do You Help with Finding Accommodation after landing?', 'answer' => 'Yes. We help you find both short term and long term accommodation based on your budget and personal preferences. Our team can connect you with verified rental listings, explain lease terms and guide you through the rental process. We make sure you avoid scams and settle into a safe and comfortable living space as soon as possible.'],
+        ['question' => '5. Can You Help Me Open a Bank Account in a Foreign Country?', 'answer' => 'Yes, we provide full support in opening a student bank account after you arrive. We’ll help you gather the necessary documents, choose the right bank and understand the account options available. We want to make the process quick and easy so you can manage your finances confidently in your new country.'],
+    ];
+@endphp
+
+<x-faq :faqs="$faqs" />

@@ -57,9 +57,9 @@ Route::fallback(function () {
         return view('services.course-selection.course-selection');
     })->name('course_selection');
 
-    Route::get('/services/counselling', function () {
+    Route::get('/services/counseling-with-an-expert', function () {
         return view('services.counselling.counselling');
-    });
+    })->name('counseling_with_an_expert');
 
     Route::get('/services/getting-admission', function () {
         return view('services.getting-admission.index');
@@ -76,6 +76,18 @@ Route::fallback(function () {
     Route::get('/services/visa-assistance', function () {
         return view('services.visa-assistance.visa');
     })->name('visa_assistance');
+
+    Route::get('/services/free-profile-evaluation', function (){
+        return view('services.free-profile-evaluation.free-profile-evaluation');
+    })->name('free_profile_evaluation');
+
+    Route::get('/services/education-loan', function (){
+        return view('services.education-loan.education-loan');
+    })->name('education_loan');
+
+    Route::get('/services/post-landing-services', function (){
+        return view('services.post-landing-services.post-landing');
+    })->name('post_landing');
 
 // services routes end
 

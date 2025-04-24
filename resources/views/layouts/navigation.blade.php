@@ -15,7 +15,7 @@
                             Services <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
                         </a>
                         <div class="sidebar-dropdown-menu">
-                            <!-- <a href="{{ url('/services/counselling') }}">Counseling with an expert</a> -->
+                            
                             <!-- <a href="{{ url('/marketing') }}">Free profile evaluation</a> -->
                             <a href="{{ url('/services/course-selection') }}">Course Selection</a>
                             <a href="{{ url('/services/getting-admission') }}">Admissions</a>
@@ -25,6 +25,10 @@
                             <!-- <a href="{{ url('/marketing') }}">Education Loan</a> -->
                             <a href="{{ url('/services/travel-arrangements') }}">Travel arrangements</a>
                             <!-- <a href="{{ url('/marketing') }}">Post - Landing services</a> -->
+                            <a href="{{ url('/services/free-profile-evaluation') }}">Free Profile Evaluation</a>
+                            <a href="{{ url('/services/education-loan') }}">Education Loan</a>
+                            <a href="{{ url('/services/post-landing-services') }}">Post Landing Services</a>
+                            <a href="{{ url('/services/counseling-with-an-expert') }}">Counseling with an expert</a>
                         </div>
                     </div>
                     <div class="sidebar-dropdown">
@@ -59,7 +63,7 @@
                     <div class="dropdown">
                         <a class="nav-item" style = "display: flex; gap: 5px; align-items: center;">Services<span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span></a>
                         <div class="dropdown-menu">
-                            <!-- <a href="{{ url('/services/counselling') }}">Counseling with an expert</a> -->
+                            
                             <!-- <a href="{{ url('/') }}">Free profile evaluation</a> -->
                             <a href="{{ url('/services/course-selection') }}">Course Selection</a>
                             <a href="{{ url('/services/getting-admission') }}">Getting Admissions</a>
@@ -69,6 +73,10 @@
                             <!-- <a href="{{ url('/') }}">Education Loan</a> -->
                             <a href="{{ url('/services/travel-arrangements') }}">Travel arrangements</a>
                             <!-- <a href="{{ url('/m') }}">Post - Landing services</a> -->
+                            <a href="{{ url('/services/free-profile-evaluation') }}">Free Profile Evaluation</a>
+                            <a href="{{ url('/services/education-loan') }}">Education Loan</a>
+                            <a href="{{ url('/services/post-landing-services') }}">Post Landing Services</a>
+                            <a href="{{ url('/services/counseling-with-an-expert') }}">Counseling with an expert</a>
                         </div>
                     </div>
 

@@ -3,7 +3,7 @@
 
     <section class="service-hero">
         <div class="service-hero-content">
-            <h1 class="main-heading">Talk to an Expert Counselor – Start Healing Today</h1>
+            <h1 class="main-heading">Education Loan Assistance for Your Study Abroad Dream</h1>
             <!-- <p>Boost your confidence and ace your student visa interview with expert mock sessions. -->
             </p>
             <!-- <a href="#get-started" class="btn">Select Your Course</a> -->
@@ -47,11 +47,11 @@
 
 @include('./components/services-components.trust')
 
-@include('services.counselling.scrollable')
+@include('services.education-loan.scrollable')
 
 @include('./components/cta-button')
 
-@include('services.counselling.faqs')
+@include('services.education-loan.faqs')
 
 
 
