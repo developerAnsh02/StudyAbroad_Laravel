@@ -126,6 +126,8 @@ We take care of your travel plans, making your visa process seamless and stress-
 
 @include('./components/stats')
 
+@include('./components/services-components.trusted-partner')
+
 @include('./components/services-components.trust')
 
 @include('services.travelling.scrollable')

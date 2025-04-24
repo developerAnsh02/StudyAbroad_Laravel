@@ -1,5 +1,5 @@
 <section id="brand-partners" class="brand-partners">
-        <div class="container">
+        <div class="container-flex">
             <h2 class="section-title">Our Global Partners</h2>
             <div class="brand-marquee">
                 <div class="brand-track">

@@ -173,6 +173,8 @@
 
 @include('./components/services-components.trust')
 
+@include('./components/services-components.trusted-partner')
+
 @include('./components/cta-button')
 
 

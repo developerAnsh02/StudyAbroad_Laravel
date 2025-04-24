@@ -394,7 +394,7 @@
     <div class="trust-container">
 
         <!-- Title  -->
-         <h2 class="title">Your Trusted Partner for a Hassle-Free Student Visa Success!</h2>
+         <h2 class="title">Process Flow</h2>
 
          <div id="road-object">
             <img src="/images/vecteezy_walking-man-in-orange-hoodie-and-backpack_56099201.png" alt="image">
@@ -558,8 +558,8 @@
             </div>
 
             <div class="section-content">
-                <h2 class="section-title">Initial Deposit & Financial Docs</h2>
-                <p class="section-description">Guided fund prep for CAS</p>
+                <h2 class="section-title">Medical Test & VISA Filing</h2>
+                <p class="section-description">Done with expert support</p>
             </div>
         </div>
 
@@ -581,8 +581,8 @@
             </div>
 
             <div class="section-content">
-                <h2 class="section-title">CAS Issuance</h2>
-                <p class="section-description">UWe ensure you meet every requirement</p>
+                <h2 class="section-title">Flight Bookings & Beyond</h2>
+                <p class="section-description">You're all set to fly!</p>
             </div>
         </div>
     </div>

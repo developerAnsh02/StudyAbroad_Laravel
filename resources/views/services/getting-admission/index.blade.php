@@ -44,6 +44,7 @@
     <!-- hero section end -->
     
     @include('components.stats')
+    @include('./components/services-components.trusted-partner')
     @include('components.services-components.trust')
     <!-- scrollable section start -->
     <style>

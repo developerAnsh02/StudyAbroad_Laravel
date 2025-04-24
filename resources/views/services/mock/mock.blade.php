@@ -73,6 +73,8 @@
 
 @include('./components/stats')
 
+@include('./components/services-components.trusted-partner')
+
 @include('./components/services-components.trust')
 
 @include('services.mock.scrollable')

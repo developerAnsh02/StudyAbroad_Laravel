@@ -353,6 +353,10 @@
         </div>
     </section> -->
 
+    <!-- Process Flow  -->
+    @include('./components/services-components.trust')
+
+    <!-- Smooth Transition  -->
     <section class="visa-services" id="visa-services">
         <div class="container">
             <h2>Smooth Transition to Your New Country</h2>
@@ -438,8 +442,7 @@
 
 
 
-
-
+    <!-- Choose us  -->
     <section id="services" class="services">
         <h2>Why <span>Choose Us?</span></h2>
         <p>WTS Visa Consultancy has served thousands of student visa application in realizing their dreams of overseas
@@ -546,8 +549,10 @@
         </div>
     </section>
 
+    <!-- Global Partners  -->
     <x-global-partner/>
 
+    <!-- Start Your Journey  -->
     <section id="services" class="services">
         <div class="container">
             <h2>Start Your Journey Today!</h2>
@@ -595,10 +600,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Our Services  -->
     <section class="our-services">
             <x-our-services />
     </section>
 
+    <!-- FAQ section  -->
     @php
         $faqs = [
             [

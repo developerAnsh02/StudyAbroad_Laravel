@@ -6,6 +6,7 @@
 @include('services.sop-assistance.comparison')
 @include('services.sop-assistance.steps')
 @include('./components/stats')
+@include('./components/services-components.trusted-partner')
 @include('./components/services-components.trust')
 @include('./components.services-components.choose-us')
 

@@ -126,6 +126,8 @@ We simplify your visa process, making your journey effortless and worry-free.
 
 @include('./components/stats')
 
+@include('./components/services-components.trusted-partner')
+
 @include('./components/services-components.trust')
 
 @include('services.visa-assistance.scrollable')

@@ -235,6 +235,7 @@
     }
 
     .home-hero-content {
+        width: 80%;
         max-width: 600px;
         margin: 0 auto;
         /* Center the content */
@@ -295,7 +296,6 @@
     .hero-content-wrapper {
         flex-direction: column;
         align-items: flex-start;
-        width: 80%;
         gap: 30px;
     }
 
@@ -334,7 +334,6 @@
 
     .map-container {
         position: relative;
-        max-width: 55%;
         margin-left: 0;
         margin-right: auto;
         top: 0;
