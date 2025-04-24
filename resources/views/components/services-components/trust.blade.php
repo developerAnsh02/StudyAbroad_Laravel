@@ -87,10 +87,10 @@
             z-index: 3;
         }
 
-        .title {
-                font-size: 32px;
+        .process-title {
+                font-size: 2rem;
                 color: black;
-                font-weight: 600;
+                font-weight: 700;
                 margin-bottom: 60px;
                 opacity: 0;
                 animation: fadeInUp 1s ease forwards;
@@ -379,13 +379,11 @@
                 margin: 0 auto 20px;
                 transform: none;
             }
-            .title{
-                font-size: 28px;
-            }
             .padding-space{
                 padding: 3px;
             }
-            .title{
+            .process-title{
+                font-size: 1.75rem;
                 margin-bottom: 20px;
             }
             .section-description{
@@ -434,7 +432,7 @@
     <div class="trust-container">
 
         <!-- Title  -->
-         <h2 class="title">Process Flow</h2>
+         <h2 class="process-title">Process Flow</h2>
 
          <div id="road-object">
             <img src="/images/vecteezy_walking-man-in-orange-hoodie-and-backpack_56099201.png" alt="image">

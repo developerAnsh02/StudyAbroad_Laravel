@@ -18,7 +18,7 @@
 
 <section class="countries-section">
     <div class="container">
-        <h2 class="section-title">Top Countries for Higher Education</h2>
+        <h2>Top Countries for Higher Education</h2>
         <div class="country-card-container">
             <div class="country-card">
                 <img src="images/usa.jpg" alt="USA">
@@ -139,7 +139,7 @@
     <!-- Client Testimonials  -->
     <section class="video-gallery-section">
         <div class="container">
-            <h2 class="section-title">Client Testimonials</h2>
+            <h2>Client Testimonials</h2>
 
             <div class="video-slider-wrapper">
                 <button class="slide-btn left" onclick="scrollSlider(-1)">‹</button>
@@ -357,7 +357,7 @@
     @include('./components/services-components.trust')
 
     <!-- Smooth Transition  -->
-    <section class="visa-services" id="visa-services">
+    <section class="visa-services dark-theme" id="visa-services">
         <div class="container">
             <h2>Smooth Transition to Your New Country</h2>
             <p>At WTS Visa Consultancy, we assist you to settle in abroad. From housing and transportation to medical care
