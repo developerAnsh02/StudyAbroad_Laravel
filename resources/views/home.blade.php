@@ -286,6 +286,12 @@
 
         .slide-btn.left { left: 10px; }
         .slide-btn.right { right: 10px; }
+
+
+        .normal-content{
+            text-align: justify;
+            font-size: 1rem;
+        }
     </style>
 
     <script>
@@ -359,7 +365,7 @@
     <!-- Smooth Transition  -->
     <section class="visa-services dark-theme" id="visa-services">
         <div class="container">
-            <h2>Smooth Transition to Your New Country</h2>
+            <h2>Smooth transition to your New Country</h2>
             <p>At WTS Visa Consultancy, we assist you to settle in abroad. From housing and transportation to medical care
                 and local way of life, we have it all covered. Our assistance enables you to settle down, get connected with
                 other students and settle down fast so you can study with confidence.</p>
@@ -368,12 +374,9 @@
                 <div class="visa-service-card">
                     <img src="icons/icons8-tourist-pulsar-color/icons8-tourist-96.png" alt="Tourist Visa">
                     <div class="service-content">
-                        <h3>Accommodation & Travel</h3>
-                        <p class="normal-content" data-id="1">Explore the world with ease! Our tourist visa services ensure
-                            a smooth and stress-free Securing the correct accommodation is a sure-fire way to enjoy a
-                            stress-free study abroad experience. With WTS Visa Consultancy, we assist you in considering
-                            cost.</p>
-                        <p class="all-content" data-id="1" style="display: none;">Securing the correct accommodation is a
+                        <h3>Application & Offer Letter</h3>
+                        <p class="normal-content" data-id="1">Ensure your application is complete with all required documents. Once accepted, you’ll receive an offer letter, a crucial step in confirming your admission to your chosen program. Keep this document handy as it's needed for visa processing and financial planning.</p>
+                        <!-- <p class="all-content" data-id="1" style="display: none;">Securing the correct accommodation is a
                             sure-fire way to enjoy a stress-free study abroad experience. With WTS Visa Consultancy, we
                             assist you in considering cost, location and facilities for both on-campus and off-campus stays.
                             Our experts also assist with travel arrangements, such as flight reservations and airport
@@ -382,7 +385,7 @@
                             the universities provide airport pick-up facilities and we assist you in arranging the same.
                             With proper accommodation and travel assistance you can settle down and concentrate on your
                             studies and personal objectives.</p>
-                        <a class="learn-more" onclick="learnmoreSection(1)">Learn More →</a>
+                        <a class="learn-more" onclick="learnmoreSection(1)">Learn More →</a> -->
                     </div>
                 </div>
 
@@ -390,11 +393,9 @@
                 <div class="visa-service-card">
                     <img src="icons/icons8-health-pulsar-color/icons8-health-96.png" alt="Travel Visa">
                     <div class="service-content">
-                        <h3>Health Insurance & Safety Advice</h3>
-                        <p class="normal-content" data-id="2">Health insurance is essential to protect yourself from
-                            unexpected medical costs. At WTS Visa Consultancy, we help you choose the right insurance plan
-                            that meets your destination's requirements and covers medical treatments and emergencies.</p>
-                        <p class="all-content" data-id="2" style="display: none;">Health insurance is essential to protect
+                        <h3>Fees & Finances</h3>
+                        <p class="normal-content" data-id="2">Plan for tuition and cost of living. Be aware of the fees and research financial aid programs. Having an account in a local bank could also help deal with day-to-day finances, so you're set financially for your new life abroad.</p>
+                        <!-- <p class="all-content" data-id="2" style="display: none;">Health insurance is essential to protect
                             yourself from unexpected medical costs. At WTS Visa Consultancy, we help you choose the right
                             insurance plan that meets your destination's requirements and covers medical treatments and
                             emergencies. We also guide you on accessing local healthcare and how to use your insurance. Our
@@ -402,17 +403,16 @@
                             Having knowledge of where to seek medical and mental health assistance visa application help
                             provides reassurance. With the right health and safety precautions you can study without
                             concern.</p>
-                        <a class="learn-more" onclick="learnmoreSection(2)">Learn More →</a>
+                        <a class="learn-more" onclick="learnmoreSection(2)">Learn More →</a> -->
                     </div>
                 </div>
                 <div class="visa-service-card">
                     <img src="icons/icons8-working-with-a-laptop-pulsar-color/icons8-working-96.png" alt="Travel Visa">
                     <div class="service-content">
                         <h3>Work & Internship Opportunities</h3>
-                        <p class="normal-content" data-id="3">Part time job while studying abroad enhances your professional
-                            career and contributes to your costs. We explain work permit laws and employment conditions to
-                            you at WTS Visa Consultancy. Part time while studying and full time during holidays </p>
-                        <p class="all-content" data-id="3" style="display: none;">Part time job while studying abroad
+                        <p class="normal-content" data-id="3"> Get your student visa as soon as you receive your offer letter. Ensure you have all documents required, such as proof of funds. Pre-book your flight early to secure the best price, arriving before your program commences for an easy transition to your new home.
+                        </p>
+                        <!-- <p class="all-content" data-id="3" style="display: none;">Part time job while studying abroad
                             enhances your professional career and contributes to your costs. We explain work permit laws and
                             employment conditions to you at WTS Visa Consultancy. Part time while studying and full time
                             during holidays are permitted by most countries and we assist you in visa application assistance
@@ -420,7 +420,7 @@
                             internships and part time employment. Our professionals assist you in building a solid resume
                             and cover letter specific to local requirements. Work-life balance improves your career and
                             provides you with economic freedom, an enriching global experience.</p>
-                        <a class="learn-more" onclick="learnmoreSection(3)">Learn More →</a>
+                        <a class="learn-more" onclick="learnmoreSection(3)">Learn More →</a> -->
                     </div>
                 </div>
             </div>
@@ -556,14 +556,14 @@
     <section id="services" class="services">
         <div class="container">
             <h2>Start Your Journey Today!</h2>
-            <p class="section-description">Start with WTS Visa Consultancy today. Plan ahead to research options, enhance
+            <p>Start with WTS Visa Consultancy today. Plan ahead to research options, enhance
                 your application and find funding. Our consultants will assist you to hit deadlines, study for exams and
                 coordinate documents effortlessly. With a plan you can confidently realize your academic aspirations.</p>
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card">
-                    <img src="icons/icons8-program-pulsar-color/icons8-program-96.png" alt="Programs">
-                    <h3>Schedule a Free Consultation with Our Experts</h3>
+                    <img src="icons/icons8-program-pulsar-color/icons8-program-96.png" alt="Programs" class="mb-2">
+                    <h3>Schedule a Free Consultation</h3>
                     <p>The initial step to begin your study abroad process is booking a complimentary consultation with WTS
                         Visa Consultancy. Our experts will evaluate your academic record, career aspirations and budget to
                         suggest the most appropriate universities and programs. We will advise you on application
@@ -575,27 +575,14 @@
                 <!-- Service 2 -->
                 <div class="service-card">
                     <img src="icons/icons8-consultation-pulsar-color/icons8-consultation-96.png" alt="Consultation">
-                    <h3>Join Our Free Study Abroad Webinars</h3>
-                    <p>Our free study abroad webinars are interactive and informative sessions for students. Organized by
-                        our expert consultants, these webinars deal with university choice, application techniques, visa
-                        procedure and finance avenues. You get to know about best places to go, studies to expect and career
-                        opportunities. You can raise questions and receive real time solutions. Guest lecturers, some of
-                        whom are successful alumni will provide you with insights and advice. These webinars will make you
-                        informed and assured in the process. Don't miss this chance to learn from professionals and increase
-                        your opportunities of getting admission and funding for your study abroad experience.</p>
+                    <h3>Virtual Tours to Your Dream University</h3>
+                    <p>Take advantage of virtual tours to tour your desired university from home. Virtual tours give you an interactive preview of the campus, student facilities, and academic buildings, and you can imagine yourself there. If you want to see the campus layout, classrooms, or recreational facilities, virtual tours offer you a comprehensive overview. This is the best time to learn about student life, campus life, and facilities and take an informed decision about your future studies.</p>
                 </div>
                 <!-- Service 3 -->
                 <div class="service-card">
                     <img src="icons/icons8-application-pulsar-color/icons8-application-96.png" alt="Application">
-                    <h3>Read Success Stories from Students Like You</h3>
-                    <p>Listening to other students can motivate you to follow your own dreams. At WTS Visa Consultancy, we
-                        have assisted thousands of students in getting into top universities across the globe. Our success
-                        stories tell you about the difficulties they encountered and how our expert advice allowed them to
-                        overcome them. Learning about their experience will provide you with hands-on information student
-                        immigration consultant about the application process, scholarships and settling into a new country.
-                        Success stories will also demonstrate how international education produces exhilarating career
-                        prospects and personal development. Let their stories inspire you to move forward to your study
-                        abroad aspiration.</p>
+                    <h3>One-on-One Session with Alumni Students</h3>
+                    <p>Get more information about your chosen university by engaging with alumni students in individual settings. Personalized interactions offer firsthand information on campus life, academic demands, and career opportunities after graduation. Alumni students can give you information, both the disadvantages and the advantages, so you have a realistic picture of what to expect. They can also guide you as to how you can make the most of your university time, from internships to networking, to prepare you with the confidence to attain your academic achievement.</p>
                 </div>
             </div>
         </div>
