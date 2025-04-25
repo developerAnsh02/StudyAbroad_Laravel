@@ -80,61 +80,61 @@
         $universities = [
             [
                 'name' => 'University of Oxford',
-                'logo' => 'images/universities/oxford.png', // Add logo URL if available
+                'logo' => 'images/universities/oxford.webp', // Add logo URL if available
                 'course' => 'Various Undergraduate & Postgraduate Courses',
                 'ranking' => 1
             ],
             [
                 'name' => 'University of Cambridge',
-                'logo' => 'images/universities/cambridge-logo.png',
+                'logo' => 'images/universities/cambridge-logo.webp',
                 'course' => 'Engineering, Medicine, Humanities, Business',
                 'ranking' => 2
             ],
             [
                 'name' => 'ETH Zurich',
-                'logo' => 'images/universities/zurich.png',
+                'logo' => 'images/universities/zurich.webp',
                 'course' => 'Engineering, Technology, Sciences',
                 'ranking' => 3
             ],
             [
                 'name' => 'University of Amsterdam',
-                'logo' => 'images/universities/amsterdam.png',
+                'logo' => 'images/universities/amsterdam.webp',
                 'course' => 'Social Sciences, Economics, Psychology',
                 'ranking' => 4
             ],
             [
                 'name' => 'University of Munich',
-                'logo' => 'images/universities/munich.png',
+                'logo' => 'images/universities/munich.webp',
                 'course' => 'Natural Sciences, Law, Economics, Medicine',
                 'ranking' => 5
             ],
             [
                 'name' => 'Heidelberg University',
-                'logo' => 'images/universities/heidelberg.png',
+                'logo' => 'images/universities/heidelberg.webp',
                 'course' => 'Life Sciences, Humanities, Social Sciences',
                 'ranking' => 6
             ],
             [
                 'name' => 'Sorbonne University',
-                'logo' => 'images/universities/sorbonne.png',
+                'logo' => 'images/universities/sorbonne.webp',
                 'course' => 'Arts, Humanities, Sciences, Engineering',
                 'ranking' => 7
             ],
             [
                 'name' => 'University of Bologna',
-                'logo' => 'images/universities/bologna.png',
+                'logo' => 'images/universities/bologna.webp',
                 'course' => 'Law, Arts, Science, Engineering',
                 'ranking' => 8
             ],
             [
                 'name' => 'University of Copenhagen',
-                'logo' => 'images/universities/copenhagen.png',
+                'logo' => 'images/universities/copenhagen.webp',
                 'course' => 'Health Sciences, Law, Humanities, Social Sciences',
                 'ranking' => 9
             ],
             [
                 'name' => 'Stockholm University',
-                'logo' => 'images/universities/stockholm.png',
+                'logo' => 'images/universities/stockholm.webp',
                 'course' => 'Environmental Sciences, IT, Arts, Business',
                 'ranking' => 10
             ]

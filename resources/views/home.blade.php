@@ -21,7 +21,7 @@
         <h2>Top Countries for Higher Education</h2>
         <div class="country-card-container">
             <div class="country-card">
-                <img src="images/usa.jpg" alt="USA">
+                <img src="images/us.webp" alt="USA">
                 <div class="country-info">
                     <h3>USA</h3>
                     <ul class="country-features">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/france.jpg" alt="France">
+                <img src="images/france.webp" alt="France">
                 <div class="country-info">
                     <h3>France</h3>
                     <ul class="country-features">
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/australia.jpg" alt="Australia">
+                <img src="images/australia.webp" alt="Australia">
                 <div class="country-info">
                     <h3>Australia</h3>
                     <ul class="country-features">
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/germany.jpg" alt="Germany">
+                <img src="images/germany.webp" alt="Germany">
                 <div class="country-info">
                     <h3>Germany</h3>
                     <ul class="country-features">
@@ -85,7 +85,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/canada.jpg" alt="Canada">
+                <img src="images/canada.webp" alt="Canada">
                 <div class="country-info">
                     <h3>Canada</h3>
                     <ul class="country-features">
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/dubai.jpg" alt="Dubai">
+                <img src="images/dubai.webp" alt="Dubai">
                 <div class="country-info">
                     <h3>Dubai</h3>
                     <ul class="country-features">
@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/ireland.jpg" alt="Ireland">
+                <img src="images/ireland.webp" alt="Ireland">
                 <div class="country-info">
                     <h3>Ireland</h3>
                     <ul class="country-features">
@@ -409,7 +409,7 @@
                 <div class="visa-service-card">
                     <img src="icons/icons8-working-with-a-laptop-pulsar-color/icons8-working-96.png" alt="Travel Visa">
                     <div class="service-content">
-                        <h3>Work & Internship Opportunities</h3>
+                        <h3>Visa and Fly Tickets</h3>
                         <p class="normal-content" data-id="3"> Get your student visa as soon as you receive your offer letter. Ensure you have all documents required, such as proof of funds. Pre-book your flight early to secure the best price, arriving before your program commences for an easy transition to your new home.
                         </p>
                         <!-- <p class="all-content" data-id="3" style="display: none;">Part time job while studying abroad
