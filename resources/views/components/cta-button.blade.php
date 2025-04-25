@@ -1,7 +1,7 @@
 <div class="study-abroad-container">
     <div class="study-abroad-content">
-        <h2>Start Your Study Abroad Journey!</h2>
-        <p>With the most trusted <strong>study abroad consultant</strong> for admission to top international universities and colleges.</p>
+        <h2>Begin Your Study Abroad Adventure!</h2>
+        <p>Get expert guidance from the leading consultants for admissions to prestigious universities and colleges worldwide.</p>
         <a href="tel:+1234567890" class="cta-button">📞 GIVE A MISSED CALL</a>
     </div>
     <div class="study-abroad-image">

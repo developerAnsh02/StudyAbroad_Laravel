@@ -1,26 +1,26 @@
 <section class="comparison-section">
-    <h2 class="comparison-title">Good SOP vs. Bad SOP</h2>
+    <h2 class="comparison-title">Good SOP vs. Bad SOP: What Makes the Difference</h2>
     <div class="comparison-container">
         <div class="comparison-column good-sop">
             <h3>✅ Good SOP</h3>
             <ul>
-                <li>✔️ Well-structured with a clear flow</li>
-                <li>✔️ Personalized and engaging storytelling</li>
-                <li>✔️ Strong introduction & impactful conclusion</li>
-                <li>✔️ Highlights achievements & career goals</li>
-                <li>✔️ Concise and to the point</li>
-                <li>✔️ Free from grammatical errors</li>
+                <li>✔️ Clear structure with smooth flow</li>
+                <li>✔️ Personalised and engaging narrative</li>
+                <li>✔️ Strong opening and memorable closing</li>
+                <li>✔️ Showcases key achievements and goals</li>
+                <li>✔️ Precise, focused, and well-written</li>
+                <li>✔️ Free of grammatical errors</li>
             </ul>
         </div>
         <div class="comparison-column bad-sop">
             <h3>❌ Bad SOP</h3>
             <ul>
-                <li>❌ Poorly organized, lacks coherence</li>
-                <li>❌ Generic, lacks a personal touch</li>
-                <li>❌ Weak introduction and abrupt ending</li>
-                <li>❌ Fails to showcase achievements or aspirations</li>
-                <li>❌ Too lengthy or too short</li>
-                <li>❌ Full of grammar mistakes</li>
+                <li>❌ Disorganised and hard to follow</li>
+                <li>❌ Generic with no personal voice</li>
+                <li>❌ Weak intro and abrupt conclusion</li>
+                <li>❌ Lacks details on achievements or goals</li>
+                <li>❌ Either too brief or overly long</li>
+                <li>❌ Contains spelling and grammatical mistakes</li>
             </ul>
         </div>
     </div>

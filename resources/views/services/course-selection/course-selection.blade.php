@@ -45,22 +45,22 @@
 
 <section class="course-selection">
     <div class="container">
-        <h2 class="title">Procedure for Choosing the Most Suitable Course</h2>
+        <h2 class="title">Steps to Choosing the Right Course for You</h2>
         <div class="steps">
             <div class="step_s">
                 <i class="fas fa-lightbulb"></i>
                 <h3>Discover Your Passion</h3>
-                <p>Identify what you are interested in and is connected to your future profession.</p>
+                <p>Discover what excites you and aligns with your career goals—your passions are the foundation for success.</p>
             </div>
             <div class="step_s">
                 <i class="fas fa-university"></i>
-                <h3>Compare Universities & Programs</h3>
-                <p>Compare courses based on rankings, fees, and employability.</p>
+                <h3>Research and Compare Options</h3>
+                <p>Compare courses by researching international rankings, tuition, coursework, and future career opportunities.</p>
             </div>
             <div class="step_s">
                 <i class="fas fa-user-graduate"></i>
-                <h3>Get Expert Guidance</h3>
-                <p>Seek experts' advice to make the best decision about your future.</p>
+                <h3>Seek Advice</h3>
+                <p>Join experienced advisors for tailored advice and informed choices aligned with your goals.</p>
             </div>
         </div>
     </div>

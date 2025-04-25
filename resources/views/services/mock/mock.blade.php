@@ -42,31 +42,31 @@
 
 
     <section class="mock-interview-section ">
-        <h2>Master Your Interview & Secure Your Success!
+        <h2>Master Your Interview & Lock In Your Success!
         </h2>
         <div class="mock-content dark-theme">
             <div class="mock-card ">
                 <i class="fas fa-comments"></i>
                 <h3 class="title-light">Personalized Coaching</h3>
-                <p>Master the most frequent interview questions, best response tactics, and most important do's & don'ts from experts.
+                <p>Discover how to ace standard interview questions, finesse your answers, and pick up golden do's and don'ts with expert advice.
                 </p>
             </div>
             <div class="mock-card">
                 <i class="fas fa-user-check"></i>
-                <h3 class="title-light">Practice with Mock Interviews</h3>
-                <p>Respond to real-world interview questions to build confidence and provide answers.
+                <h3 class="title-light">Mock Interview Practice</h3>
+                <p>Practice interview situations realistically to hone your skills and answer confidently and clearly.
                 </p>
             </div>
             <div class="mock-card">
                 <i class="fas fa-bullseye"></i>
-                <h3 class="title-light">Expert Feedback & Refining</h3>
-                <p>Receive personalized feedback, enhance weak points, and refine your answers.
+                <h3 class="title-light">Expert Feedback & Refinement</h3>
+                <p>Obtain honest feedback to know your areas of weakness, refine your answers, and improve overall performance.
                 </p>
             </div>
             <div class="mock-card">
                 <i class="fas fa-bullseye"></i>
-                <h3 class="title-light">Build Confidence & Impression</h3>
-                <p>Excel at communication, body language, and presentation to create a lasting impression.</p>
+                <h3 class="title-light">Confidence & Impact</h3>
+                <p>Acquire effective communication skills, command your body language, and dress well to leave a lasting impression.</p>
             </div>
         </div>
     </section>
