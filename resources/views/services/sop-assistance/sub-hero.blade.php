@@ -1,10 +1,9 @@
 <section class="service-section">
-    <h2 class="service-title">Professional SOP Writing Assistance</h2>
+    <h2 class="service-title">SOP Professional Writing to Enhance Your University Application</h2>
     <div class="service-container">
         <div class="left">
             <p class="service-text">
-            A well-crafted Statement of Purpose (SOP) is a key consideration for securing admission in your desired university. It highlights your academic history, career goals, and reasons for choosing a specific course and university. 
-Our experts ensure your SOP is engaging, well-structured, and tailored to impress the admission committees.
+            Your Statement of Purpose (SOP) is what gets you noticed by leading universities. It's not a summary — it's your history, highlighting your academic experience, professional goals, and the reason you're choosing your course and university. At WTS Visa Consultancy, our experienced writers create persuasive, tailored SOPs that speak to your individual strengths and ambitions. We concentrate on crisp structure, crisp language, and compelling content to make your application stand out and leave a lasting impression on admission committees.
 
             </p>
     

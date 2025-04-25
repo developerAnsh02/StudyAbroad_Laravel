@@ -43,27 +43,37 @@ We take care of your travel plans, making your visa process seamless and stress-
 
 
     <section class="infographic-section">
-  <h2>Comprehensive Post-Arrival Support for a Smooth Transition</h2>
+  <h2>Full Post-Arrival Support for Seamless Transition</h2>
   <div class="info-grid">
     <div class="info-card">
       <div class="icon">🧭</div>
       <h3>Local Orientation</h3>
-      <p>Get familiar with public transport, local laws, and essential services in your new city.</p>
+      <p>Learn about public transport, local regulations, and major services in your new city to settle down in no time.</p>
     </div>
     <div class="info-card">
       <div class="icon">🏠</div>
       <h3>Accommodation Assistance</h3>
-      <p>Find comfortable, affordable housing options near your university or college.</p>
+      <p>Identify comfortable and affordable accommodations near your university or college for easy living.</p>
     </div>
     <div class="info-card">
       <div class="icon">📱</div>
       <h3>Banking & SIM Setup</h3>
-      <p>Help setting up a local bank account and mobile SIM for hassle-free transactions.</p>
+      <p>Establish a local bank account and mobile SIM card for hassle-free transactions and easy connectivity.</p>
     </div>
     <div class="info-card">
       <div class="icon">🤝</div>
       <h3>Community Connection</h3>
-      <p>Join local student communities and connect with peers for a smoother transition.</p>
+      <p>Join local student groups to network and befriend new people and get used to your new surroundings.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">👩‍⚕️</div>
+      <h3>Healthcare Advice</h3>
+      <p>Seek assistance in learning how to access healthcare services and getting enrolled with local physicians for assurance.</p>
+    </div>
+    <div class="info-card">
+      <div class="icon">➕</div>
+      <h3>Emergency Assistance</h3>
+      <p>Be assisted in times of any emergencies, to be never left behind in times of transition.</p>
     </div>
   </div>
 </section>
