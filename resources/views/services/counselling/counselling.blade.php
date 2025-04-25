@@ -4,7 +4,7 @@
     <section class="service-hero">
         <div class="service-hero-content">
             <h1 class="main-heading">Talk to an Expert Counselor – Start Healing Today</h1>
-            <!-- <p>Boost your confidence and ace your student visa interview with expert mock sessions. -->
+            <p>Connect with an expert counselor and start your journey today.
             </p>
             <!-- <a href="#get-started" class="btn">Select Your Course</a> -->
 

@@ -4,13 +4,13 @@ return [
     'default' => [
         'title' => 'WTS Visa - Trusted Visa Consultancy',
         'description' => 'Get expert visa guidance and support with WTS Visa.',
-        'keywords' => 'visa, immigration, student visa, work visa',
+        'keywords' => 'visa, immigration, student visa',
     ],
 
     'pages' => [
         'home' => [
             'title' => 'WTS Visa Consultancy – Expert Visa & Immigration Services',
-            'description' => 'Trusted visa consultancy for study, work, and immigration. WTS Visa Consultancy helps you secure visas smoothly with expert guidance. Get started today!',
+            'description' => 'Trusted visa consultancy for study, and immigration. WTS Visa Consultancy helps you secure visas smoothly with expert guidance. Get started today!',
             'keywords' => '',
         ],
         'contact' => [
@@ -54,6 +54,26 @@ return [
         'visa_assistance' => [
             'title' => 'Visa Assistance Services | Expert Guidance for Fast Visa Approval',
             'description' => 'Get expert student visa assistance for smooth processing, correct documentation, and fast approvals. Start your international education journey today!',
+            'keywords' => '',
+        ],
+        'free_profile_evaluation' => [
+            'title' => 'Free Profile Evaluation – Expert Guidance for Your Future',
+            'description' => 'Get a Free Profile Evaluation to assess your academic background and goals. Receive personalized advice to help you make informed decisions for your future.',
+            'keywords' => '',
+        ],
+        'education_loan' => [
+            'title' => 'Education Loan for Studies Abroad – Easy & Flexible Options',
+            'description' => 'Get an Education Loan for studying abroad with WTS Visa Consultancy. Enjoy flexible repayment options and expert guidance to fund your academic dreams.',
+            'keywords' => '',
+        ],
+        'post_landing' => [
+            'title' => 'Post-Landing Services – Start Your New Journey Stress-Free',
+            'description' => 'WTS Visa Consultancy’s Post-Landing Services ensure a smooth transition with airport pickup, accommodation support, and local guidance for a stress-free start.',
+            'keywords' => '',
+        ],
+        'counseling_with_an_expert' => [
+            'title' => 'Expert Counseling – Get Personalised Study Abroad Guidance',
+            'description' => 'Book a session with WTS Visa Consultancy for expert counseling and get personalised advice on courses, universities, and your study abroad plan.',
             'keywords' => '',
         ],
 

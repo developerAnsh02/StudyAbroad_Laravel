@@ -4,8 +4,8 @@
     <section class="service-hero">
         <div class="service-hero-content">
             <h1 class="main-heading">Free Profile Evaluation for Your Study Abroad Success</h1>
-            <!-- <p>Boost your confidence and ace your student visa interview with expert mock sessions.
-            </p> -->
+            <p>Unlock your study abroad dream with a free expert profile check!
+            </p>
             <!-- <a href="#get-started" class="btn">Select Your Course</a> -->
 
             <!-- Features Section -->
