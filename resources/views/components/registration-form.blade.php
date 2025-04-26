@@ -19,7 +19,7 @@
             <select id="visa-type" name="visa_type" required>
                 <option value="" disabled selected>Select Visa Type</option>
                 <option value="Tourist Visa">Tourist Visa</option>
-                <option value="Work Visa">Work Visa</option>
+                <!-- <option value="Work Visa">Work Visa</option> -->
                 <option value="Student Visa">Student Visa</option>
                 <!-- <option value="Business Visa">Business Visa</option> -->
             </select>
