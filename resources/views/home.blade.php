@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/ireland.webp" alt="Ireland">
+                <img src="images/Ireland.webp" alt="Ireland">
                 <div class="country-info">
                     <h3>Ireland</h3>
                     <ul class="country-features">
