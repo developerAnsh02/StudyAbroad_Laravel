@@ -81,61 +81,61 @@
         $universities = [
             [
                 'name' => 'Harvard (USA)',
-                'logo' => 'images/universities/Harvard-Logo.png',
+                'logo' => 'images/universities/Harvard-Logo.webp',
                 'course' => 'Science & Medicine',
                 'ranking' => 1
             ],
             [
                 'name' => 'Stanford (USA)',
-                'logo' => 'images/universities/Stanford_University_Logo.png',
+                'logo' => 'images/universities/Stanford_University_Logo.webp',
                 'course' => 'Engineering & Technology',
                 'ranking' => 2
             ],
             [
                 'name' => 'Massachusetts Institute of Technology (MIT) (USA)',
-                'logo' => 'images/universities/MIT_logo.png',
+                'logo' => 'images/universities/MIT_logo.webp',
                 'course' => 'Engineering & Physical Sciences',
                 'ranking' => 6
             ],
             [
                 'name' => 'University of Oxford (UK)',
-                'logo' => 'images/universities/Oxford-University.png',
+                'logo' => 'images/universities/Oxford-University.webp',
                 'course' => 'Economics & Political Science',
                 'ranking' => 45
             ],
             [
                 'name' => 'University of Cambridge (UK)',
-                'logo' => 'images/universities/cambridge-logo.png',
+                'logo' => 'images/universities/cambridge-logo.webp',
                 'course' => 'Arts & Humanities',
                 'ranking' => 22
             ],
             [
                 'name' => 'University of Toronto (Canada)',
-                'logo' => 'images/universities/toronto.png',
+                'logo' => 'images/universities/toronto.webp',
                 'course' => 'Health & Life Sciences',
                 'ranking' => 40
             ],
             [
                 'name' => 'Singapore\'s National University (NUS)',
-                'logo' => 'images/universities/NUS.png',
+                'logo' => 'images/universities/NUS.webp',
                 'course' => 'Business & Law',
                 'ranking' => 32
             ],
             [
                 'name' => 'Australian National University (ANU)',
-                'logo' => 'images/universities/ANU_Logo.jpg',
+                'logo' => 'images/universities/ANU_Logo.webp',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],
             [
                 'name' => 'ETH Zurich (Switzerland)',
-                'logo' => 'images/universities/zurich.png',
+                'logo' => 'images/universities/zurich.webp',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],
             [
                 'name' => 'University of Melbourne, Australia',
-                'logo' => 'images/universities/Melbourne_Logo.png',
+                'logo' => 'images/universities/Melbourne_Logo.webp',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],

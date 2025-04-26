@@ -100,49 +100,49 @@
     $universities = [
         [
             'name' => 'University of Auckland',
-            'logo' => 'images/universities/auckland.png',
+            'logo' => 'images/universities/auckland.webp',
             'course' => 'Engineering, Medicine, Business, Arts',
             'ranking' => 1
         ],
         [
             'name' => 'University of Otago',
-            'logo' => 'images/universities/otago.png',
+            'logo' => 'images/universities/otago.webp',
             'course' => 'Health Sciences, Humanities, Science',
             'ranking' => 2
         ],
         [
             'name' => 'Victoria University of Wellington',
-            'logo' => 'images/universities/victoria.png',
+            'logo' => 'images/universities/victoria.webp',
             'course' => 'Law, Humanities, Science',
             'ranking' => 3
         ],
         [
             'name' => 'University of Canterbury',
-            'logo' => 'images/universities/canterbury.png',
+            'logo' => 'images/universities/canterbury.webp',
             'course' => 'Engineering, Forestry, Education',
             'ranking' => 4
         ],
         [
             'name' => 'Massey University',
-            'logo' => 'images/universities/massey.png',
+            'logo' => 'images/universities/massey.webp',
             'course' => 'Aviation, Agriculture, Design',
             'ranking' => 5
         ],
         [
             'name' => 'Auckland University of Technology (AUT)',
-            'logo' => 'images/universities/aut.png',
+            'logo' => 'images/universities/aut.webp',
             'course' => 'IT, Hospitality, Health Science',
             'ranking' => 6
         ],
         [
             'name' => 'Lincoln University',
-            'logo' => 'images/universities/lincoln.png',
+            'logo' => 'images/universities/lincoln.webp',
             'course' => 'Agriculture, Environment, Business',
             'ranking' => 7
         ],
         [
             'name' => 'Waikato University',
-            'logo' => 'images/universities/waikato.png',
+            'logo' => 'images/universities/waikato.webp',
             'course' => 'Management, Education, Science',
             'ranking' => 8
         ],

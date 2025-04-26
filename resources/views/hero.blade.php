@@ -31,7 +31,7 @@
 
             <div class="card-country UK-card">
                 <div class="flag-circle">
-                    <img src="images/icons/uk.png" loading="lazy" alt="UK Flag">
+                    <img src="images/icons/uk.webp" loading="lazy" alt="UK Flag">
                 </div>
                 <span>UK</span>
                 <div class="popup popup-uk">
@@ -52,7 +52,7 @@
 
             <div class="card-country usa-card">
                 <div class="flag-circle">
-                    <img src="images/icons/united-states.png" loading="lazy" alt="USA Flag">
+                    <img src="images/icons/united-states.webp" loading="lazy" alt="USA Flag">
                 </div>
                 <span>USA</span>
                 <div class="popup popup-usa">
@@ -73,7 +73,7 @@
 
             <div class="card-country canada-card">
                 <div class="flag-circle">
-                    <img src="images/icons/canada.png" loading="lazy" alt="Canada Flag">
+                    <img src="images/icons/canada.webp" loading="lazy" alt="Canada Flag">
                 </div>
                 <span>Canada</span>
                 <div class="popup popup-canada">
@@ -94,7 +94,7 @@
 
             <div class="card-country france-card">
                 <div class="flag-circle">
-                    <img src="images/icons/france.png" loading="lazy" alt="France Flag">
+                    <img src="images/icons/france.webp" loading="lazy" alt="France Flag">
                 </div>
                 <span>France</span>
                 <div class="popup popup-france">
@@ -115,7 +115,7 @@
 
             <div class="card-country australia-card">
                 <div class="flag-circle">
-                    <img src="images/icons/australia.png" loading="lazy" alt="Australia Flag">
+                    <img src="images/icons/australia.webp" loading="lazy" alt="Australia Flag">
                 </div>
                 <span>Australia</span>
                 <div class="popup popup-au">

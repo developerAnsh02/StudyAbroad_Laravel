@@ -82,61 +82,61 @@
         $universities = [
             [
                 'name' => 'University of Oxford',
-                'logo' => 'images/universities/oxford.png',
+                'logo' => 'images/universities/oxford.webp',
                 'course' => 'Science & Medicine',
                 'ranking' => 1
             ],
             [
                 'name' => 'University of Cambridge',
-                'logo' => 'images/universities/cambridge-logo.png',
+                'logo' => 'images/universities/cambridge-logo.webp',
                 'course' => 'Engineering & Technology',
                 'ranking' => 2
             ],
             [
                 'name' => 'Imperial College London',
-                'logo' => 'images/universities/imperial.png',
+                'logo' => 'images/universities/imperial.webp',
                 'course' => 'Engineering & Physical Sciences',
                 'ranking' => 6
             ],
             [
                 'name' => 'London School of Economics and Political Science (LSE)',
-                'logo' => 'images/universities/lse.png',
+                'logo' => 'images/universities/lse.webp',
                 'course' => 'Economics & Political Science',
                 'ranking' => 45
             ],
             [
                 'name' => 'University of Edinburgh',
-                'logo' => 'images/universities/edinburgh.png',
+                'logo' => 'images/universities/edinburgh.webp',
                 'course' => 'Arts & Humanities',
                 'ranking' => 22
             ],
             [
                 'name' => 'King’s College London',
-                'logo' => 'images/universities/kings.png',
+                'logo' => 'images/universities/kings.webp',
                 'course' => 'Health & Life Sciences',
                 'ranking' => 40
             ],
             [
                 'name' => 'University of Manchester',
-                'logo' => 'images/universities/manchester.png',
+                'logo' => 'images/universities/manchester.webp',
                 'course' => 'Business & Law',
                 'ranking' => 32
             ],
             [
                 'name' => 'University of Bristol',
-                'logo' => 'images/universities/bristol.png',
+                'logo' => 'images/universities/bristol.webp',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],
             [
                 'name' => 'University of Warwick',
-                'logo' => 'images/universities/warwick.png',
+                'logo' => 'images/universities/warwick.webp',
                 'course' => 'Mathematics & Economics',
                 'ranking' => 64
             ],
             [
                 'name' => 'University of Glasgow',
-                'logo' => 'images/universities/glasgow.png',
+                'logo' => 'images/universities/glasgow.webp',
                 'course' => 'Medicine & Arts',
                 'ranking' => 73
             ]

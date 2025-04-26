@@ -81,49 +81,49 @@
         $universities = [
             [
                 'name' => 'Harvard University',
-                'logo' => 'images/universities/Harvard-Logo.png',
+                'logo' => 'images/universities/Harvard-Logo.webp',
                 'course' => 'Science & Medicine',
                 'ranking' => 1
             ],
             [
                 'name' => 'Stanford University ',
-                'logo' => 'images/universities/Stanford_University_Logo.png',
+                'logo' => 'images/universities/Stanford_University_Logo.webp',
                 'course' => 'Engineering & Technology',
                 'ranking' => 2
             ],
             [
                 'name' => 'Massachusetts Institute of Technology (MIT)',
-                'logo' => 'images/universities/MIT_logo.png',
+                'logo' => 'images/universities/MIT_logo.webp',
                 'course' => 'Engineering & Physical Sciences',
                 'ranking' => 6
             ],
             [
                 'name' => 'California Institute of Technology (Caltech)',
-                'logo' => 'images/universities/CalTech_Logo.png',
+                'logo' => 'images/universities/CalTech_Logo.webp',
                 'course' => 'Economics & Political Science',
                 'ranking' => 45
             ],
             [
                 'name' => 'University of Chicago',
-                'logo' => 'images/universities/Chicago_Logo.png',
+                'logo' => 'images/universities/Chicago_Logo.webp',
                 'course' => 'Arts & Humanities',
                 'ranking' => 22
             ],
             [
                 'name' => 'Columbia University',
-                'logo' => 'images/universities/Columbia.png',
+                'logo' => 'images/universities/Columbia.webp',
                 'course' => 'Health & Life Sciences',
                 'ranking' => 40
             ],
             [
                 'name' => 'Yale University',
-                'logo' => 'images/universities/Yale_logo.jpg',
+                'logo' => 'images/universities/Yale_logo.webp',
                 'course' => 'Business & Law',
                 'ranking' => 32
             ],
             [
                 'name' => 'Princeton University',
-                'logo' => 'images/universities/Princeton_Logo.png',
+                'logo' => 'images/universities/Princeton_Logo.webp',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],
@@ -135,7 +135,7 @@
             ],
             [
                 'name' => 'University of California, Berkeley',
-                'logo' => 'images/universities/Berkeley_Logo.png',
+                'logo' => 'images/universities/Berkeley_Logo.webp',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],

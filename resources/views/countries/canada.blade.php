@@ -103,49 +103,49 @@
     $universities = [
         [
             'name' => 'University of Toronto',
-            'logo' => 'images/universities/toronto.png',
+            'logo' => 'images/universities/toronto.webp',
             'course' => '',
             'ranking' => ''
         ],
         [
             'name' => 'University of British Columbia',
-            'logo' => 'images/universities/ubc.png',
+            'logo' => 'images/universities/ubc.webp',
             'course' => '',
             'ranking' => ''
         ],
         [
             'name' => 'McGill University',
-            'logo' => 'images/universities/mcgill.png',
+            'logo' => 'images/universities/mcgill.webp',
             'course' => '',
             'ranking' => ''
         ],
         [
             'name' => 'University of Alberta',
-            'logo' => 'images/universities/alberta.png',
+            'logo' => 'images/universities/alberta.webp',
             'course' => '',
             'ranking' => ''
         ],
         [
             'name' => 'University of Montreal',
-            'logo' => 'images/universities/montreal.png',
+            'logo' => 'images/universities/montreal.webp',
             'course' => '',
             'ranking' => ''
         ],
         [
             'name' => 'Queen’s University',
-            'logo' => 'images/universities/queens.png',
+            'logo' => 'images/universities/queens.webp',
             'course' => '',
             'ranking' => ''
         ],
         [
             'name' => 'University of Waterloo',
-            'logo' => 'images/universities/waterloo.png',
+            'logo' => 'images/universities/waterloo.webp',
             'course' => '',
             'ranking' => ''
         ],
         [
             'name' => 'Western University',
-            'logo' => 'images/universities/western.png',
+            'logo' => 'images/universities/western.webp',
             'course' => '',
             'ranking' => ''
         ],

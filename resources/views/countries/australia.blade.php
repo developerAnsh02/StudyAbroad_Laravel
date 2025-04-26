@@ -84,25 +84,25 @@
         $universities = [
             [
                 'name' => 'The University of Melbourne',
-                'logo' => 'images/universities/Melbourne_Logo.png',
+                'logo' => 'images/universities/Melbourne_Logo.webp',
                 'course' => 'Science & Medicine',
                 'ranking' => 1
             ],
             [
                 'name' => 'The Australian National University (ANU)',
-                'logo' => 'images/universities/ANU_Logo.jpg',
+                'logo' => 'images/universities/ANU_Logo.webp',
                 'course' => 'Engineering & Technology',
                 'ranking' => 2
             ],
             [
                 'name' => 'The University of Sydney',
-                'logo' => 'images/universities/Sydney_Logo.png',
+                'logo' => 'images/universities/Sydney_Logo.webp',
                 'course' => 'Engineering & Physical Sciences',
                 'ranking' => 6
             ],
             [
                 'name' => 'The University of Queensland',
-                'logo' => 'images/universities/Queensland_Logo.png',
+                'logo' => 'images/universities/Queensland_Logo.webp',
                 'course' => 'Economics & Political Science',
                 'ranking' => 45
             ],
@@ -114,7 +114,7 @@
             ],
             [
                 'name' => 'The University of New South Wales (UNSW)',
-                'logo' => 'images/universities/UNSW_Logo.png',
+                'logo' => 'images/universities/UNSW_Logo.webp',
                 'course' => 'Health & Life Sciences',
                 'ranking' => 40
             ],
@@ -126,7 +126,7 @@
             ],
             [
                 'name' => 'The University of Adelaide',
-                'logo' => 'images/universities/Adelaide_Logo.jpg',
+                'logo' => 'images/universities/Adelaide_Logo.webp',
                 'course' => 'Science & Engineering',
                 'ranking' => 61
             ],
