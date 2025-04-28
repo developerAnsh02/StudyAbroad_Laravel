@@ -4,7 +4,7 @@
 
     <div class="sample-container">
         <div class="sample">
-            <h3>98% Visa Success Rate</h3>
+            <h3>98% Success Rate</h3>
             <p>Our expert support ensures a high approval rate, making your journey smooth and stress-free.</p>
         </div>
         <div class="sample">
