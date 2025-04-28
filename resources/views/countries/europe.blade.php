@@ -281,9 +281,7 @@
                     <h2 class="service-heading">How to Apply for Permanent Residency (PR) in Europe after Graduation?</h2>
                     <p class="content-description">
                         A number of nations across Europe allow students to remain in the country for a limited period after
-                        their studies in order to look for jobs. For instance, Germany, France, and Holland grant graduates
-                        a work visa for 2-5 years in order to apply for PR status. Such a visa usually requires full-time
-                        employment, evidence that one supports his or her own finances, and continuous residence. Some
+                        their studies in order to look for jobs. Some
                         affordable universities in Europe for international students may also ask for certain language
                         proficiency and cultural knowledge. The use of such fast-tracked methods is normally available to
                         highly skilled workers. The major documents needed would include a current passport, proof of
@@ -402,7 +400,7 @@
     ],
     [
         'question' => '2. What Are the Career Opportunities after Studying in Europe?',
-        'answer' => 'European universities graduate students, who, by and large, are known to have the best career options because their degrees are highly regarded by employers the world over. Quite a good number of countries issue how to apply for universities in Europe post-study work visas, which allow graduates to stay in the country and work. WTS Visa Consultancy helps you discover job opportunities, prepares you for interviews, and is likely to set you up with applicants.'
+        'answer' => 'European universities graduate students, who, by and large, are known to have the best career options because their degrees are highly regarded by employers the world over. WTS Visa Consultancy helps you discover job opportunities, prepares you for interviews, and is likely to set you up with applicants.'
     ],
     [
         'question' => '3. Are There Scholarships Available for International Students in Europe?',

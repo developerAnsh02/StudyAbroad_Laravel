@@ -7,7 +7,7 @@
                 </div>
                 <p>
                     Your trusted partner for securing visas to the USA, Canada, and Australia. We offer personalized
-                    guidance, ensuring a smooth application process for tourist, student, and work visas.
+                    guidance, ensuring a smooth application process for tourist and student visas.
                 </p>
             </div>
 

@@ -65,7 +65,7 @@
         ['title' => '2. Short Course Duration', 'desc' => 'One of the greatest advantages of studying in the United Kingdom is that the courses are shorter in comparison with other countries. Three years are the typical length of undergraduate degrees and very often a masters program lasts only a year. Not only does this help save the student a great deal in tuition fees, but it also allows him or her to get into the job market sooner than would otherwise be possible and thus get a head start in his or her career. '],
         ['title' => '3. Multicultural Environment', 'desc' => 'Such diversity can be found in the student population of the UK, making this country student-friendly for students from all parts of the world. International students attending universities create such a vibrant and embracing environment for study. This multicultural study in UK after 12th experience encourages the students to have a global point of view and make friends for life with people from different countries. '],
         ['title' => '4. Work While Studying ', 'desc' => 'This allows international students studying in the UK to work part-time when studying, thus enabling them to gain relevant work experience and also contribute to their living expenses. Up to 20 hours can be worked, during term time, while during the holidays, students are entitled to work full-time. Thus opportunity is available to build more professional competencies and also create an effective financial structure.'],
-        ['title' => '5. Post Study Work Opportunities', 'desc' => 'The government of the United Kingdom offers a post-study work visa, which is referred to as a Graduate Route. All international students under this visa are entitled to remain and work in the United Kingdom for up to two years after obtaining their degrees (for PhD graduates, it would be three years). This provision eventually gives the graduates all the opportunity to gain much work experience in the UK job market as well as the possibility of getting long-term employment. '],
+        ['title' => '5. Post Study Work Opportunities', 'desc' => 'The government of the United Kingdom allows international graduates to remain and work in the UK for up to two years after obtaining their degrees (for PhD graduates, it would be three years). This opportunity helps graduates gain valuable work experience in the UK job market and increases their chances of securing long-term employment.'],
         ['title' => '6. Strong Industry Links and Career Prospects', 'desc' => 'The UK university has various strong industry ties, which ensure that students have access to paid networking, internships, and placement opportunities with leading employers. Most of the courses are framed in association with employers ensuring that graduates have all the knowledge required to develop well in their respective fields.'],
     ];
 @endphp
@@ -287,7 +287,7 @@ $guideContent = [
 
             <div class="content-box">
                 <h2 class="service-heading">Job Opportunities after Graduation in the UK</h2>
-                <p class="content-description">The UK offers excellent job opportunities for international graduates, making it an attractive destination. The Post-Study Work Visa (Graduate Route) allows students to stay in the UK for up to two years after graduation (three years for PhD graduates). This helps in gaining work experience and exploring career options.</p>
+                <p class="content-description">The UK offers excellent job opportunities for international graduates, making it an attractive destination. International students can stay in the UK for up to two years after graduation (three years for PhD graduates), helping them gain valuable work experience and explore career options.</p>
                 <p class="content-description">High-demand sectors like IT, finance, health, and engineering offer lucrative job opportunities. Students can work part-time during term time (up to 20 hours/week) to gain experience and support living expenses. Many universities also provide internships, placement programs, job fairs, and career support services to enhance employability.</p>
             </div>
             <div class="content-box">
@@ -299,7 +299,7 @@ $guideContent = [
         </div>
 
         <div class="column">
-            <div class="content-box">
+            <!-- <div class="content-box">
                 <h2 class="service-heading">How to Apply for a Post-Study Work Visa in the UK (Graduate Route)?</h2>
                 <ul>
                     <li>Complete Your Degree in the UK - You must have a degree from a recognized UK university.</li>
@@ -310,7 +310,7 @@ $guideContent = [
                     <li>Wait for Approval - Processing time is generally 8-12 weeks.</li>
                 </ul>
                 <p class="content-description">WTS Visa Consultancy helps students understand eligibility criteria and assists with post-study work visa applications.</p>
-            </div>
+            </div> -->
             <div class="content-box">
                 <h2 class="service-heading">Study in the UK-Where Education Meets Global Success
                 </h2>

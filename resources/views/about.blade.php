@@ -149,7 +149,7 @@
             ],
             [
                 "question" => "5.	Can I Stay After My Studies to Work?",
-                "answer" => "Several nations provide post-study work visas for international students to develop work experience following graduation. Conditions of eligibility and duration differ in each country."
+                "answer" => "Several countries allow international students to stay and gain work experience after graduation. Conditions of eligibility and duration differ in each country."
             ],
         ];
     @endphp

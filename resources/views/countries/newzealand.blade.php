@@ -66,7 +66,7 @@
         ],
         [
             'title' => '2. Work Opportunities for Students',
-            'desc' => 'International students can work part-time while studying in New Zealand, so they gain valuable work experience while partly supporting their living expenses. They are eligible to apply for a post-study work visa that increases their career prospects after graduation.'
+            'desc' => 'International students can work part-time while studying in New Zealand, so they gain valuable work experience while partly supporting their living expenses.'
         ],
         [
             'title' => '3. Affordable Tuition Fees and Living Costs',
@@ -147,9 +147,15 @@
             'ranking' => 8
         ],
     ];
+    $universitySection = [
+        'heading' => 'Top-Ranked Universities in New Zealand',
+        'highlight' => 'for Global Students',
+        'sub_heading' => 'Best universities in New Zealand for international students are:',
+        'footer' => ''
+    ];
 @endphp
 
-<x-universities :universities="$universities" />
+<x-universities :universities="$universities" :universitySection="$universitySection" />
 
   <!-- New Zealand course section -->
 @php
@@ -276,14 +282,14 @@ $guideContent = [
 
             <div class="content-box">
                 <h2 class="service-heading">Career & Job Prospects after Graduation in New Zealand</h2>
-                <p class="content-description">New Zealand provides excellent career opportunities for overseas graduates. Post study work visa permits graduates to work for a maximum of 3 years based on the qualification. Study and work in New Zealand offers numerous opportunities in areas like IT, health, engineering, and agriculture, where qualified employees are always in demand. Graduates may also be eligible for permanent residency under the skilled migrant category if they qualify. Career services are available in most universities to assist students with job placement, resume writing and interviewing. There are easy requirements to study in New Zealand for international students that guarantee the student receives proper support throughout.</p>
+                <p class="content-description">New Zealand provides excellent career opportunities for overseas graduates. Study and work in New Zealand offers numerous opportunities in areas like IT, health, engineering, and agriculture, where qualified employees are always in demand. Graduates may also be eligible for permanent residency under the skilled migrant category if they qualify. Career services are available in most universities to assist students with job placement, resume writing and interviewing. There are easy requirements to study in New Zealand for international students that guarantee the student receives proper support throughout.</p>
             </div>
         </div>
 
         <div class="column">
             <div class="content-box">
                 <h2 class="service-heading">Common Challenges for International Students & How to Overcome Them</h2>
-                <p class="content-description">A study abroad experience sounds vibrant, with both personal and academic benefits; however, it comes with challenges. For international students, adjusting Post study work visa in New Zealand to perhaps their first new culture and education system can be quite a daunting task. However, with positive thoughts and support, challenges can be managed and turned into fruitful experiences. </p>
+                <p class="content-description">A study abroad experience sounds vibrant, offering both personal and academic benefits; however, it comes with challenges. For international students, adjusting to a new culture and education system can be quite a daunting task. However, with positive thoughts and support, these challenges can be managed and turned into fruitful experiences.</p>
                 <ul class="faq-list">
                     <li><strong>Language Barriers –</strong> 
                         <p class="content-description">Language fluency can be a hindrance for many international students in terms of getting their message through and affecting their academic performance. Workshops on language learning should be further attended, and spots for conversing with native speakers should be used to boost proficiency and confidence tremendously.</p>
@@ -332,7 +338,7 @@ $guideContent = [
         ],
         [
             'question' => '3. What Are the Career Opportunities for International Graduates in New Zealand?',
-            'answer' => 'Fresh graduates will be eligible for post-study work visas lasting up to a maximum of three years. IT, healthcare, engineering, and construction are high-demand jobs. Universities have career services, different networking events, and job placement services. Under the Skilled Migrant Category, graduates may also qualify for permanent residency.'
+            'answer' => 'Fresh graduates have the opportunity to work in New Zealand for up to three years after completing their studies. IT, healthcare, engineering, and construction are among the high-demand sectors. Universities offer career services, networking events, and job placement support. Under the Skilled Migrant Category, graduates may also qualify for permanent residency.'
         ],
         [
             'question' => '4. Is Health Insurance Required for International Students in New Zealand?',
@@ -340,7 +346,7 @@ $guideContent = [
         ],
         [
             'question' => '5. Can I Bring My Family with Me on a Student Visa?',
-            'answer' => 'Postgraduate students can study along with their family. The spouse is qualified to apply for an open work visa, while children are entitled to register as domestic students. Evidence of financial sustenance plus relationship documents must be attached to the application. WTS Visa Consultancy helps in the process of obtaining dependent visas-so that the family can remain together during the time of study in New Zealand.'
+            'answer' => 'Postgraduate students can study along with their family. The spouse may be eligible to work in New Zealand, while children can register as domestic students. Evidence of financial support and relationship documents must be attached to the application. WTS Visa Consultancy assists with the process of obtaining dependent visas, helping families stay together during the time of study in New Zealand.'
         ],
     ];
 @endphp

@@ -58,7 +58,7 @@
                     <h3>Australia</h3>
                     <ul class="country-features">
                         <li>High-quality education system</li>
-                        <li>Post-study work visa</li>
+                        <!-- <li>Post-study work visa</li> -->
                         <li>Safe and welcoming environment</li>
                         <li>Paid part-time work options</li>
                         <li>Beautiful landscapes & lifestyle</li>
@@ -123,7 +123,7 @@
                     <ul class="country-features">
                         <li>Tech industry growth</li>
                         <li>One-year master's programs</li>
-                        <li>Post-study work visa</li>
+                        <!-- <li>Post-study work visa</li> -->
                         <li>English-speaking country</li>
                         <li>Home to top global firms</li>
                         <li>Welcoming culture</li>
