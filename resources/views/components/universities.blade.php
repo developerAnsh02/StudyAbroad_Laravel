@@ -12,7 +12,7 @@
                 <div class="swiper-slide">
                     <div class="university-card">
                         <div class="card-left">
-                            <img src="{{ asset($university['logo'] ?? ' ') }}" alt="{{ $university['name'] ?? ' ' }}">
+                            <img src="{{ asset($university['logo'] ?? ' ') }}" loading="lazy"  alt="{{ $university['name'] ?? ' ' }}">
                         </div>
                         <div class="card-right">
                             <h3>{{ $university['name'] ?? ' ' }}</h3>

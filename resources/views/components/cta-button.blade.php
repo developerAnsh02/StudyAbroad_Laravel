@@ -5,7 +5,7 @@
         <a href="tel:+1234567890" class="cta-button">📞 GIVE A MISSED CALL</a>
     </div>
     <div class="study-abroad-image">
-        <img src="/images/cta-img.webp" alt="Study Abroad">
+        <img src="/images/cta-img.webp" loading="lazy"  alt="Study Abroad">
     </div>
 </div>
 

@@ -3,7 +3,7 @@
             <!-- Left Section -->
             <div class="footer-left">
                 <div class="logo-footer">
-                    <a href="#"><img src="/images/logo-wts.png" alt=""></a>
+                    <a href="#"><img src="/images/logo-wts.png" loading="lazy" alt=""></a>
                 </div>
                 <p>
                     Your trusted partner for securing visas to the USA, Canada, and Australia. We offer personalized

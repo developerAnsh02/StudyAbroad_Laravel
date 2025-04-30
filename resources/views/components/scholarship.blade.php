@@ -8,7 +8,7 @@
             <p>{!! $scholarship['footer'] !!}</p>
         </div>
         <div class="scholarship-img">
-            <img src="{{ asset($scholarship['image']) }}" alt="Scholarships UK">
+            <img src="{{ asset($scholarship['image']) }}" loading="lazy" alt="Scholarships UK">
         </div>
     </div>
 

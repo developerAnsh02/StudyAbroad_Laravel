@@ -31,7 +31,7 @@
 
             <div class="card-country UK-card">
                 <div class="flag-circle">
-                    <img src="images/icons/uk.webp" loading="lazy" alt="UK Flag">
+                    <img src="images/icons/uk.webp" alt="UK Flag">
                 </div>
                 <span>UK</span>
                 <div class="popup popup-uk">
@@ -52,7 +52,7 @@
 
             <div class="card-country usa-card">
                 <div class="flag-circle">
-                    <img src="images/icons/united-states.webp" loading="lazy" alt="USA Flag">
+                    <img src="images/icons/united-states.webp" alt="USA Flag">
                 </div>
                 <span>USA</span>
                 <div class="popup popup-usa">
@@ -73,7 +73,7 @@
 
             <div class="card-country canada-card">
                 <div class="flag-circle">
-                    <img src="images/icons/canada.webp" loading="lazy" alt="Canada Flag">
+                    <img src="images/icons/canada.webp" alt="Canada Flag">
                 </div>
                 <span>Canada</span>
                 <div class="popup popup-canada">
@@ -94,7 +94,7 @@
 
             <div class="card-country france-card">
                 <div class="flag-circle">
-                    <img src="images/icons/france.webp" loading="lazy" alt="France Flag">
+                    <img src="images/icons/france.webp" alt="France Flag">
                 </div>
                 <span>France</span>
                 <div class="popup popup-france">
@@ -115,7 +115,7 @@
 
             <div class="card-country australia-card">
                 <div class="flag-circle">
-                    <img src="images/icons/australia.webp" loading="lazy" alt="Australia Flag">
+                    <img src="images/icons/australia.webp" alt="Australia Flag">
                 </div>
                 <span>Australia</span>
                 <div class="popup popup-au">
@@ -219,7 +219,7 @@
         background: url('/images/fbf0efd993d06415633881cd7b0c43de.jpg') no-repeat center center/cover;
         position: relative;
         padding: 100px 0 80px 0;
-        /* Add padding instead of fixed height */
+        min-height: 600px;
     }
 
     .hero-content-wrapper {
@@ -230,7 +230,7 @@
         max-width: 1200px;
         gap: 20px;
         margin: auto;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         /* Ensures responsiveness */
     }
 
@@ -278,21 +278,6 @@
     }
 
     @media (max-width: 768px) {
-        .hero-title {
-            font-size: 30px;
-        }
-
-        .hero-subtitle {
-            font-size: 16px;
-        }
-
-        .hero-cta {
-            font-size: 15px;
-            padding: 12px 28px;
-        }
-    }
-
-    @media (max-width: 768px) {
     .hero-content-wrapper {
         flex-direction: column;
         align-items: flex-start;
@@ -312,6 +297,9 @@
         padding: 12px 24px;
     }
 
+    .hero-subtitle {
+        font-size: 16px;
+    }
     
 }
 
@@ -340,12 +328,6 @@
         /* Remove top margin to align properly */
     }
 
-    /*.map-image {*/
-    /*    width: 100%;*/
-    /*    opacity: 0;*/
-    /*    transform: scale(0.8);*/
-    /*    animation: imageFadeIn 2s 0.5s forwards;*/
-    /*}*/
     .map-image {
         width: 100%;
         opacity: 1;
@@ -386,7 +368,9 @@
     }
 
     .flag-circle img {
+        height: 32px;
         width: 32px;
+        object-fit: cover;
         transition: transform 0.5s;
     }
 

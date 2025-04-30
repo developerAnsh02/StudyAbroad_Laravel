@@ -12,7 +12,7 @@
             @foreach($courses as $course)
                 <div class="swiper-slide">
                     <div class="course-card">
-                        <img src="{{ asset($course['image'] ?? ' ') }}" alt="{{ $course['title'] ?? ' '}}">
+                        <img src="{{ asset($course['image'] ?? ' ') }}" loading="lazy"  alt="{{ $course['title'] ?? ' '}}">
                         <div class="course-card-content">
                             <h3>{{ $course['title'] ?? ' ' }}</h3>
                         </div>

@@ -435,7 +435,7 @@
          <h2 class="process-title">Process Flow</h2>
 
          <div id="road-object">
-            <img src="/images/vecteezy_walking-man-in-orange-hoodie-and-backpack_56099201.png" alt="image">
+            <img src="/images/vecteezy_walking-man-in-orange-hoodie-and-backpack_56099201.png" loading="lazy"  alt="image">
          </div>
 
         <div class="extra-space"></div>
@@ -444,10 +444,10 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
-                <img src="/images/trusted-comp-img/profileEval.png" alt="image">
+                <img src="/images/trusted-comp-img/profileEval.png" loading="lazy"  alt="image">
             </div>
             <!-- <img src="/images/path.svg" alt="path"> -->
-             <img class="hide section-1-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+             <img class="hide section-1-curve-img" src="/images/trusted-comp-img/orangecurve.png" loading="lazy" alt="image">
              
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -467,11 +467,11 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
-                <img src="/images/trusted-comp-img/University_shortlisting.png" alt="image">
+                <img src="/images/trusted-comp-img/University_shortlisting.png" loading="lazy" alt="image">
             </div>
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-29.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="flip hide section-2-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="flip hide section-2-curve-img" src="/images/trusted-comp-img/orangecurve.png" loading="lazy" alt="image">
 
             <!-- <canvas class="road-canvas flip-road"></canvas> -->
              <canvas class="road-canvas"></canvas>
@@ -490,11 +490,11 @@
            
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
-                <img src="/images/trusted-comp-img/application_process.png" alt="image">
+                <img src="/images/trusted-comp-img/application_process.png" loading="lazy" alt="image">
                  <!-- <img src="/icons/image.png" alt="image"> -->
             </div>
             <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-34px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="hide section-3-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="hide section-3-curve-img" src="/images/trusted-comp-img/orangecurve.png" loading="lazy" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -514,10 +514,10 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
-                 <img src="/images/trusted-comp-img/offer_letter.png" alt="image">
+                 <img src="/images/trusted-comp-img/offer_letter.png" loading="lazy" alt="image">
             </div>
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-38.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="flip hide section-4-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="flip hide section-4-curve-img" src="/images/trusted-comp-img/orangecurve.png" loading="lazy" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -537,10 +537,10 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
-                <img src="/images/trusted-comp-img/financial_deposit.png" alt="image">
+                <img src="/images/trusted-comp-img/financial_deposit.png" loading="lazy" alt="image">
             </div>
             <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="hide section-5-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="hide section-5-curve-img" src="/images/trusted-comp-img/orangecurve.png" loading="lazy" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -560,10 +560,10 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
-                <img src="/images/trusted-comp-img/cas_issue.png" alt="image">
+                <img src="/images/trusted-comp-img/cas_issue.png" loading="lazy" alt="image">
             </div>
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="flip hide section-6-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="flip hide section-6-curve-img" src="/images/trusted-comp-img/orangecurve.png" loading="lazy" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->
@@ -583,10 +583,10 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: right;" class="section-image">
-                <img src="/images/trusted-comp-img/medical-test.png" alt="image">
+                <img src="/images/trusted-comp-img/medical-test.png" loading="lazy" alt="image">
             </div>
             <!-- <img class="hide" style = "height: 250px; position: absolute; left:49%; top:-43px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="hide section-7-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="hide section-7-curve-img" src="/images/trusted-comp-img/orangecurve.png" loading="lazy" alt="image">
             <!-- <img src="/images/path.svg" alt="path"> -->
 
             <!-- <canvas class="road-canvas"></canvas> -->
@@ -606,10 +606,10 @@
             
             <div class="padding-space"></div>
             <div style="justify-content: left;" class="section-image">
-                <img src="/images/trusted-comp-img/flight_booking.png" alt="image">
+                <img src="/images/trusted-comp-img/flight_booking.png" loading="lazy" alt="image">
             </div>
             <!-- <img class="flip hide" style = "height: 250px; position: absolute; left:37%; top:-47.5px;" src="/images/trusted-comp-img/orangecurve.png" alt="image"> -->
-            <img class="flip hide section-8-curve-img" src="/images/trusted-comp-img/orangecurve.png" alt="image">
+            <img class="flip hide section-8-curve-img" src="/images/trusted-comp-img/orangecurve.png" loading="lazy" alt="image">
             <!-- <img class="flip" src="/images/path.svg" alt="path"> -->
 
              <!-- <canvas class="road-canvas flip-road"></canvas> -->

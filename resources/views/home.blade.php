@@ -21,7 +21,7 @@
         <h2>Top Countries for Higher Education</h2>
         <div class="country-card-container">
             <div class="country-card">
-                <img src="images/us.webp" alt="USA">
+                <img src="images/us.webp" loading="lazy"  alt="USA">
                 <div class="country-info">
                     <h3>USA</h3>
                     <ul class="country-features">
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/france.webp" alt="France">
+                <img src="images/france.webp" loading="lazy"  alt="France">
                 <div class="country-info">
                     <h3>France</h3>
                     <ul class="country-features">
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/australia.webp" alt="Australia">
+                <img src="images/australia.webp" loading="lazy"  alt="Australia">
                 <div class="country-info">
                     <h3>Australia</h3>
                     <ul class="country-features">
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/germany.webp" alt="Germany">
+                <img src="images/germany.webp" loading="lazy"  alt="Germany">
                 <div class="country-info">
                     <h3>Germany</h3>
                     <ul class="country-features">
@@ -85,7 +85,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/canada.webp" alt="Canada">
+                <img src="images/canada.webp" loading="lazy"  alt="Canada">
                 <div class="country-info">
                     <h3>Canada</h3>
                     <ul class="country-features">
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/dubai.webp" alt="Dubai">
+                <img src="images/dubai.webp" loading="lazy"  alt="Dubai">
                 <div class="country-info">
                     <h3>Dubai</h3>
                     <ul class="country-features">
@@ -117,7 +117,7 @@
                 </div>
             </div>
             <div class="country-card">
-                <img src="images/Ireland.webp" alt="Ireland">
+                <img src="images/Ireland.webp" loading="lazy"  alt="Ireland">
                 <div class="country-info">
                     <h3>Ireland</h3>
                     <ul class="country-features">
@@ -154,7 +154,7 @@
                             <div class="video-card">
                                 <div class="video-wrapper">
                                     <div class="youtube-facade" data-video-id="{{ $videoId }}" onclick="loadYoutube(this)">
-                                        <img src="https://img.youtube.com/vi/{{ $videoId }}/hqdefault.jpg"
+                                        <img src="https://img.youtube.com/vi/{{ $videoId }}/hqdefault.jpg" loading="lazy" 
                                              alt="{{ $video->title }}"
                                              {!! $loadingAttr !!}>
                                     </div>
@@ -372,7 +372,7 @@
             <div class="visa-service-cards">
                 <!-- Tourist Visa -->
                 <div class="visa-service-card">
-                    <img src="icons/icons8-tourist-pulsar-color/icons8-tourist-96.png" alt="Tourist Visa">
+                    <img src="icons/icons8-tourist-pulsar-color/icons8-tourist-96.png" loading="lazy"  alt="Tourist Visa">
                     <div class="service-content">
                         <h3>Application & Offer Letter</h3>
                         <p class="normal-content" data-id="1">Ensure your application is complete with all required documents. Once accepted, you’ll receive an offer letter, a crucial step in confirming your admission to your chosen program. Keep this document handy as it's needed for visa processing and financial planning.</p>
@@ -391,7 +391,7 @@
 
                 <!-- Travel Visa -->
                 <div class="visa-service-card">
-                    <img src="icons/icons8-health-pulsar-color/icons8-health-96.png" alt="Travel Visa">
+                    <img src="icons/icons8-health-pulsar-color/icons8-health-96.png" loading="lazy"  alt="Travel Visa">
                     <div class="service-content">
                         <h3>Fees & Finances</h3>
                         <p class="normal-content" data-id="2">Plan for tuition and cost of living. Be aware of the fees and research financial aid programs. Having an account in a local bank could also help deal with day-to-day finances, so you're set financially for your new life abroad.</p>
@@ -407,10 +407,10 @@
                     </div>
                 </div>
                 <div class="visa-service-card">
-                    <img src="icons/icons8-working-with-a-laptop-pulsar-color/icons8-working-96.png" alt="Travel Visa">
+                    <img src="icons/icons8-working-with-a-laptop-pulsar-color/icons8-working-96.png" loading="lazy"  alt="Travel Visa">
                     <div class="service-content">
                         <h3>Visa and Fly Tickets</h3>
-                        <p class="normal-content" data-id="3"> Get your student visa as soon as you receive your offer letter. Ensure you have all documents required, such as proof of funds. Pre-book your flight early to secure the best price, arriving before your program commences for an easy transition to your new home.
+                        <p class="normal-content" data-id="3">Once you receive your offer letter, apply for your student visa through the relevant embassy or consulate. Ensure you have all documents required, such as proof of funds. Pre-book your flight early to secure the best price, arriving before your program commences for an easy transition to your new home.
                         </p>
                         <!-- <p class="all-content" data-id="3" style="display: none;">Part time job while studying abroad
                             enhances your professional career and contributes to your costs. We explain work permit laws and
@@ -445,12 +445,9 @@
     <!-- Choose us  -->
     <section id="services" class="services">
         <h2>Why <span>Choose Us?</span></h2>
-        <p>WTS Visa Consultancy has served thousands of student visa application in realizing their dreams of overseas
-            studies. Ranging from institution selection to life after arrival, we provide guidance and accurate facts
-            through strong alliance with leading institutes. Our distinguished record guarantees stress-free experience to
-            ensure you obtain your academic accomplishments confidently.</p>
+        <p>With over a decade of experience, WTS Visa Consultancy knows what international students face. Our consultants remain aware of university admissions, visa regulations, and scholarship opportunities to provide you with the latest information. We have established good relationships with leading universities to assist students in identifying the most appropriate program for their aspirations. We have experience in guiding and assisting with complicated applications and the visa process to make it go as smoothly as possible. Thousands of successful placements are a reflection of our success in placing students in the appropriate opportunities. With us, you can go through the study abroad process with confidence and attain your academic objectives.</p>
         <div class="card">
-            <img src="icons/quality.png" alt="Global Edge">
+            <img src="icons/quality.png" loading="lazy"  alt="Global Edge">
             <div>
                 <h3>10+ Years of Study Abroad Experience</h3>
                 <p>With over a decade of experience, WTS Visa Consultancy knows what international students face. Our
@@ -465,35 +462,23 @@
         </div>
         <hr>
         <div class="card">
-            <img src="icons/graduation.png" alt="Choice">
+            <img src="icons/graduation.png" loading="lazy"  alt="Choice">
             <div>
                 <h3>Thousands of Students Placed in Top Universities</h3>
-                <p>We have placed thousands of students in top universities in US, UK, Canada, Australia and other
-                    countries. It is through understanding each of our students' academic past and professional future that
-                    we become successful. We support you to make good application submissions, assist with exams, and get
-                    the visa to secure admissions. By giving close attention and strategic assistance, we produce good
-                    success ratios. Successful student testimonials indicate the extent to which our services were of value
-                    in enhancing their student life and careers. With us, you can get into a top university and get the most
-                    out of your study abroad experience.</p>
+                <p>We have placed thousands of students in top universities in the US, UK, Canada, Australia, and other countries. It is through understanding each of our students' academic past and professional future that we become successful. We support you in making strong application submissions, assist with exams, and guide you through the visa application process to help secure admissions. By giving close attention and strategic assistance, we produce strong success ratios. Successful student testimonials indicate the extent to which our services added value to their student life and careers. With us, you can get into a top university and make the most of your study abroad experience.</p>
             </div>
         </div>
         <hr>
         <div class="card">
-            <img src="icons/trust.png" alt="Top Universities">
+            <img src="icons/trust.png" loading="lazy"  alt="Top Universities">
             <div>
                 <h3>Parents & Students Worldwide Trust Us</h3>
-                <p>Parents from around the world trust WTS Visa Consultancy due to our guaranteed results and transparent
-                    process. We know parents worry about safety, money and future careers. We address these concerns student
-                    visa processing with straight-forward advice and constant support. We inform parents at every step so
-                    they can trust in their child's progress. Our high success rate in scholarships and placements is
-                    evidence of our dependability and professionalism. Parents' and students' testimonials indicate the
-                    positive effect of our services. Trust us and enjoy peace of mind and a seamless transition for students
-                    and their families and ensure the study abroad experience is successful and rewarding. </p>
+                <p>Parents from around the world trust WTS Visa Consultancy due to our guaranteed results and transparent process. We know parents worry about safety, money and future careers. We address these concerns by guiding students through the visa application process with straightforward advice and constant support. We inform parents at every step so they can trust in their child's progress. Our high success rate in scholarships and placements is evidence of our dependability and professionalism. Parents' and students' testimonials indicate the positive effect of our services. Trust us and enjoy peace of mind and a seamless transition for students and their families and ensure the study abroad experience is successful and rewarding.</p>
             </div>
         </div>
         <hr>
         <div class="card">
-            <img src="icons/mentoring.png" alt="Top Universities">
+            <img src="icons/mentoring.png" loading="lazy"  alt="Top Universities">
             <div>
                 <h3>Counseling Sessions</h3>
                 <p>Personalized sessions for students and their parents covering:</p>
@@ -510,7 +495,7 @@
         </div>
         <hr>
         <div class="card">
-            <img src="icons/accommodation.png" alt="Top Universities">
+            <img src="icons/accommodation.png" loading="lazy"  alt="Top Universities">
             <div>
                 <h3>Accommodation Support</h3>
                 <p>Assistance with finding suitable housing based on:</p>
@@ -524,7 +509,7 @@
         </div>
         <hr>
         <div class="card">
-            <img src="icons/reliable.png" alt="Top Universities">
+            <img src="icons/reliable.png" loading="lazy"  alt="Top Universities">
             <div>
                 <h3>Part-Time Job Assistance</h3>
                 <p>Helping students’ secure suitable part-time employment:</p>
@@ -538,7 +523,7 @@
         </div>
         <hr>
         <div class="card">
-            <img src="icons/airport.png" alt="Top Universities">
+            <img src="icons/airport.png" loading="lazy"  alt="Top Universities">
             <div>
                 <h3>Airport Pickup Service</h3>
                 <ul style="padding-left: 16px;">
@@ -562,7 +547,7 @@
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card">
-                    <img src="icons/icons8-program-pulsar-color/icons8-program-96.png" alt="Programs" class="mb-2">
+                    <img src="icons/icons8-program-pulsar-color/icons8-program-96.png" loading="lazy"  alt="Programs" class="mb-2">
                     <h3>Schedule a Free Consultation</h3>
                     <p>The initial step to begin your study abroad process is booking a complimentary consultation with WTS
                         Visa Consultancy. Our experts will evaluate your academic record, career aspirations and budget to
@@ -574,13 +559,13 @@
                 </div>
                 <!-- Service 2 -->
                 <div class="service-card">
-                    <img src="icons/icons8-consultation-pulsar-color/icons8-consultation-96.png" alt="Consultation">
+                    <img src="icons/icons8-consultation-pulsar-color/icons8-consultation-96.png" loading="lazy"  alt="Consultation">
                     <h3>Virtual Tours to Your Dream University</h3>
                     <p>Take advantage of virtual tours to tour your desired university from home. Virtual tours give you an interactive preview of the campus, student facilities, and academic buildings, and you can imagine yourself there. If you want to see the campus layout, classrooms, or recreational facilities, virtual tours offer you a comprehensive overview. This is the best time to learn about student life, campus life, and facilities and take an informed decision about your future studies.</p>
                 </div>
                 <!-- Service 3 -->
                 <div class="service-card">
-                    <img src="icons/icons8-application-pulsar-color/icons8-application-96.png" alt="Application">
+                    <img src="icons/icons8-application-pulsar-color/icons8-application-96.png" loading="lazy"  alt="Application">
                     <h3>One-on-One Session with Alumni Students</h3>
                     <p>Get more information about your chosen university by engaging with alumni students in individual settings. Personalized interactions offer firsthand information on campus life, academic demands, and career opportunities after graduation. Alumni students can give you information, both the disadvantages and the advantages, so you have a realistic picture of what to expect. They can also guide you as to how you can make the most of your university time, from internships to networking, to prepare you with the confidence to attain your academic achievement.</p>
                 </div>

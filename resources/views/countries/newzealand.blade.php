@@ -48,7 +48,7 @@
                 <p>New Zealand is a popular destination for overseas students because of the quality education, friendly people and breath-taking natural scenery. We assist you in making your study in New Zealand a reality, walking you through every step. The education system of the country is well-known globally and provides a mix of theoretical and practical knowledge. The universities have a reputation for research quality and innovative pedagogy.WTS Visa Consultancy makes your path to studying in New Zealand for international students smooth and rewarding.</p>
             </div>
             <div class="sub-hero-img">
-                <img src="/images/new-zealand-bg.png" alt="Study in uk">
+                <img src="/images/new-zealand-bg.png" loading="lazy" alt="Study in uk">
             </div>
         </div>
     </section>

@@ -49,7 +49,7 @@
                 </p>
             </div>
             <div class="sub-hero-img">
-                <img src="/images/canada-bg.png" alt="Study in uk">
+                <img src="/images/canada-bg.png" loading="lazy" alt="Study in uk">
             </div>
         </div>
     </section>
@@ -74,7 +74,7 @@
         ],
         [
             'title' => '4. Work While Studying',
-            'desc' => 'International students are allowed to work at most 20 hours a week during academic sessions and full time during breaks. Living expenses can Canada study visa thus be managed better by these opportunities, along with work experience gained.'
+            'desc' => 'International students are allowed to work up to 20 hours a week during academic sessions and full-time during breaks. These opportunities help manage living expenses and provide valuable work experience while studying in Canada on a study visa.'
         ],
         [
             'title' => '5. Post-Graduation Work Opportunities',

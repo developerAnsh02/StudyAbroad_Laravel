@@ -49,7 +49,7 @@
                 <p>Studying in the UK is a dream for many students worldwide, thanks to its prestigious universities, high-quality education, and global career opportunities. At WTS Visa Consultancy, we specialize in helping students navigate the complex process of studying abroad, from choosing the right university to securing a student visa. The UK is home to some of the oldest and most respected institutions, ensuring that students receive a world- class education that is recognized internationally. Moreover, the country’s diverse culture, student-friendly cities, and vast academic resources make it an excellent place for personal and professional growth. Whether you want to pursue undergraduate, postgraduate, or research programs, the UK provides a supportive environment that fosters innovation and excellence. With our expert guidance, you can embark on your academic journey in the UK with confidence and ease</p>
             </div>
             <div class="sub-hero-img">
-                <img src="/images/uk-bg.png" alt="Study in uk">
+                <img src="/images/uk-bg.png" loading="lazy" alt="Study in uk">
             </div>
         </div>
     </section>
@@ -316,7 +316,7 @@ $guideContent = [
                 </h2>
                 <p class="content-description">The UK means more than just a degree, it is a globally respected education squarely aimed at opening doors leading to success in a diverse terrain. UK universities emphasize research, innovation, and practical learning that prepare students for a competitive job market. Furthermore, analytical thinking, communication abilities, and problem-solving are strongly emphasized in UK education, hence creating capable graduates with high employability.
                 </p>
-                <p class="content-description">A few of the best work and study in UK for international students minds in academia reside in the UK, and students, therefore, learn under the guidance of industry experts and in modern world-class research facilities. At WTS Visa Consultancy, we assist students in finding the right universities and courses suited for their career aspirations. Studying in the UK is a guarantee of a bright future, whether you study in UK for international students who want to work in the UK after graduation or return home with an internationally recognized degree. Our team ensures a seamless transition from admissions-the whole application process-to the visa.
+                <p class="content-description">A few of the best work and study in UK for international students minds in academia reside in the UK, and students, therefore, learn under the guidance of industry experts and in modern world-class research facilities. At WTS Visa Consultancy, we assist students in finding the right universities and courses suited for their career aspirations. Studying in the UK is a guarantee of a bright future, whether you study in UK for international students who want to work in the UK after graduation or return home with an internationally recognized degree. Our team ensures a seamless transition from admissions-the whole application process-to the visa application assistance.
                 </p>
             </div>
 

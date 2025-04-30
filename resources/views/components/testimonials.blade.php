@@ -134,7 +134,7 @@
                 <div class="swiper-slide">
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="{{ asset('images/testimonial1.jpg') }}" alt="Yatish Shrimali">
+                            <img src="{{ asset('images/testimonial1.jpg') }}" loading="lazy"  alt="Yatish Shrimali">
                         </div>
                         <h3>Yatish Shrimali</h3>
                         <p>I'm glad to get the chance to thank Gateway International. They make a good team ensure quality.</p>
@@ -144,7 +144,7 @@
                 <div class="swiper-slide">
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="{{ asset('images/testimonial2.jpg') }}" alt="Sahiba Burman">
+                            <img src="{{ asset('images/testimonial2.jpg') }}" loading="lazy"  alt="Sahiba Burman">
                         </div>
                         <h3>Sahiba Burman</h3>
                         <p>Gateway International was grateful to me for helping me convince my parents to let me study abroad.</p>
@@ -154,7 +154,7 @@
                 <div class="swiper-slide">
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="{{ asset('images/testimonial3.jpg') }}" alt="Harshvardhan Soni">
+                            <img src="{{ asset('images/testimonial3.jpg') }}" loading="lazy"  alt="Harshvardhan Soni">
                         </div>
                         <h3>Harshvardhan Soni</h3>
                         <p>Through my journey, Gateway International’s advice, guidance, and support have been an enormous help.</p>
@@ -164,7 +164,7 @@
                 <div class="swiper-slide">
                     <div class="testimonial-card">
                         <div class="testimonial-image">
-                            <img src="{{ asset('images/testimonial4.jpg') }}" alt="Aman Verma">
+                            <img src="{{ asset('images/testimonial4.jpg') }}" loading="lazy"  alt="Aman Verma">
                         </div>
                         <h3>Aman Verma</h3>
                         <p>Through my journey, Gateway International’s advice, guidance, and support have been an enormous help.</p>

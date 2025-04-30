@@ -99,7 +99,7 @@ h3{
 
             <div class="content-box">
                 <h2 class="service-heading">What Makes Our Free Profile Evaluation the Smart First Step?</h2>
-                <p class="content-description">We believe in helping you make informed decisions before you invest your time and money. Our free profile evaluation gives you access to genuine, personalized advice from international education experts. We don’t just assess—you get a complete roadmap to your goals. So you can move forward with confidence. Many of our students who started with this student visa free evaluation service are now studying at top global universities. You could be next!</p>
+                <p class="content-description">We believe in helping you make informed decisions before you invest your time and money. Our free profile evaluation gives you access to genuine, personalized advice from international education experts. We don’t just assess—you get a complete roadmap to your goals, including guidance on university selection and visa application support. So you can move forward with confidence. Many of our students who started with this free evaluation and visa assistance service are now studying at top global universities. You could be next!</p>
                
             </div>
 

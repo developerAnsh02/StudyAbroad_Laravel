@@ -21,7 +21,7 @@
         </div>
         <div class="sample">
             <h3>Fast-Track, Hassle-Free Process</h3>
-            <p>Smooth and stress-free visa applications with expert support at every step.</p>
+            <p>Smooth and stress-free visa applications assistance with expert support at every step.</p>
         </div>
         <div class="sample">
             <h3>Scholarships & Financial Aid Help</h3>

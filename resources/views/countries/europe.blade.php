@@ -54,7 +54,7 @@
                     partner in making this life-changing opportunity a reality!</p>
             </div>
             <div class="sub-hero-img">
-                <img src="/images/europe-bg.png" alt="Study in europe">
+                <img src="/images/europe-bg.png" loading="lazy" alt="Study in europe">
             </div>
         </div>
     </section>
@@ -316,15 +316,7 @@
                 <div class="content-box">
                     <h2 class="service-heading">Study in Europe – Unlock Your Future with World-Class Education</h2>
                     <p class="content-description">
-                        The European study pattern offers superlative education, global career access, and diverse academic
-                        programs. European universities rank among the best in the world and, thus, their degrees are
-                        accepted with study in Europe esteem by employers. At WTS Visa Consultancy, we help you with
-                        selection and university and program options. The flexible education system in Europe allows
-                        personalized study plans. Apart from academics, there is exposure to rich culture and new languages
-                        along with easy travel. Europe facilitates innovation by providing advanced how to get a student
-                        visa for Europe research facilities and cooperative projects. WTS Visa Consultancy streamlines the
-                        visa and application process, so you can find your way smoothly toward academic success and personal
-                        growth. Let us help you with your study abroad endeavours.
+                        The European study pattern offers superlative education, global career access, and diverse academic programs. European universities rank among the best in the world and, thus, their degrees are held in high esteem by employers. At WTS Visa Consultancy, we help you with university and program selection. The flexible education system in Europe allows personalized study plans. Apart from academics, there is exposure to rich culture and new languages along with easy travel. Europe facilitates innovation through advanced research facilities and collaborative projects. WTS Visa Consultancy streamlines the application and visa guidance process, so you can find your way smoothly toward academic success and personal growth. Let us help you with your study abroad endeavours.
                     </p>
                 </div>
             </div>

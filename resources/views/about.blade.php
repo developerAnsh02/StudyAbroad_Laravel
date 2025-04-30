@@ -10,7 +10,7 @@
             <div class="accent-dot"></div>
             <div class="accent-dot"></div>
             <h2>Who We Are</h2>            
-            <p>WTS Visa Consultancy, owned by <span class="highlight">Warrgyizmorsch Pvt. Ltd.</span>, began its journey as a student visa consultancy company and specialized in student visas. But through sheer hard work and devotion to excellence we have evolved as a company that specializes in student visas for leading destinations such as Canada, Australia, New Zealand, USA, UK, Europe, and others. Within a short time span we have established a strong network of institutions across the globe and have offices both in India and abroad and we are growing rapidly. Our excellent visa success rate is a testament to our commitment and our team of specialists guarantees a hassle-free process from documentation to visa interview.</p>
+            <p>WTS Visa Consultancy, owned by <span class="highlight">Warrgyizmorsch Pvt. Ltd.</span>, began its journey as a student visa consultancy company and specialized in student visa assistance. But through sheer hard work and devotion to excellence we have evolved as a company that specializes in student visa assistance for leading destinations such as Canada, Australia, New Zealand, USA, UK, Europe, and others. Within a short time span we have established a strong network of institutions across the globe and have offices both in India and abroad and we are growing rapidly. Our excellent success rate is a testament to our commitment and our team of specialists guarantees a hassle-free process from documentation to visa interview.</p>
         </section>
 
         <section class="why-choose fade-in">
@@ -109,7 +109,7 @@
             <div class="accent-dot"></div>
             <div class="accent-dot"></div>
             <h2>Future Plans and Expansion</h2>
-            <p>We are constantly improving as a top visa consultancy to serve our students even better. We will be adding more countries to our services so students can consider more study options. We are also in the process of implementing technology to make the visa application process even quicker and smoother.</p>
+            <p>We are constantly improving as a top visa consultancy to serve our students even better. We will be adding more countries to our services so students can consider more study options. We are also working on implementing technology to streamline our support during the visa application process, helping students stay organized and submit accurate documentation for a smoother experience.</p>
             <p>Our future aim is to offer end to end support including accommodation and career advice. <span class="highlight">WTS Visa Consultancy</span> believes in growing along with our students and beyond approval of visas.</p>
         </section>
     </div>
