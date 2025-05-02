@@ -3,6 +3,11 @@
 
     @include('hero')
 
+    <!-- Add in your <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
 
     @php
         $videos = [
@@ -15,6 +20,8 @@
         ];
         $firstVideoId = Str::afterLast($videos[0]->url, '/');
     @endphp
+
+    @include('./components/course-details')
 
 <section class="countries-section">
     <div class="container">
@@ -376,16 +383,7 @@
                     <div class="service-content">
                         <h3>Application & Offer Letter</h3>
                         <p class="normal-content" data-id="1">Ensure your application is complete with all required documents. Once accepted, you’ll receive an offer letter, a crucial step in confirming your admission to your chosen program. Keep this document handy as it's needed for visa processing and financial planning.</p>
-                        <!-- <p class="all-content" data-id="1" style="display: none;">Securing the correct accommodation is a
-                            sure-fire way to enjoy a stress-free study abroad experience. With WTS Visa Consultancy, we
-                            assist you in considering cost, location and facilities for both on-campus and off-campus stays.
-                            Our experts also assist with travel arrangements, such as flight reservations and airport
-                            pickups, to ensure you get here hassle-free. Our experts advise visa advice you on local
-                            transportation and rental contracts so that you don't encounter any housing problems. Some of
-                            the universities provide airport pick-up facilities and we assist you in arranging the same.
-                            With proper accommodation and travel assistance you can settle down and concentrate on your
-                            studies and personal objectives.</p>
-                        <a class="learn-more" onclick="learnmoreSection(1)">Learn More →</a> -->
+                        
                     </div>
                 </div>
 
@@ -395,15 +393,7 @@
                     <div class="service-content">
                         <h3>Fees & Finances</h3>
                         <p class="normal-content" data-id="2">Plan for tuition and cost of living. Be aware of the fees and research financial aid programs. Having an account in a local bank could also help deal with day-to-day finances, so you're set financially for your new life abroad.</p>
-                        <!-- <p class="all-content" data-id="2" style="display: none;">Health insurance is essential to protect
-                            yourself from unexpected medical costs. At WTS Visa Consultancy, we help you choose the right
-                            insurance plan that meets your destination's requirements and covers medical treatments and
-                            emergencies. We also guide you on accessing local healthcare and how to use your insurance. Our
-                            safety tips cover campus and city safety, dealing with emergencies and knowledge of local laws.
-                            Having knowledge of where to seek medical and mental health assistance visa application help
-                            provides reassurance. With the right health and safety precautions you can study without
-                            concern.</p>
-                        <a class="learn-more" onclick="learnmoreSection(2)">Learn More →</a> -->
+                       
                     </div>
                 </div>
                 <div class="visa-service-card">
@@ -412,15 +402,7 @@
                         <h3>Visa and Fly Tickets</h3>
                         <p class="normal-content" data-id="3">Once you receive your offer letter, apply for your student visa through the relevant embassy or consulate. Ensure you have all documents required, such as proof of funds. Pre-book your flight early to secure the best price, arriving before your program commences for an easy transition to your new home.
                         </p>
-                        <!-- <p class="all-content" data-id="3" style="display: none;">Part time job while studying abroad
-                            enhances your professional career and contributes to your costs. We explain work permit laws and
-                            employment conditions to you at WTS Visa Consultancy. Part time while studying and full time
-                            during holidays are permitted by most countries and we assist you in visa application assistance
-                            getting such opportunities. We link you to university career guidance and local companies for
-                            internships and part time employment. Our professionals assist you in building a solid resume
-                            and cover letter specific to local requirements. Work-life balance improves your career and
-                            provides you with economic freedom, an enriching global experience.</p>
-                        <a class="learn-more" onclick="learnmoreSection(3)">Learn More →</a> -->
+                       
                     </div>
                 </div>
             </div>
@@ -444,6 +426,7 @@
 
     <!-- Choose us  -->
     <section id="services" class="services">
+        <div class="container">
         <h2>Why <span>Choose Us?</span></h2>
         <p>With over a decade of experience, WTS Visa Consultancy knows what international students face. Our consultants remain aware of university admissions, visa regulations, and scholarship opportunities to provide you with the latest information. We have established good relationships with leading universities to assist students in identifying the most appropriate program for their aspirations. We have experience in guiding and assisting with complicated applications and the visa process to make it go as smoothly as possible. Thousands of successful placements are a reflection of our success in placing students in the appropriate opportunities. With us, you can go through the study abroad process with confidence and attain your academic objectives.</p>
         <div class="card">
@@ -532,6 +515,7 @@
                 </ul>
             </div>
         </div>
+        </div>
     </section>
 
     <!-- Global Partners  -->
@@ -614,40 +598,6 @@
 
 
 
-<!-- Registration Form Modal
-<div id="registrationModal" class="modal">
-    <div class="modal-content">
-        <span class="close-modal" onclick="closeRegistrationForm()">&times;</span>
-        <div class="registration-form">
-            <h2>Register for Consultation</h2>
-            <form id="consultationForm" action="{{ route('submit.registration') }}" method="POST">
-                @csrf
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="phone" placeholder="Phone Number" required>
-                </div>
-                <div class="form-group">
-                    <select name="country" required>
-                        <option value="">Select Preferred Country</option>
-                        <option value="USA">USA</option>
-                        <option value="France">France</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Germany">Germany</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Dubai">Dubai</option>
-                        <option value="Ireland">Ireland</option>
-                    </select>
-                </div>
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
-        </div>
-    </div>
-</div> -->
 
 <script>
 function openRegistrationForm() {
@@ -666,4 +616,3 @@ window.onclick = function(event) {
     }
 }
 </script>
-

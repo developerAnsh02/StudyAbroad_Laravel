@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
+use App\Http\Controllers\UniversityController;
 
 
 
@@ -26,6 +27,9 @@ Route::get('/terms-of-service', function () {
     return view("terms-of-service");
 })->name('terms_of_service');
 
+
+
+Route::get('/universities', [UniversityController::class, 'index'])->name('universities.index');
 
 
 // Route::post('/contact-submit', [MasterController::class, 'submit'])->name('contact.submit');

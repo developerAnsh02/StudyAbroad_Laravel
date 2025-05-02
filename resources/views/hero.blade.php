@@ -227,6 +227,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        width: 90%;
         max-width: 1200px;
         gap: 20px;
         margin: auto;

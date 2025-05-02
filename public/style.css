@@ -2439,7 +2439,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* services  */
+
 .services{
+    max-width: 1200px;
+    margin: auto;
     padding: 20px 5%;
 }
 .section-description{

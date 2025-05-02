@@ -34,7 +34,7 @@
     }
 
     .content-service {
-        width: 90%;
+        max-width: 1200px;
         margin: 40px auto;
         padding: 30px;
         background: #ffffff;
@@ -168,6 +168,8 @@
         <div class="sidebar">
             <h2>Our Services</h2>
             <ul id="service-menu">
+                <li data-target="counseling"><i class="fa-solid fa-medal icon"></i> Counseling with an Expert</li>
+                <li data-target="evaluation"><i class="fa-solid fa-address-card icon"></i> Free Profile Evaluation</li>
                 <li data-target="course"><i class="fa-solid fa-book icon"></i> Course Selection</li>
                 <li data-target="admission"><i class="fa-solid fa-university icon"></i> Admission</li>
                 <li data-target="sop"><i class="fa-solid fa-file-signature icon"></i> SOP</li>
@@ -175,9 +177,7 @@
                 <li data-target="travel"><i class="fa-solid fa-plane icon"></i> Travel Arrangements</li>
                 <li data-target="visa"><i class="fa-solid fa-book icon"></i> Visa Assistance</li>
                 <li data-target="post-landing"><i class="fa-solid fa-house-user icon"></i> Post-Landing Services</li>
-                <li data-target="evaluation"><i class="fa-solid fa-address-card icon"></i> Free Profile Evaluation</li>
                 <li data-target="loan"><i class="fa-solid fa-user-graduate icon"></i> Education Loan</li>
-                <li data-target="counseling"><i class="fa-solid fa-medal icon"></i> Counseling with an Expert</li>
             </ul>
             <p class="swipe-up">Swipe Up to See More</p>
         </div>
