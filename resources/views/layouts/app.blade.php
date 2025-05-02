@@ -141,7 +141,7 @@
 
     <div class="whatsapp-container">
         <a href="https://wa.me/+918000915743" target="_blank" class="whatsapp-icon">
-            <img src="{{ asset('icons/WhatsApp_icon.png') }}" alt="WhatsApp" />
+            <img src="{{ asset('icons/WhatsApp_icon.webp') }}" alt="WhatsApp" />
             <div class="tooltip">Chat with us on WhatsApp!</div>
         </a>
     </div>
