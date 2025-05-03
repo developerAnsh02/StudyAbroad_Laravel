@@ -474,7 +474,7 @@
     .card-country:hover .popup-uk {
         display: block;
         opacity: 1;
-        transform: translateX(18%) translateY(145px);
+        transform: translateX(-42%) translateY(300px);
     }
 
     /* ✅ For screens 1045px and wider */
@@ -482,7 +482,7 @@
         .card-country:hover .popup-france {
             display: block;
             opacity: 1;
-            transform: translateX(-122%) translateY(165px);
+            transform: translateX(-60%) translateY(301px);
         }
     }
 
@@ -491,7 +491,7 @@
         .card-country:hover .popup-france {
             display: block;
             opacity: 1;
-            transform: translateX(22%) translateY(165px);
+            transform: translateX(-60%) translateY(301px);
         }
 
     }
@@ -568,9 +568,49 @@
 
         
 
-        .card-country {
+        /* .card-country {
             display: none;
-            /* Hide country cards */
-        }
+        } */
+         .usa-card {
+        top: 51%;
+        left: 2%;
     }
+    .australia-card {
+        top: 71%;
+        left: 59%;
+    }
+
+    .card-country:hover .popup-canada {
+        display: block;
+        opacity: 1;
+        transform: translateX(-10%) translateY(333px);
+    }
+
+    .card-country:hover .popup-usa {
+        display: block;
+        opacity: 1;
+        transform: translateX(-14%) translateY(315px);
+    }
+
+    .card-country:hover .popup-uk {
+        display: block;
+        opacity: 1;
+        transform: translateX(-55%) translateY(296px);
+    }
+
+    .card-country:hover .popup-france {
+        display: block;
+        opacity: 1;
+        transform: translateX(-72%) translateY(296px);
+    }
+
+    .card-country:hover .popup-au {
+        display: block;
+        opacity: 1;
+        transform: translateX(-82%) translateY(7px);
+    }
+}
+
+    
+
 </style>
