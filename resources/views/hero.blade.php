@@ -489,6 +489,14 @@
         transform: translateX(-42%) translateY(300px);
     }
 
+    @media screen and (min-width: 1045px) {
+        .card-country:hover .popup-france {
+            display: block;
+            opacity: 1;
+            transform: translateX(-60%) translateY(301px);
+        }
+
+    }
 
     /* ✅ For screens below 1045px */
     @media screen and (max-width: 1044px) {
