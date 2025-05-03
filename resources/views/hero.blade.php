@@ -1,4 +1,5 @@
 <section class="hero-main">
+    <img src="/images/fbf0efd993d06415633881cd7b0c43de.jpg" alt="Hero Background" class="hero-bg" loading="lazy" />
 
     <div class="hero-content-wrapper">
 
@@ -216,11 +217,22 @@
 
 <style>
     .hero-main {
-        background: url('/images/fbf0efd993d06415633881cd7b0c43de.jpg') no-repeat center center/cover;
+        /* background: url('/images/fbf0efd993d06415633881cd7b0c43de.jpg') no-repeat center center/cover; */
         position: relative;
         padding: 100px 0 80px 0;
         min-height: 600px;
     }
+
+    .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 
     .hero-content-wrapper {
         display: flex;
@@ -422,7 +434,7 @@
 
     .australia-card {
         top: 72%;
-        left: 78%;
+        left: 69%;
     }
 
     .france-marker {
@@ -477,14 +489,6 @@
         transform: translateX(-42%) translateY(300px);
     }
 
-    /* ✅ For screens 1045px and wider */
-    @media screen and (min-width: 1045px) {
-        .card-country:hover .popup-france {
-            display: block;
-            opacity: 1;
-            transform: translateX(-60%) translateY(301px);
-        }
-    }
 
     /* ✅ For screens below 1045px */
     @media screen and (max-width: 1044px) {
