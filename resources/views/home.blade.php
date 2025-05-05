@@ -21,7 +21,7 @@
         $firstVideoId = Str::afterLast($videos[0]->url, '/');
     @endphp
 
-    @include('./components/course-details')
+    @include('components.course-details')
 
 <section class="countries-section">
     <div class="container">

@@ -981,7 +981,7 @@ h1, h2, h3, h4, h5, h6, p {
     animation: fade-in 1s ease;
 
     /* Width control */
-    max-width: 410px;
+    max-width: 450px;
     margin: 0 auto; /* center horizontally */
 }
 

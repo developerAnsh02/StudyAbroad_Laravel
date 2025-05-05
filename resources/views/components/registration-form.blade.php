@@ -30,19 +30,19 @@
             <div class="custom-radio-group" role="group" aria-label="Counselling Mode">
                 <input type="radio" name="counselling_mode" value="Phone" id="radioPhone">
                 <label for="radioPhone">
-                    <span class="icon">📞</span>
+                    <span class="icon"><i class="fas fa-phone"></i></span>
                     <span class="text">Phone Call</span>
                 </label>
 
                 <input type="radio" name="counselling_mode" value="Video" id="radioVideo">
                 <label for="radioVideo">
-                    <span class="icon">💻</span>
+                    <span class="icon"><i class="fas fa-laptop-code"></i></span>
                     <span class="text">Video Session</span>
                 </label>
 
                 <input type="radio" name="counselling_mode" value="Home" id="radioHome">
                 <label for="radioHome">
-                    <span class="icon">🏠</span>
+                    <span class="icon"><i class="fas fa-home"></i></span>
                     <span class="text">In-Home Visit</span>
                 </label>
             </div>
@@ -447,7 +447,15 @@
     }
 
     .custom-radio-group .icon {
-        font-size: 18px;
+        display: inline-block;
+
+    margin-right: 2px;
+    font-size: 18px;
+    color: #4a4a4a;
+    transition: color 0.3s;
+    }
+    .custom-radio-group label:hover .icon {
+        color: #ffa500;
     }
 
     @media (max-width: 480px) {
