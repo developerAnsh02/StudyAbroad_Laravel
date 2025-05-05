@@ -189,7 +189,7 @@
 
     @media (max-width: 768px) {
         .modal-content {
-            margin: 10% auto;
+            margin: 25% auto;
             width: 95%;
         }
     }
