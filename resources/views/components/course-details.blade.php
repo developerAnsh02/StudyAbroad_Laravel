@@ -149,7 +149,7 @@
       display: block;
     }
 
-    label {
+    #stepForm label {
       display: block;
       margin: 15px 0 5px;
       font-weight: bold;
