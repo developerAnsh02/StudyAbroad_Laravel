@@ -161,6 +161,7 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.7);
         backdrop-filter: blur(5px);
+        overflow: auto;
     }
 
     .modal-content {
