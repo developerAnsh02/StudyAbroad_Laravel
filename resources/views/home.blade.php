@@ -259,7 +259,7 @@
         }
 
         .youtube-facade::after {
-            content: '▶';
+            content: '';
             font-size: 3rem;
             color: white;
             position: absolute;
