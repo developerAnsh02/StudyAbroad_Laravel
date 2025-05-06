@@ -454,7 +454,8 @@
     color: #4a4a4a;
     transition: color 0.3s;
     }
-    .custom-radio-group label:hover .icon {
+    .custom-radio-group label:hover .icon,
+    .custom-radio-group input[type="radio"]:checked + label .icon {
         color: #ffa500;
     }
 
