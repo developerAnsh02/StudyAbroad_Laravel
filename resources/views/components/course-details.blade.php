@@ -20,14 +20,14 @@
       <!-- Step 1: Country -->
       <div class="form-step active" id="step-1">
         <label for="country">Select Countries (You can choose multiple)</label>
-        <select id="country" name="countries[]" multiple class="choices-multiple" required>
+        <select id="country" name="countries[]"  required>
           <option value="Canada">Canada</option>
-          <option value="USA">USA</option>
-          <option value="UK">UK</option>
+          <option value="USA">United States</option>
+          <option value="UK">United Kingdom</option>
           <option value="Ireland">Ireland</option>
           <option value="New Zealand">New Zealand</option>
           <option value="Australia">Australia</option>
-          <option value="UAE">UAE</option>
+          <option value="UAE">United Arab Emirates</option>
           <option value="Singapore">Singapore</option>
           <option value="Malaysia">Malaysia</option>
         </select>
@@ -39,6 +39,7 @@
         <label for="course">Select Course Types (You can choose multiple)</label>
         <select id="course" name="course[]" required>
           <option value="">Choose Course Type</option>
+          <option name="Undergraduate" value="Certificate">Certificate</option>
           <option name="Undergraduate" value="Undergraduate">Undergraduate</option>
           <option name="Postgraduate" value="Postgraduate">Postgraduate</option>
         </select>
@@ -256,21 +257,14 @@ function validateFinalStep() {
   const courseSelect = document.getElementById('course');
   const departmentSelect = document.getElementById('department');
 
-  const ugDepartments = [
-    { value: 'bsc', text: 'BSc Computer Science' },
-    { value: 'ba', text: 'BA Business Management' },
-    { value: 'bcom', text: 'BCom Accounting and Finance' },
-    { value: 'cyber', text: 'BSc Cyber Security' }
-  ];
-
-  const pgDepartments = [
-    { value: 'mba', text: 'Master of Business Administration (MBA)' },
-    { value: 'ma', text: 'Master of Arts in Social Work' },
-    { value: 'msc-ds', text: 'MSc Advanced Computer Science with Data Science' },
-    { value: 'ai', text: 'MS in Applied Artificial Intelligence' },
-    { value: 'cyber', text: 'Cyber Security and Intelligence' },
-    { value: 'analytics', text: 'Data Analytics' }
-  ];
+    // Loop through the data and create option elements for each course
+    data.forEach(course => {
+      const option = document.createElement('option');
+      option.value = course.id; // Set the course ID as the value
+      option.textContent = course.name.trim(); // Set the course name as the display text
+      departmentSelect.appendChild(option); // Add the option to the select
+    });
+  
 
   // Initialize Choices.js
   const choices = new Choices(departmentSelect, {
@@ -279,7 +273,11 @@ function validateFinalStep() {
     placeholderValue: 'Select up to 3 departments',
     searchPlaceholderValue: 'Search...',
   });
-
+  
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
+  
   function updateDepartments(courseType) {
     const departments = courseType === 'Undergraduate' ? ugDepartments : pgDepartments;
 
