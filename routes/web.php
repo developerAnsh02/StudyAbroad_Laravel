@@ -31,8 +31,10 @@ Route::get('/terms-of-service', function () {
 
 
 
+// Route::get('/universities', [UniversityController::class, 'index'])->name('universities.index');
+// Route::post('/universities/search', [UniversityController::class, 'handleSubmit'])->name('universities.search');
 Route::get('/universities', [UniversityController::class, 'index'])->name('universities.index');
-Route::post('/universities/search', [UniversityController::class, 'handleSubmit'])->name('universities.search');
+Route::get('/universities/{country}', [UniversityController::class, 'showByCountry'])->name('universities.byCountry');
 
 
 // Route::post('/contact-submit', [MasterController::class, 'submit'])->name('contact.submit');

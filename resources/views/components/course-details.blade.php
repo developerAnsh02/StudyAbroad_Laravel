@@ -19,7 +19,7 @@
     <form id="stepForm" onsubmit="return validateFinalStep()">
       <!-- Step 1: Country -->
       <div class="form-step active" id="step-1">
-        <label for="country">Select Countries (You can choose multiple)</label>
+        <label for="country">Select Countries</label>
         <select id="country" name="countries[]"  required>
           <option value="Canada">Canada</option>
           <option value="USA">United States</option>

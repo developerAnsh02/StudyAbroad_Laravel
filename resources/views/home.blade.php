@@ -17,6 +17,9 @@
             (object)[ 'url' => 'https://www.youtube.com/embed/z6S02ntwcQI', 'title' => 'Sumandeep Review' ],
             (object)[ 'url' => 'https://www.youtube.com/embed/h7x-BRbPco4', 'title' => 'Ayushi Review' ],
             (object)[ 'url' => 'https://www.youtube.com/embed/mWNsU_SSenY', 'title' => 'Prakhar Review' ],
+            (object)[ 'url' => 'https://www.youtube.com/shorts/iLsffDOBQHw', 'title' => 'Amit Zala' ],
+            (object)[ 'url' => 'https://www.youtube.com/shorts/kjFZQJXYujI', 'title' => 'Student Review' ],
+            (object)[ 'url' => 'https://www.youtube.com/shorts/-8m6MXZG0sQ', 'title' => 'Sajay' ],
         ];
         $firstVideoId = Str::afterLast($videos[0]->url, '/');
     @endphp

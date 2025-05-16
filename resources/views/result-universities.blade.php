@@ -132,39 +132,99 @@
 
 
 @section('content')
-    <section class="university-section">
-        <h1>Top University Courses</h1>
+<section class="university-section">
+    <h1>Top University Courses</h1>
 
-        <div class="grid">
-            @forelse ($universities as $index => $uni)
-                <div class="card-uni" style="animation-delay: {{ min($index * 0.1, 1) }}s;">
-                    <img class="uni-img" src="{{ asset($uni['coursesWebsite']['image'] ?? 'images/default-university.jpg') }}" alt="{{ $uni['title'] ?? 'University Course' }} Image">
+    <form method="GET" action="{{ route('universities.index') }}">
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" onchange="location.href='/universities/' + this.value">
+            @foreach ($availableCountries as $country)
+                <option value="{{ $country }}" {{ $country == $selectedCountry ? 'selected' : '' }}>
+                    {{ ucfirst($country) }}
+                </option>
+            @endforeach
+        </select>
+    </form>
 
-                    <div class="card-content">
-                        <div class="university-header">
-                            <img class="university-logo" src="{{ asset($uni['university']['image'] ?? 'images/university-logos/default-logo.png') }}" alt="{{ $uni['university']['name'] ?? 'University' }} Logo">
-                            <h3 title="{{ $uni['university']['name'] ?? 'Unnamed University' }}">{{ trim($uni['university']['name'] ?? 'Unnamed University') }}</h3>
-                        </div>
+    <div class="grid">
+        @forelse ($universities as $index => $uni)
+            <div class="card-uni" style="animation-delay: {{ min($index * 0.1, 1) }}s;">
+                <img class="uni-img" src="{{ $uni['coursesWebsite']['image'] ?? asset('images/default-university.jpg') }}" alt="{{ $uni['title'] ?? 'University Course' }} Image">
 
-                        <div class="info"><i class="fas fa-book-open"></i> {{ trim($uni['title'] ?? 'N/A') }}</div>
-                        <div class="info"><i class="fas fa-user-graduate"></i> {{ $uni['coursesWebsite']['courseLevel'] ?? 'N/A' }} | Level {{ $uni['coursesWebsite']['courseLevelId'] ?? 'N/A' }}</div>
-                        <div class="info"><i class="fas fa-clock"></i> {{ $uni['coursesWebsite']['duration'] ?? 'N/A' }}</div>
-                        <div class="info"><i class="fas fa-map-marker-alt"></i> {{ $uni['coursesWebsite']['location'] ?? 'Unknown' }}</div>
-                        <div class="info"><i class="fas fa-file-invoice-dollar"></i> Application Fees: {{ $uni['university']['currencySymbol'] ?? '$' }}{{ $uni['coursesWebsite']['applicationFees'] ?? 'N/A' }}</div>
-                        <div class="info"><i class="fas fa-money-bill-wave"></i> Tuition Fees:
-                            <span class="fee">
-                                {{ $uni['university']['currencySymbol'] ?? '$' }}{{ number_format($uni['coursesWebsite']['tuitionFees'] ?? 0) }}
-                                {{ $uni['university']['currencyCode'] ?? 'USD' }}
-                            </span>
-                        </div>
+                <div class="card-content">
+                    <div class="university-header">
+                        <img class="university-logo" src="{{ $uni['university']['image'] ?: asset('images/university-logos/default-logo.png') }}" alt="{{ $uni['university']['name'] ?? 'University' }} Logo">
+                        <h3 title="{{ $uni['university']['name'] ?? 'Unnamed University' }}">{{ trim($uni['university']['name'] ?? 'Unnamed University') }}</h3>
+                    </div>
+
+                    <div class="info"><i class="fas fa-book-open"></i> {{ trim($uni['title'] ?? 'N/A') }}</div>
+                    <div class="info"><i class="fas fa-user-graduate"></i> {{ $uni['coursesWebsite']['courseLevel'] ?? 'N/A' }} | Level {{ $uni['coursesWebsite']['courseLevelId'] ?? 'N/A' }}</div>
+                    <div class="info"><i class="fas fa-clock"></i> {{ $uni['coursesWebsite']['duration'] ?? 'N/A' }}</div>
+                    <div class="info"><i class="fas fa-map-marker-alt"></i> {{ $uni['coursesWebsite']['location'] ?? 'Unknown' }}</div>
+                    <div class="info"><i class="fas fa-file-invoice-dollar"></i> Application Fees: {{ $uni['university']['currencySymbol'] ?? '$' }}{{ $uni['coursesWebsite']['applicationFees'] ?? 'N/A' }}</div>
+                    <div class="info"><i class="fas fa-money-bill-wave"></i> Tuition Fees:
+                        <span class="fee">
+                            {{ $uni['university']['currencySymbol'] ?? '$' }}{{ number_format($uni['coursesWebsite']['tuitionFees'] ?? 0) }}
+                            {{ $uni['university']['currencyCode'] ?? 'USD' }}
+                        </span>
                     </div>
                 </div>
-            @empty
-                <div class="no-data">
-                    No university courses found.
-                </div>
-            @endforelse
-        </div>
+            </div>
+        @empty
+            <div class="no-data">
+                No university courses found.
+            </div>
+        @endforelse
+    </div>
 
-    </section>
+    <div class="pagination">
+        {{ $universities->links() }}
+    </div>
+</section>
 @endsection
+
+<!-- Pagination styling  -->
+
+<style>
+    .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pagination svg {
+    width: 16px;
+    height: 16px;
+}
+
+.pagination nav > div:first-child {
+    display: none;
+}
+
+.pagination nav {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination nav a,
+.pagination nav span {
+    margin: 0 5px;
+    padding: 6px;
+    color: black;
+    text-decoration: none;
+}
+
+.pagination nav span {
+    /* background-color: #18336c; */
+    color: black;
+    font-weight: bold;
+}
+
+.pagination nav span[aria-current='page'] {
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
+
+</style>
