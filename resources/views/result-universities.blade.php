@@ -1,7 +1,121 @@
 @extends('layouts.app')
 
+@section('content')
+<section class="university-section">
+    <h1>Top University Courses</h1>
 
-    <style>
+    <form method="GET">
+        <div class="filters">
+            {{-- Country Dropdown --}}
+            <label for="country">Select Country:</label>
+            <select id="country" name="country">
+                @foreach ($availableCountries as $country)
+                    <option value="{{ $country }}" {{ $country == $selectedCountry ? 'selected' : '' }}>
+                        {{ ucfirst($country) }}
+                    </option>
+                @endforeach
+            </select>
+
+            {{-- Course Level Dropdown --}}
+            <label for="courseLevel">Select Course Level:</label>
+            <select id="courseLevel" name="courseLevel">
+                <option value="all">All Levels</option>
+                @foreach ($availableCourseLevels as $level)
+                    <option value="{{ strtolower($level) }}" {{ strtolower($level) == strtolower($selectedCourseLevel) ? 'selected' : '' }}>
+                        {{ ucfirst($level) }}
+                    </option>
+                @endforeach
+            </select>
+
+            {{-- Tuition Fee Range Dropdown --}}
+            <label for="tuitionRange">Select Tuition Range:</label>
+            <select id="tuitionRange" name="tuitionRange">
+                <option value="all">All Ranges</option>
+                @foreach ($availableTuitionRanges as $range)
+                    <option value="{{ $range }}" {{ $range == $selectedTuitionRange ? 'selected' : '' }}>
+                        ${{ str_replace('-', ' - $', $range) }}
+                    </option>
+                @endforeach
+            </select>
+
+            {{-- Department Dropdown --}}
+<label for="department">Select Department:</label>
+<select name="department" id="department">
+    <option value="all">All Departments</option>
+    @foreach ($availableDepartments as $dept)
+        <option value="{{ $dept }}" {{ request('department') == $dept ? 'selected' : '' }}>{{ $dept }}</option>
+    @endforeach
+</select>
+        </div>
+    </form>
+
+    {{-- University Grid --}}
+    <div class="grid">
+        @forelse ($universities as $index => $uni)
+            <div class="card-uni" style="animation-delay: {{ min($index * 0.1, 1) }}s;">
+                <img class="uni-img" src="{{ $uni['coursesWebsite']['image'] ?? asset('images/default-university.jpg') }}" alt="{{ $uni['title'] ?? 'University Course' }} Image">
+
+                <div class="card-content">
+                    <div class="university-header">
+                        <img class="university-logo" src="{{ $uni['university']['image'] ?: asset('images/university-logos/default-logo.png') }}" alt="{{ $uni['university']['name'] ?? 'University' }} Logo">
+                        <h3 title="{{ $uni['university']['name'] ?? 'Unnamed University' }}">{{ trim($uni['university']['name'] ?? 'Unnamed University') }}</h3>
+                    </div>
+
+                    <div class="info"><i class="fas fa-book-open"></i> {{ trim($uni['title'] ?? 'N/A') }}</div>
+                    <div class="info"><i class="fas fa-user-graduate"></i> {{ $uni['coursesWebsite']['courseLevel'] ?? 'N/A' }}</div>
+                    <div class="info"><i class="fas fa-clock"></i> {{ $uni['coursesWebsite']['duration'] ?? 'N/A' }}</div>
+                    <div class="info"><i class="fas fa-map-marker-alt"></i> {{ $uni['coursesWebsite']['location'] ?? 'Unknown' }}</div>
+                    <div class="info"><i class="fas fa-file-invoice-dollar"></i> Application Fees: {{ $uni['university']['currencySymbol'] ?? '$' }}{{ $uni['coursesWebsite']['applicationFees'] ?? 'N/A' }}</div>
+                    <div class="info"><i class="fas fa-money-bill-wave"></i> Tuition Fees:
+                        <span class="fee">
+                            {{ $uni['university']['currencySymbol'] ?? '$' }}{{ number_format($uni['coursesWebsite']['tuitionFees'] ?? 0) }}
+                            {{ $uni['university']['currencyCode'] ?? 'USD' }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        @empty
+            <div class="no-data">No university courses found.</div>
+        @endforelse
+    </div>
+
+    <div class="pagination">
+        {{ $universities->links() }}
+    </div>
+</section>
+
+<script>
+    // On change, navigate to updated URL
+    const selects = ['country', 'courseLevel', 'tuitionRange', 'department'];
+
+selects.forEach(id => {
+    document.getElementById(id).addEventListener('change', () => {
+        const country = document.getElementById('country').value;
+        const level = document.getElementById('courseLevel').value;
+        const fee = document.getElementById('tuitionRange').value;
+        const department = document.getElementById('department').value;
+
+        let url = `/universities/${country}`;
+        if(level !== 'all') url += `/${level}`;
+        if(fee !== 'all') {
+            if(level === 'all') url += `/all`;
+            url += `/${fee}`;
+        }
+
+        // Append department as query parameter if not 'all'
+        if(department && department !== 'all') {
+            url += `?department=${encodeURIComponent(department)}`;
+        }
+
+        window.location.href = url;
+    });
+});
+
+</script>
+@endsection
+
+
+<style>
         .university-section {
             padding: 120px 20px 60px 20px;
             background: #f7f7f7;
@@ -129,59 +243,6 @@
             }
         }
     </style>
-
-
-@section('content')
-<section class="university-section">
-    <h1>Top University Courses</h1>
-
-    <form method="GET" action="{{ route('universities.index') }}">
-        <label for="country">Select Country:</label>
-        <select id="country" name="country" onchange="location.href='/universities/' + this.value">
-            @foreach ($availableCountries as $country)
-                <option value="{{ $country }}" {{ $country == $selectedCountry ? 'selected' : '' }}>
-                    {{ ucfirst($country) }}
-                </option>
-            @endforeach
-        </select>
-    </form>
-
-    <div class="grid">
-        @forelse ($universities as $index => $uni)
-            <div class="card-uni" style="animation-delay: {{ min($index * 0.1, 1) }}s;">
-                <img class="uni-img" src="{{ $uni['coursesWebsite']['image'] ?? asset('images/default-university.jpg') }}" alt="{{ $uni['title'] ?? 'University Course' }} Image">
-
-                <div class="card-content">
-                    <div class="university-header">
-                        <img class="university-logo" src="{{ $uni['university']['image'] ?: asset('images/university-logos/default-logo.png') }}" alt="{{ $uni['university']['name'] ?? 'University' }} Logo">
-                        <h3 title="{{ $uni['university']['name'] ?? 'Unnamed University' }}">{{ trim($uni['university']['name'] ?? 'Unnamed University') }}</h3>
-                    </div>
-
-                    <div class="info"><i class="fas fa-book-open"></i> {{ trim($uni['title'] ?? 'N/A') }}</div>
-                    <div class="info"><i class="fas fa-user-graduate"></i> {{ $uni['coursesWebsite']['courseLevel'] ?? 'N/A' }} | Level {{ $uni['coursesWebsite']['courseLevelId'] ?? 'N/A' }}</div>
-                    <div class="info"><i class="fas fa-clock"></i> {{ $uni['coursesWebsite']['duration'] ?? 'N/A' }}</div>
-                    <div class="info"><i class="fas fa-map-marker-alt"></i> {{ $uni['coursesWebsite']['location'] ?? 'Unknown' }}</div>
-                    <div class="info"><i class="fas fa-file-invoice-dollar"></i> Application Fees: {{ $uni['university']['currencySymbol'] ?? '$' }}{{ $uni['coursesWebsite']['applicationFees'] ?? 'N/A' }}</div>
-                    <div class="info"><i class="fas fa-money-bill-wave"></i> Tuition Fees:
-                        <span class="fee">
-                            {{ $uni['university']['currencySymbol'] ?? '$' }}{{ number_format($uni['coursesWebsite']['tuitionFees'] ?? 0) }}
-                            {{ $uni['university']['currencyCode'] ?? 'USD' }}
-                        </span>
-                    </div>
-                </div>
-            </div>
-        @empty
-            <div class="no-data">
-                No university courses found.
-            </div>
-        @endforelse
-    </div>
-
-    <div class="pagination">
-        {{ $universities->links() }}
-    </div>
-</section>
-@endsection
 
 <!-- Pagination styling  -->
 

@@ -76,14 +76,6 @@
         <label for="preference">Select Course Preferences (comma separated)</label>
         <input type="text" id="preference" name="preferences" placeholder="e.g., Computer Science, Finance" required>
 
-        <!-- <label for="test">Proficiency Test(s)</label>
-        <select id="test" name="test" required>
-          <option value="">Choose Test</option>
-          <option value="IELTS">IELTS</option>
-          <option value="TOEFL">TOEFL</option>
-          <option value="PTE">PTE</option>
-        </select> -->
-
         <button type="submit" class="form-btn">Apply Now</button>
       </div>
     </form>
