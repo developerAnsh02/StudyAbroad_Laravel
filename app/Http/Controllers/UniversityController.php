@@ -15,13 +15,18 @@ class UniversityController extends Controller
         return redirect()->route('universities.byCountry', ['country' => 'usa']);
     }
 
-public function showByCountry(Request $request, $country, $courseLevel = null, $tuitionRange = null)
+public function showByCountry(Request $request, $country)
 {
     $availableCountries = ['usa', 'canada', 'australia', 'ireland', 'malaysia', 'newzlealand', 'singapore', 'UAE', 'uk'];
 
     if (!in_array($country, $availableCountries)) {
         abort(404, 'Country not supported');
     }
+
+    $courseLevel = $request->query('courseLevel', null);
+$tuitionRange = $request->query('tuitionRange', null);
+$department = $request->query('department', null);
+
 
     $dataPath = storage_path("app/data/{$country}.json");
     $universities = [];
@@ -65,7 +70,7 @@ public function showByCountry(Request $request, $country, $courseLevel = null, $
             }
 
             // Filter by tuition range
-            if ($tuitionRange && $tuitionRange !== 'all') {
+            if ($tuitionRange && $tuitionRange !== 'all' && strpos($tuitionRange, '-') !== false) {
                 [$min, $max] = explode('-', $tuitionRange);
                 $universities = array_filter($universities, function ($uni) use ($min, $max) {
                     $fee = $uni['coursesWebsite']['tuitionFees'] ?? 0;
@@ -109,6 +114,15 @@ public function showByCountry(Request $request, $country, $courseLevel = null, $
     } else {
         $paginated = new LengthAwarePaginator([], 0, 6);
     }
+
+    if ($request->ajax() && $request->query('filterUpdateOnly')) {
+        return response()->json([
+            'courseLevels' => $courseLevels,
+            'tuitionRanges' => $tuitionRanges,
+            'departments' => $departments,
+        ]);
+    }
+    
 
     return view('result-universities', [
         'universities' => $paginated,
