@@ -24,7 +24,18 @@
         $firstVideoId = Str::afterLast($videos[0]->url, '/');
     @endphp
 
-    @include('components.course-details')
+    @include('components.course-details', [
+    'universities' => $universities,
+    'selectedCountry' => $selectedCountry,
+    'selectedCourseLevel' => $selectedCourseLevel,
+    'selectedTuitionRange' => $selectedTuitionRange,
+    'availableCountries' => $availableCountries,
+    'availableCourseLevels' => $availableCourseLevels,
+    'availableTuitionRanges' => $availableTuitionRanges,
+    'availableDepartments' => $availableDepartments,
+    'currencySymbol' => $currencySymbol,
+])
+
 
 <section class="countries-section">
     <div class="container">

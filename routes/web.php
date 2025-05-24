@@ -9,9 +9,7 @@ use App\Http\Controllers\UniversityController;
 
 
 
-Route::get('/', function () {
-    return view("home");
-})->name('home');
+Route::get('/', [UniversityController::class, 'filterUniversity'])->name('home');
 
 Route::get('/contact', function () {
     return view("contact");
@@ -29,9 +27,9 @@ Route::get('/terms-of-service', function () {
 
 
 
-Route::get('/universities', [UniversityController::class, 'index'])->name('universities.index');
-Route::get('/universities/{country}', [UniversityController::class, 'showByCountry']);
-
+// Route::get('/universities', [UniversityController::class, 'index'])->name('universities.index');
+// Route::get('/universities/{country}', [UniversityController::class, 'showByCountry']);
+Route::get('/universities', [UniversityController::class, 'showByCountry'])->name('universities.index');
 
 
 // Route::post('/contact-submit', [MasterController::class, 'submit'])->name('contact.submit');
