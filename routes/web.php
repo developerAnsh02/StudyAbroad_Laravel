@@ -27,8 +27,6 @@ Route::get('/terms-of-service', function () {
 
 
 
-// Route::get('/universities', [UniversityController::class, 'index'])->name('universities.index');
-// Route::get('/universities/{country}', [UniversityController::class, 'showByCountry']);
 Route::get('/universities', [UniversityController::class, 'showByCountry'])->name('universities.index');
 
 
