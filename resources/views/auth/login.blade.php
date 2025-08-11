@@ -1,47 +1,47 @@
 <x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+    <style>
+        {!! file_get_contents(public_path('css/custom-auth.css')) !!}
+    </style>
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+    <div class="container">
+        <div class="login-box">
+            <form class="form" method="POST" action="{{ route('login') }}">
+                @csrf
 
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                <div style="height: 60px; width: 190px"><img src="/images/logo-wts.png" alt=""></div>
+                <span class="header">Login</span>
+
+                <!-- Email -->
+                <input type="email" name="email" class="input" placeholder="Email" value="{{ old('email') }}" required
+                    autofocus autocomplete="new-email">
+                @error('email')
+                    <p style="color: red; font-size: 12px;">{{ $message }}</p>
+                @enderror
+
+                <!-- Password -->
+                <input type="password" name="password" class="input" placeholder="Password" required autocomplete="new-password">
+                @error('password')
+                    <p style="color: red; font-size: 12px;">{{ $message }}</p>
+                @enderror
+
+                <!-- Remember Me -->
+                <label class="footer mt-2">
+                    <input type="checkbox" name="remember">
+                    Remember Me
+                </label>
+
+                <!-- Submit Button -->
+                <button type="submit" class="button sign-in">Log In</button>
+
+                <!-- Footer Links -->
+                <p class="footer mt-3">
+                    <a href="{{ route('password.request') }}" class="link">Forgot password?</a><br/>
+                    <span class="flex justify-between">
+                        Don't have an account?
+                        <a href="{{ route('register') }}" class="link flex justify-end ml-auto">Sign up, it's free!</a>
+                    </span>
+                </p>
+            </form>
         </div>
-
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="remember">
-                <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Remember me') }}</span>
-            </label>
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
-
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
-            </x-primary-button>
-        </div>
-    </form>
+    </div>
 </x-guest-layout>
