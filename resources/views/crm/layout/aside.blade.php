@@ -3,18 +3,15 @@
         <div class="m-header">
             <a href="{{ route('dashboard') }}" class="b-brand">
                 <!-- Logo -->
-                <img src="{{ asset('/images/favicon.png') }}" alt="Full Logo" class="logo logo-lg">
-                <img src="{{ asset('/images/favicon.png') }}" alt="Small Logo" class="logo logo-sm">
+                <img src="{{ asset('/crm-assets/assets/images/logo/logo-wts.webp') }}" alt="Full Logo" class="logo logo-lg" style="max-height: 50px;">
+                <img src="{{ asset('/crm-assets/assets/images/logo/wts.webp') }}" alt="Small Logo" class="logo logo-sm">
             </a>
         </div>
 
         <div class="navbar-content">
             <ul class="nxl-navbar">
 
-                {{-- Navigation Label --}}
-                <li class="nxl-item nxl-caption">
-                    <label>Navigation</label>
-                </li>
+                
 
                 {{-- Dashboards --}}
                 <li class="nxl-item nxl-hasmenu">
@@ -45,17 +42,7 @@
                 </li>
             </ul>
 
-            {{-- Sidebar Info Card --}}
-            <div class="card text-center">
-                <div class="card-body">
-                    <i class="feather-sunrise fs-4 text-dark"></i>
-                    <h6 class="mt-4 text-dark fw-bolder">Downloading Center</h6>
-                    <p class="fs-11 my-3 text-dark">
-                        Duralux is a production ready CRM to get started up and running easily.
-                    </p>
-                    <a href="#" class="btn btn-primary text-dark w-100">Download Now</a>
-                </div>
-            </div>
+            
         </div>
     </div>
 </nav>

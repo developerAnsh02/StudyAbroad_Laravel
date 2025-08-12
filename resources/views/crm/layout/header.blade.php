@@ -20,12 +20,7 @@
                 </a>
             </div>
 
-            {{-- nxl-lavel-mega-menu-toggle --}}
-            <div class="nxl-lavel-mega-menu-toggle d-flex d-lg-none">
-                <a href="javascript:void(0);" id="nxl-lavel-mega-menu-open">
-                    <i class="feather-align-left"></i>
-                </a>
-            </div>
+            
         </div>
 
         <!-- [Start] Header Right -->
