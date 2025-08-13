@@ -10,39 +10,31 @@
 
         <div class="navbar-content">
             <ul class="nxl-navbar">
+                @foreach($menus as $menu)
+                    <li class="nxl-item {{ $menu->children->count() ? 'nxl-hasmenu' : '' }}">
+                        <a href="{{ $menu->url ?? 'javascript:void(0);' }}" class="nxl-link">
+                            @if($menu->icon)
+                                <span class="nxl-micon"><i class="{{ $menu->icon }}"></i></span>
+                            @endif
+                            <span class="nxl-mtext">{{ $menu->name }}</span>
+                            @if($menu->children->count())
+                                <span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
+                            @endif
+                        </a>
 
-                
-
-                {{-- Dashboards --}}
-                <li class="nxl-item nxl-hasmenu">
-                    <a href="javascript:void(0);" class="nxl-link">
-                        <span class="nxl-micon"><i class="feather-airplay"></i></span>
-                        <span class="nxl-mtext">Dashboards</span>
-                        <span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
-                    </a>
-                    <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="">CRM</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="">Analytics</a></li>
-                    </ul>
-                </li>
-
-                {{-- Reports --}}
-                <li class="nxl-item nxl-hasmenu">
-                    <a href="javascript:void(0);" class="nxl-link">
-                        <span class="nxl-micon"><i class="feather-cast"></i></span>
-                        <span class="nxl-mtext">Reports</span>
-                        <span class="nxl-arrow"><i class="feather-chevron-right"></i></span>
-                    </a>
-                    <ul class="nxl-submenu">
-                        <li class="nxl-item"><a class="nxl-link" href="">Sales Report</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="">Leads Report</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="">Project Report</a></li>
-                        <li class="nxl-item"><a class="nxl-link" href="">Timesheets Report</a></li>
-                    </ul>
-                </li>
+                        @if($menu->children->count())
+                            <ul class="nxl-submenu">
+                                @foreach($menu->children as $child)
+                                    <li class="nxl-item">
+                                        <a class="nxl-link" href="{{ $child->url }}">{{ $child->name }}</a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        @endif
+                    </li>
+                @endforeach
             </ul>
 
-            
         </div>
     </div>
 </nav>
